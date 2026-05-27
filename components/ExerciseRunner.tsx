@@ -195,18 +195,29 @@ function Renderer({ ex, answer, setAnswer, disabled }: { ex: Exercise; answer: a
   if (ex.type === "cloze") {
     const parts = ex.text.split(/\{\{(\d+)\}\}/g);
     return (
-      <div className="text-[15px] leading-loose text-ink">
-        {parts.map((p, i) =>
-          i % 2 === 0 ? <span key={i}>{p}</span> : (
-            <input
-              key={i}
-              className="inline-block mx-1 px-2 py-1 bg-inset border-b-2 border-acc/50 focus:border-acc focus:outline-none w-32 text-center text-acc font-pixel text-[10px]"
-              value={answer[parseInt(p, 10)] || ""}
-              onChange={(e) => { const next = [...answer]; next[parseInt(p, 10)] = e.target.value; setAnswer(next); }}
-              disabled={disabled}
-            />
-          )
-        )}
+      <div className="text-[15px] leading-[2.4] text-ink">
+        {parts.map((p, i) => {
+          if (i % 2 === 0) return <span key={i}>{p}</span>;
+          const blankIdx = parseInt(p, 10);
+          const val = answer[blankIdx] || "";
+          // Dynamically size based on expected/current content
+          const accept = ex.blanks[blankIdx]?.accept || [];
+          const maxAcceptLen = Math.max(...accept.map((a) => a.length), 8);
+          const size = Math.max(maxAcceptLen + 2, val.length + 2, 8);
+          return (
+            <span key={i} className="inline-flex flex-col items-center align-baseline mx-1">
+              <input
+                size={size}
+                className="bg-inset border border-line/[0.06] focus:border-acc focus:outline-none focus:ring-2 focus:ring-acc/20 rounded-sm px-2 py-1 text-center text-acc font-mono text-[13px] tracking-wide"
+                value={val}
+                onChange={(e) => { const next = [...answer]; next[blankIdx] = e.target.value; setAnswer(next); }}
+                disabled={disabled}
+                placeholder={`#${blankIdx + 1}`}
+              />
+              <span className="font-pixel text-[7px] text-ink-4 mt-0.5">{blankIdx + 1}/{ex.blanks.length}</span>
+            </span>
+          );
+        })}
       </div>
     );
   }
