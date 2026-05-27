@@ -1,0 +1,358 @@
+[
+  {
+    "id": "uit-calc-01",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H3","lening","multi-step","rekenen"],
+    "type": "open",
+    "question": "Investeringskrediet van € 100 000 over 5 jaar aan 4% met vaste kapitaalaflossingen (gelijke kapitaaldelen). Bereken de TOTALE intrest over de hele lening (in euro, geheel getal).",
+    "accept": ["12000","12 000","12.000"],
+    "explanation": "Kapitaal/jaar = 20 000. Schulden bij begin van jaar: 100k, 80k, 60k, 40k, 20k. Intrest = 4% × (100+80+60+40+20)k = 4% × 300 000 = € 12 000."
+  },
+  {
+    "id": "uit-calc-02",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","BTW","auto","aftrek","rekenen"],
+    "type": "open",
+    "question": "Een ondernemer koopt een personenwagen voor bedrijfsgebruik aan voor € 30 000 excl. BTW (21%). Hoeveel BTW kan hij effectief recupereren (in euro)?",
+    "accept": ["3150","3 150","3.150"],
+    "explanation": "BTW = 21% × 30 000 = € 6 300. Aftrekbaar voor personenwagens = 50% → € 3 150."
+  },
+  {
+    "id": "uit-calc-03",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","degressief","boekwaarde","rekenen"],
+    "type": "open",
+    "question": "Machine € 50 000, lineaire afschrijving 20%/jaar. Degressief met max 40% (= 2× lineair). Wat is de boekwaarde aan het EINDE van jaar 3 (in euro)?",
+    "accept": ["10800","10 800","10.800"],
+    "explanation": "J1: 40%×50 000=20 000 → BW=30 000. J2: 40%×30 000=12 000 → BW=18 000. J3: 40%×18 000=7 200 → BW=€ 10 800."
+  },
+  {
+    "id": "uit-calc-04",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","MvH","kortingen","rekenen"],
+    "type": "open",
+    "question": "Factuur: prijs € 5 000, 10% handelskorting, vervoer € 100, verloren verpakking € 50, 2% financiële korting. Bereken de Maatstaf van Heffing (in euro, twee decimalen).",
+    "accept": ["4557","4557,00","4 557","4.557","4557.00"],
+    "explanation": "5000 − 500 (10%) + 100 + 50 = 4650. − 2% fin. korting = 4650 − 93 = € 4 557."
+  },
+  {
+    "id": "uit-calc-05",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","BTW","tarieven","rekenen"],
+    "type": "open",
+    "question": "Factuur bevat goederen aan 21% (MvH € 1 000) en aan 6% (MvH € 500), plus vervoer € 60 dat aan het laagste tarief belast wordt. Hoeveel BTW totaal (in euro, twee decimalen)?",
+    "accept": ["243,60","243.60","243,6","243.6"],
+    "explanation": "MvH 6% = 500 + 60 = 560 → BTW = 33,60. MvH 21% = 1 000 → BTW = 210. Totaal = € 243,60."
+  },
+  {
+    "id": "uit-calc-06",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H3","hypotheek","jaar2","rekenen"],
+    "type": "open",
+    "question": "Hypothecaire lening € 100 000 over 5 jaar aan 5%, met vaste kapitaalaflossingen. Hoeveel intrest betaal je in JAAR 2 (in euro)?",
+    "accept": ["4000","4 000","4.000"],
+    "explanation": "Kap/jaar = 20 000. Restschuld bij begin jaar 2 = 80 000. Intrest jaar 2 = 5% × 80 000 = € 4 000."
+  },
+  {
+    "id": "uit-calc-07",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","cashflow","winst","rekenen"],
+    "type": "open",
+    "question": "Boekhoudkundige winst € 100 000. Afschrijvingen in resultatenrekening € 30 000. Investering in een nieuwe machine € 50 000 (uit eigen middelen, geen lening). Bereken de cashflow (in euro).",
+    "accept": ["80000","80 000","80.000"],
+    "explanation": "Cashflow ≈ winst + afschrijving (geen kasuitstroom) − werkelijke investering = 100 000 + 30 000 − 50 000 = € 80 000."
+  },
+  {
+    "id": "uit-calc-08",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H2","fiscaliteit","EM vs BV","rekenen"],
+    "type": "open",
+    "question": "KMO maakt € 100 000 winst. Bij een BV (verlaagd tarief 20% op eerste schijf € 100 000), hoeveel vennootschapsbelasting betaalt ze (in euro)?",
+    "accept": ["20000","20 000","20.000"],
+    "explanation": "20% × 100 000 = € 20 000 vennootschapsbelasting."
+  },
+  {
+    "id": "uit-calc-09",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H6","break-even","grensprijs","rekenen"],
+    "type": "open",
+    "question": "Vaste kosten € 240 000, variabele kost € 30/stuk, verkoopprijs € 80/stuk. Bereken de break-even hoeveelheid (in stuks).",
+    "accept": ["4800","4 800","4.800"],
+    "explanation": "BE = 240 000 / (80 − 30) = 240 000 / 50 = 4 800 stuks."
+  },
+  {
+    "id": "uit-calc-10",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H6","loon","arbeider","rekenen"],
+    "type": "open",
+    "question": "Arbeider brutoloon € 2 500. RSZ-werknemersbijdrage 13,07% op 108% van het brutoloon. Hoeveel RSZ wordt ingehouden (in euro, twee decimalen)?",
+    "accept": ["352,89","352.89","353"],
+    "explanation": "108% × 2 500 = 2 700. 13,07% × 2 700 = € 352,89 RSZ-werknemersbijdrage."
+  },
+
+  {
+    "id": "uit-mc-01",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H1","faillissement","verschoning"],
+    "type": "mc",
+    "question": "Sandra runt een eenmanszaak en gaat failliet zonder dat ze fouten maakte. Wat geldt?",
+    "options": [
+      "Ze blijft levenslang aansprakelijk voor de schulden",
+      "Regsol kan haar éénmalig verschonen waardoor schuldeisers haar niet meer kunnen vervolgen",
+      "Ze moet eerst de Winwinlening terugbetalen vooraleer ze kan herstarten",
+      "Verschoning geldt alleen voor vennootschappen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Verschoning via Regsol is mogelijk voor natuurlijke personen die geen fout maakten. Vennootschappen worden ontbonden, niet verschoond."
+  },
+  {
+    "id": "uit-mc-02",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H4","verzekering","scenario"],
+    "type": "mc",
+    "question": "Een schrijnwerker beschadigt tijdens een levering de traphal van de klant. Welke verzekering dekt deze schade?",
+    "options": [
+      "BA Auto",
+      "BA Uitbating / Exploitatie",
+      "BA Na Levering",
+      "Brandverzekering"
+    ],
+    "correctIndex": 1,
+    "explanation": "Schade veroorzaakt door de schrijnwerker of zijn personeel tijdens uitoefening van het beroep valt onder BA Uitbating. BA Na Levering geldt enkel voor schade die NA de levering ontstaat door het product zelf."
+  },
+  {
+    "id": "uit-mc-03",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","BTW","vrijgesteld"],
+    "type": "mc",
+    "question": "Een Belgische BV verkoopt machines aan een Franse BTW-plichtige onderneming. Wat staat er op de factuur?",
+    "options": [
+      "21% Belgische BTW",
+      "20% Franse BTW",
+      "BTW verlegd — vrijgesteld als intracommunautaire levering",
+      "0% BTW met vermelding 'export'"
+    ],
+    "correctIndex": 2,
+    "explanation": "Intracommunautaire levering (ICL) tussen EU-belastingplichtigen → factuur met 'BTW verlegd'. De Franse koper geeft de BTW dubbel aan in zijn eigen aangifte (aftrekbaar én verschuldigd)."
+  },
+  {
+    "id": "uit-mc-04",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H3","leasing","boekhouding"],
+    "type": "mc",
+    "question": "Een leasingcontract heeft een aankoopoptie van 20% van de aankoopprijs. Hoe wordt dit boekhoudkundig behandeld?",
+    "options": [
+      "Financiële leasing — activeren op de balans en afschrijven",
+      "Operationele leasing — boeken als huur (kost klasse 6), niet op de balans",
+      "Hypothecair krediet — activeren als onroerend goed",
+      "Investeringskrediet — als lening op de passiefzijde"
+    ],
+    "correctIndex": 1,
+    "explanation": "Aankoopoptie > 15% → operationele leasing → boeken als huur in klasse 6, niet activeren."
+  },
+  {
+    "id": "uit-mc-05",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H7","bijberoep","schijnzelfstandige"],
+    "type": "mc",
+    "question": "Lars werkt 30u/week als loontrekkende én voert een zelfstandige activiteit uit voor één enkele opdrachtgever zonder vrijheid om uren te kiezen. Wat geldt?",
+    "options": [
+      "Hij is een correcte bijberoeper",
+      "Hij is een schijnzelfstandige en moet sociale bijdragen betalen zoals een loontrekkende",
+      "Hij hoeft geen sociale bijdragen te betalen omdat hij min. halftijds werkt",
+      "Hij valt onder het maxi-statuut"
+    ],
+    "correctIndex": 1,
+    "explanation": "Werken voor één opdrachtgever zonder vrijheid van uren of werkorganisatie = schijnzelfstandigheid. Sanctie: sociale zekerheid betalen zoals loontrekkende."
+  },
+  {
+    "id": "uit-mc-06",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H2","aansprakelijkheid"],
+    "type": "mc",
+    "question": "Tom heeft een BV. Bij een belangrijke kredietovereenkomst stelt hij zich persoonlijk borg voor de schulden van zijn vennootschap. Vervolgens gaat de BV failliet. Wat is het gevolg?",
+    "options": [
+      "De beperkte aansprakelijkheid blijft volledig gelden — Tom verliest enkel zijn inbreng",
+      "Tom verliest de beperkte aansprakelijkheid en kan persoonlijk aangesproken worden voor de schulden waarvoor hij borg stond",
+      "De bank moet eerst alle activa van de BV verkopen voor Tom kan aangesproken worden",
+      "Tom kan via Regsol verschoond worden"
+    ],
+    "correctIndex": 1,
+    "explanation": "Door zich persoonlijk borg te stellen verliest een aandeelhouder/bestuurder zijn beperkte aansprakelijkheid voor die specifieke schuld. Verschoning geldt enkel voor natuurlijke personen (eenmanszaken), niet voor bestuurders die persoonlijk borg stonden."
+  },
+  {
+    "id": "uit-mc-07",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H6","make-or-buy"],
+    "type": "mc",
+    "question": "Onderdeel A: variabele kost € 40/stuk, toegerekende vaste kost € 15/stuk, integrale kostprijs € 55/stuk. Extern aanbod: € 50/stuk. Wat is de juiste beslissing?",
+    "options": [
+      "Op korte termijn aankopen (50 < 55)",
+      "Op korte termijn zelf maken (40 < 50); op lange termijn pas aankopen indien de vaste kosten effectief verdwijnen",
+      "Altijd aankopen — extern is goedkoper",
+      "Altijd zelf maken — vaste kosten zijn al gemaakt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Korte termijn: enkel variabele kosten tellen → zelf maken (40 < 50). Lange termijn: pas aankopen als vaste kosten effectief geëlimineerd kunnen worden (anders draag je 15 dubbel)."
+  },
+  {
+    "id": "uit-mc-08",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","balans","afschrijving"],
+    "type": "mc",
+    "question": "Een onderneming koopt een nijverheidsgebouw én een terrein. Wat klopt boekhoudkundig?",
+    "options": [
+      "Beide worden lineair afgeschreven, gebouw aan 5%, terrein aan 3%",
+      "Enkel het gebouw wordt afgeschreven; het terrein niet (geen jaarlijks waardeverlies)",
+      "Beide worden degressief afgeschreven over 20 jaar",
+      "Geen van beide wordt afgeschreven — beide blijven op de balans aan aanschaffingswaarde"
+    ],
+    "correctIndex": 1,
+    "explanation": "Terreinen worden niet afgeschreven (geen jaarlijks waardeverlies). Het nijverheidsgebouw wordt afgeschreven aan 5%/jaar (20 jaar)."
+  },
+
+  {
+    "id": "uit-tf-01",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","BTW","aftrek"],
+    "type": "tf",
+    "question": "Een ondernemer mag de BTW op een restaurantbezoek met een belangrijke klant volledig aftrekken als hij de factuur correct bewaart.",
+    "correct": false,
+    "explanation": "BTW op hotel- en restaurantkosten is uitdrukkelijk NIET aftrekbaar, ongeacht of de factuur correct is."
+  },
+  {
+    "id": "uit-tf-02",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","afschrijving","BV"],
+    "type": "tf",
+    "question": "Een BV koopt op 1 oktober een machine. Ze mag het volledige eerste-jaarsafschrijvingsbedrag boeken, ongeacht het tijdstip van aankoop.",
+    "correct": false,
+    "explanation": "Voor vennootschappen verplicht sinds 2020: pro rata afschrijven in het jaar van aankoop. Hier 3/12 van het jaarbedrag. De volledige-jaar-regel geldt enkel voor eenmanszaken."
+  },
+  {
+    "id": "uit-tf-03",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H1","faillissement","schuldeisers"],
+    "type": "tf",
+    "question": "Vanaf het moment dat een onderneming een gerechtelijke reorganisatie aanvraagt, kan ze niet meer failliet verklaard worden door haar schuldeisers.",
+    "correct": true,
+    "explanation": "Klopt — vanaf neerlegging van het verzoekschrift kan de ondernemer niet meer failliet verklaard worden, tenzij op eigen aangifte. Ook geen gedwongen verkoop meer."
+  },
+
+  {
+    "id": "uit-cloze-01",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H1","faillissement","voorwaarden"],
+    "type": "cloze",
+    "question": "Vul de drie voorwaarden voor faillietverklaring aan.",
+    "text": "Om failliet verklaard te worden moeten drie voorwaarden cumulatief vervuld zijn: (1) het moet gaan om een {{0}}, (2) de betalingen moeten {{1}} zijn, en (3) het {{2}} moet geschokt zijn.",
+    "blanks": [
+      { "accept": ["onderneming"] },
+      { "accept": ["gestaakt"] },
+      { "accept": ["krediet"] }
+    ],
+    "explanation": "Onderneming + betalingen gestaakt + krediet geschokt = de drie cumulatieve voorwaarden."
+  },
+  {
+    "id": "uit-cloze-02",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H6","loonberekening"],
+    "type": "cloze",
+    "question": "Vul de loonberekening voor een bediende aan.",
+    "text": "Brutoloon − RSZ-werknemersbijdrage ({{0}}%) = belastbaar loon − {{1}} = nettoloon. De werkgever betaalt bovendien een {{2}} bijdrage van ongeveer 27%.",
+    "blanks": [
+      { "accept": ["13,07","13.07"] },
+      { "accept": ["bedrijfsvoorheffing","bv"] },
+      { "accept": ["patronale","werkgevers"] }
+    ],
+    "explanation": "RSZ-WN 13,07% → belastbaar loon. Bedrijfsvoorheffing = voorschot PB. Patronale bijdrage ~27% bedienden (~33% arbeiders) = werkgeverskost."
+  },
+
+  {
+    "id": "uit-case-01",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H1","H7","moeilijkheden","casus"],
+    "type": "case",
+    "context": "Marie heeft een eenmanszaak (schoonheidssalon) en zit door verminderde klanten met openstaande facturen die ze niet meer kan betalen. Haar bank heeft het kaskrediet ingetrokken.",
+    "question": "Loop de escalatie door.",
+    "steps": [
+      {
+        "prompt": "Stap 1 — Welke informele weg kan Marie eerst proberen om uit de problemen te raken?",
+        "modelAnswer": "Minnelijk akkoord met haar schuldeisers (eventueel via een ondernemingsbemiddelaar aangesteld door de voorzitter van de rechtbank). Minimum 2 schuldeisers, neergelegd in Regsol."
+      },
+      {
+        "prompt": "Stap 2 — Als dit niet lukt, welke gerechtelijke procedure biedt haar bescherming?",
+        "modelAnswer": "Gerechtelijke reorganisatie (GRP/WCO). Vanaf neerlegging niet meer failliet verklaarbaar door schuldeisers. Opschorting in regel 6 maanden. Drie mogelijke doelen: minnelijk akkoord, reorganisatieplan, of gerechtelijke overdracht."
+      },
+      {
+        "prompt": "Stap 3 — Als ook dat faalt en het faillissement onafwendbaar is — welke drie voorwaarden moeten cumulatief vervuld zijn?",
+        "modelAnswer": "(1) Het is een onderneming, (2) de betalingen zijn gestaakt, (3) het krediet is geschokt — geen krediet meer van schuldeisers of banken."
+      },
+      {
+        "prompt": "Stap 4 — Marie heeft geen fouten gemaakt. Wat is haar tweede kans?",
+        "modelAnswer": "Verschoning via Regsol — als natuurlijke persoon kan ze éénmalig verschoond worden, waardoor schuldeisers haar niet meer kunnen vervolgen. Een vennootschap zou daarentegen ontbonden worden."
+      },
+      {
+        "prompt": "Stap 5 — Welke sociale uitkering ontvangt ze tijdens deze periode?",
+        "modelAnswer": "Overbruggingsrecht via haar sociaal verzekeringsfonds: behoud van rechten op kinderbijslag en geneeskundige verzorging gedurende 4 kwartalen, plus een maandelijkse uitkering gelijk aan het minimumpensioen voor zelfstandigen. Maximum 12 maanden over haar volledige loopbaan."
+      }
+    ],
+    "explanation": "Volledige escalatieketen: minnelijk akkoord → GRP → faillissement (+ verschoning voor eenmanszaak) → overbruggingsrecht voor sociaal vangnet."
+  },
+  {
+    "id": "uit-case-02",
+    "chapter": 99,
+    "difficulty": "extreem",
+    "tags": ["H5","BTW","afschrijving","balans","casus"],
+    "type": "case",
+    "context": "BV Solis koopt op 1 april een productielijn aan voor € 80 000 excl. BTW (21%). Levensduur 8 jaar, restwaarde 0, lineaire methode. De BV-eigenaar gebruikt daarnaast een personenwagen waarvan de BTW op de aankoop € 4 200 bedroeg.",
+    "question": "Werk de fiscale en boekhoudkundige gevolgen uit.",
+    "steps": [
+      {
+        "prompt": "Stap 1 — Hoeveel BTW betaalt Solis op de productielijn, en hoeveel kan ze terugvorderen?",
+        "modelAnswer": "BTW = 21% × 80 000 = € 16 800. Geen beperking voor productiemiddelen → volledig (100%) aftrekbaar = € 16 800 terug te vorderen via aangifte."
+      },
+      {
+        "prompt": "Stap 2 — Hoeveel BTW kan Solis recupereren op de personenwagen?",
+        "modelAnswer": "BTW op personenwagens beperkt tot 50%. Aftrekbaar = 50% × 4 200 = € 2 100. De resterende € 2 100 vormt een fiscale kost (geen aftrek)."
+      },
+      {
+        "prompt": "Stap 3 — Bereken het jaarlijks afschrijvingsbedrag van de productielijn (lineair, volledig jaar).",
+        "modelAnswer": "a = (80 000 − 0) / 8 = € 10 000 per jaar."
+      },
+      {
+        "prompt": "Stap 4 — Hoeveel afschrijving boekt Solis in het EERSTE boekjaar gezien de aankoopdatum (1 april)?",
+        "modelAnswer": "BV → pro rata verplicht: 9/12 × 10 000 = € 7 500 in jaar 1 (april t.e.m. december). Eenmanszaak zou daarentegen € 10 000 mogen boeken."
+      },
+      {
+        "prompt": "Stap 5 — Op welke zijde van de balans verschijnt de productielijn, en in welke rubriek?",
+        "modelAnswer": "Actiefzijde, onder VASTE ACTIVA, rubriek 'Materiële vaste activa'. Aanschaffingswaarde € 80 000 met cumulatieve afschrijving als minwaarde → boekwaarde."
+      }
+    ],
+    "explanation": "Combineert: BTW-aftrek (productie 100%, auto 50%), lineaire afschrijving, pro rata-regel voor vennootschappen, balansstructuur."
+  }
+]

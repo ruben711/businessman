@@ -16,6 +16,7 @@ const sections = [
     items: [
       { href: "/casussen", label: "Casussen", icon: "◆" },
       { href: "/examen", label: "Examen", icon: "◉" },
+      { href: "/uitdagingen", label: "Uitdagingen", icon: "⚔" },
     ],
   },
   {

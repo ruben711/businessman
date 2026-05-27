@@ -2383,10 +2383,11 @@
     "chapter": 6,
     "difficulty": "midden",
     "tags": [
-      "equivalentcijfer"
+      "equivalent",
+      "kostprijs"
     ],
     "type": "mc",
-    "question": "Variabele kost € 0,25/stuk; biedprijs € 0,32/stuk; bestelling 30 000 stuks (vaste kosten al gedekt). Hoeveel extra winst levert dit op (in euro)?",
+    "question": "Wanneer is de equivalentcijfermethode aangewezen?",
     "options": [
       "Maatwerk per klant",
       "Vergelijkbare massaproducten (bv. brouwerij, bakkerij)",
@@ -2394,7 +2395,7 @@
       "Voor diensten zonder fysieke producten"
     ],
     "correctIndex": 1,
-    "explanation": "Equivalentcijfer = relatieve verhouding voor vergelijkbare massaproducten."
+    "explanation": "De equivalentcijfermethode is geschikt voor producten die weinig van elkaar verschillen (massaproductie), bv. een brouwerij of bakkerij."
   },
   {
     "id": "h6-open-3",

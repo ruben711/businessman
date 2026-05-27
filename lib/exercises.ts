@@ -88,6 +88,7 @@ export function diffChipClass(d: string): string {
     case "basis":    return "chip chip-diff-basis";
     case "midden":   return "chip chip-diff-midden";
     case "diepgang": return "chip chip-diff-diepgang";
+    case "extreem":  return "chip chip-diff-extreem";
     default:         return "chip";
   }
 }
@@ -97,6 +98,7 @@ export function diffDotColor(d: string): string {
     case "basis":    return "bg-[#4ade80]";
     case "midden":   return "bg-[#fbbf24]";
     case "diepgang": return "bg-[#f87171]";
+    case "extreem":  return "bg-[#a78bfa]";
     default:         return "bg-ink-4";
   }
 }
