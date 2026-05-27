@@ -8,7 +8,7 @@
       "definitie"
     ],
     "type": "mc",
-    "question": "Welke organisatie valt NIET onder het begrip 'onderneming' volgens artikel I.1,1° WER?",
+    "question": "Welke organisatie valt NIET onder het begrip 'onderneming' volgens het WER?",
     "options": [
       "Een eenmanszaak",
       "Een VZW",
@@ -46,7 +46,7 @@
       "beperkingen"
     ],
     "type": "mc",
-    "question": "Welk beroep is onverenigbaar met een zelfstandige activiteit?",
+    "question": "Welk beroep mag je NIET combineren met een zelfstandige activiteit?",
     "options": [
       "Tandarts",
       "Notaris",
@@ -54,7 +54,7 @@
       "Schrijnwerker"
     ],
     "correctIndex": 1,
-    "explanation": "Onverenigbaar: gerechtsdeurwaarders, advocaten, notarissen, beoefenaars van een eredienst, politiemensen, gerechtelijke jobs, staatsambtenaren."
+    "explanation": "Onverenigbare beroepen: notaris, advocaat, gerechtsdeurwaarder, politieagent, staatsambtenaar, beoefenaar van een eredienst."
   },
   {
     "id": "h1-open-1",
@@ -170,7 +170,7 @@
       "RPR"
     ],
     "type": "mc",
-    "question": "Welke onderneming moet zich NIET inschrijven in het rechtspersonenregister (RPR)?",
+    "question": "Welke onderneming hoeft zich NIET in te schrijven in het rechtspersonenregister (RPR)?",
     "options": [
       "Een BV",
       "Een NV",
@@ -188,7 +188,7 @@
       "huwelijk"
     ],
     "type": "mc",
-    "question": "Welk huwelijksstelsel wordt voor ondernemers vaak aangeraden?",
+    "question": "Welk huwelijksstelsel wordt aangeraden voor wie een eigen zaak start?",
     "options": [
       "Wettelijk stelsel",
       "Scheiding van goederen",
@@ -389,12 +389,12 @@
       "voorwaarden"
     ],
     "type": "mc",
-    "question": "Welke combinatie van voorwaarden moet vervuld zijn vooraleer een onderneming failliet verklaard kan worden?",
+    "question": "Welke drie voorwaarden moeten samen vervuld zijn vooraleer een onderneming failliet kan verklaard worden?",
     "options": [
-      "Verlies maken én personeel ontslagen hebben",
-      "Het betreft een onderneming, betalingen zijn gestaakt, krediet is geschokt",
-      "Niet langer BTW kunnen betalen én geen omzet hebben",
-      "Schulden hebben bij minstens drie schuldeisers"
+      "Verlies maken en personeel ontslagen hebben",
+      "Onderneming + betalingen gestaakt + krediet geschokt",
+      "Geen BTW kunnen betalen en geen omzet",
+      "Schulden bij minstens drie schuldeisers"
     ],
     "correctIndex": 1,
     "explanation": "De drie wettelijke voorwaarden: onderneming + betalingen gestaakt + krediet geschokt."
@@ -475,7 +475,7 @@
       "aangifte"
     ],
     "type": "tf",
-    "question": "Enkel de ondernemer zelf kan een faillietverklaring aanvragen.",
+    "question": "Alleen de ondernemer zelf kan een faillietverklaring opstarten.",
     "correct": false,
     "explanation": "Ook één of meer schuldeisers, het openbaar ministerie en een voorlopige bewindvoerder kunnen dagvaarden."
   },
@@ -487,7 +487,7 @@
       "eenmanszaak"
     ],
     "type": "mc",
-    "question": "Wat is een belangrijk NADEEL van een eenmanszaak?",
+    "question": "Wat is een belangrijk nadeel van een eenmanszaak?",
     "options": [
       "Verplicht financieel plan",
       "Onbeperkte en hoofdelijke aansprakelijkheid",
@@ -506,12 +506,12 @@
       "belastbaar jaar"
     ],
     "type": "mc",
-    "question": "Wat is het aanslagjaar?",
+    "question": "Wat verstaat men onder het aanslagjaar?",
     "options": [
       "Het jaar waarin je inkomsten verdient",
-      "Het jaar erna waarin de fiscus belastingen berekent",
-      "Hetzelfde als boekjaar",
-      "Enkel relevant voor vennootschappen"
+      "Het jaar waarin de fiscus je belastingen berekent",
+      "Hetzelfde als het boekjaar",
+      "Alleen relevant voor vennootschappen"
     ],
     "correctIndex": 1,
     "explanation": "Aanslagjaar = jaar na het belastbaar jaar, waarin de fiscus berekent en de aangifte gebeurt."
@@ -537,7 +537,7 @@
       "belastbaar jaar"
     ],
     "type": "tf",
-    "question": "Het belastbaar jaar is het jaar waarin je je inkomsten of winst verdient.",
+    "question": "Het belastbaar jaar is het kalenderjaar waarin de inkomsten of winst worden verdiend.",
     "correct": true,
     "explanation": "Belastbaar jaar = verdienjaar; aanslagjaar = berekenjaar."
   },
@@ -609,11 +609,11 @@
       "kapitaal"
     ],
     "type": "mc",
-    "question": "Wat is het minimumkapitaal voor de oprichting van een BV?",
+    "question": "Wat geldt voor het minimumkapitaal van een BV?",
     "options": [
       "€ 18 550",
       "€ 61 500",
-      "Geen wettelijk minimum, maar wel toereikend aanvangsvermogen",
+      "Geen wettelijk minimum, maar een toereikend aanvangsvermogen",
       "€ 100 000"
     ],
     "correctIndex": 2,
@@ -628,7 +628,7 @@
       "kapitaal"
     ],
     "type": "mc",
-    "question": "Wat is het minimumkapitaal voor een NV?",
+    "question": "Wat is het minimumoprichtingskapitaal van een NV?",
     "options": [
       "€ 18 550",
       "€ 61 500",
@@ -656,25 +656,6 @@
     ],
     "correctIndex": 2,
     "explanation": "PB-tarieven gaan progressief tot 50%."
-  },
-  {
-    "id": "h2-mc-8",
-    "chapter": 2,
-    "difficulty": "midden",
-    "tags": [
-      "VOF",
-      "aansprakelijkheid"
-    ],
-    "type": "mc",
-    "question": "Welke aansprakelijkheid hebben vennoten van een VOF?",
-    "options": [
-      "Beperkt tot hun inbreng",
-      "Onbeperkt en hoofdelijk",
-      "Enkel voor de stille vennoot",
-      "Geen aansprakelijkheid"
-    ],
-    "correctIndex": 1,
-    "explanation": "VOF-vennoten zijn onbeperkt en hoofdelijk aansprakelijk - elke vennoot kan voor alle schulden opdraaien."
   },
   {
     "id": "h2-open-1",
@@ -725,37 +706,6 @@
     "explanation": "20% verlaagd tarief op eerste €100 000, boven 25%."
   },
   {
-    "id": "h2-open-5",
-    "chapter": 2,
-    "difficulty": "midden",
-    "tags": [
-      "VOF"
-    ],
-    "type": "open",
-    "question": "Wat is het minimumaantal vennoten voor een VOF (Vennootschap onder Firma)?",
-    "accept": [
-      "2",
-      "twee"
-    ],
-    "explanation": "Min. 2 vennoten, geen kapitaal nodig, onbeperkt en hoofdelijk aansprakelijk."
-  },
-  {
-    "id": "h2-open-6",
-    "chapter": 2,
-    "difficulty": "midden",
-    "tags": [
-      "CV",
-      "aandeelhouders"
-    ],
-    "type": "open",
-    "question": "Wat is het minimumaantal aandeelhouders voor een CV?",
-    "accept": [
-      "3",
-      "drie"
-    ],
-    "explanation": "Min. 3 aandeelhouders, geen minimumkapitaal maar wel voldoende aanvangsvermogen, beperkte aansprakelijkheid."
-  },
-  {
     "id": "h2-tf-2",
     "chapter": 2,
     "difficulty": "midden",
@@ -775,7 +725,7 @@
       "fiscaliteit"
     ],
     "type": "tf",
-    "question": "Het basistarief van de vennootschapsbelasting bedraagt 25%.",
+    "question": "Het basistarief van de vennootschapsbelasting is 25%.",
     "correct": true,
     "explanation": "25% basistarief; 20% verlaagd op eerste schijf €100 000 voor KMO's."
   },
@@ -800,7 +750,7 @@
     ],
     "type": "cloze",
     "question": "Vul de fiscale tarieven aan.",
-    "text": "Een eenmanszaak betaalt {{0}} tot {{1}}%. Een vennootschap heeft als basistarief {{2}}%, verlaagd tot {{3}}% voor KMO's op de eerste schijf van €100 000.",
+    "text": "Een eenmanszaak wordt belast in de {{0}} met tarieven tot {{1}}%. Een vennootschap betaalt vennootschapsbelasting met basistarief {{2}}%, verlaagd tot {{3}}% voor KMO's op de eerste schijf van EUR 100 000.",
     "blanks": [
       {
         "accept": [
@@ -865,7 +815,7 @@
       "leverancierskrediet"
     ],
     "type": "mc",
-    "question": "Wat is een typisch voorbeeld van kortetermijnfinanciering door derden?",
+    "question": "Welke kredietvorm is typisch een kortetermijnfinanciering via derden?",
     "options": [
       "Hypothecair krediet",
       "Leasing",
@@ -1027,11 +977,11 @@
       "hypothecair mandaat"
     ],
     "type": "mc",
-    "question": "Een hypothecair mandaat kost ongeveer hoeveel ten opzichte van een echte hypotheek?",
+    "question": "Hoe verhoudt de kostprijs van een hypothecair mandaat zich tot een echte hypotheek?",
     "options": [
       "Even duur",
-      "De helft",
-      "1/3",
+      "Ongeveer de helft",
+      "Ongeveer 1/3",
       "Het dubbele"
     ],
     "correctIndex": 2,
@@ -1193,7 +1143,7 @@
       "BA Auto"
     ],
     "type": "mc",
-    "question": "Welke verzekering is WETTELIJK VERPLICHT voor elke voertuigeigenaar?",
+    "question": "Welke verzekering is wettelijk verplicht voor elke voertuigeigenaar?",
     "options": [
       "Hospitalisatieverzekering",
       "BA Auto",
@@ -1278,7 +1228,7 @@
       "VAPZ"
     ],
     "type": "mc",
-    "question": "Hoeveel procent van je inkomen mag je jaarlijks in VAPZ storten?",
+    "question": "Hoeveel procent van je netto-bedrijfsinkomen mag je jaarlijks in VAPZ storten?",
     "options": [
       "3,5 %",
       "8,17 %",
@@ -1365,7 +1315,7 @@
       "brandverzekering"
     ],
     "type": "tf",
-    "question": "BA Brand en Ontploffing is hetzelfde als een gewone brandverzekering.",
+    "question": "BA Brand en Ontploffing is identiek aan een gewone brandverzekering.",
     "correct": false,
     "explanation": "BA Brand dekt aansprakelijkheid tegenover derden; brandverzekering dekt het eigen gebouw + inboedel."
   },
@@ -1456,7 +1406,7 @@
       "schijnzelfstandige"
     ],
     "type": "tf",
-    "question": "Als blijkt dat je altijd voor dezelfde opdrachtgever werkt zonder vrijheid, ben je schijnzelfstandige.",
+    "question": "Wanneer je altijd voor dezelfde opdrachtgever werkt zonder vrijheid van uren of werkorganisatie, is er sprake van schijnzelfstandigheid.",
     "correct": true,
     "explanation": "Sanctie: sociale zekerheid betalen zoals een loontrekkende. Vrijheid om uren en werkorganisatie te kiezen is cruciaal."
   },
@@ -1538,6 +1488,25 @@
     "question": "Een factuur tussen twee belastingplichtigen (B2B) is altijd verplicht.",
     "correct": true,
     "explanation": "Klopt — basisprincipe: factuur verplicht tussen belastingplichtigen."
+  },
+  {
+    "id": "h5-calc-10",
+    "chapter": 5,
+    "difficulty": "midden",
+    "tags": [
+      "B2B",
+      "schadevergoeding"
+    ],
+    "type": "open",
+    "question": "Een B2B-factuur van € 5 000 wordt niet tijdig betaald. Hoeveel bedraagt de automatische forfaitaire schadevergoeding (in euro)?",
+    "accept": [
+      "40",
+      "40,00",
+      "40.00",
+      "€40",
+      "€ 40"
+    ],
+    "explanation": "Automatische forfait van € 40 voor invorderingskosten."
   },
   {
     "id": "h5-calc-2",
@@ -1710,6 +1679,25 @@
     "explanation": "Max. 40% van AW in jaar 1. Degressief percentage ≤ 2× lineair."
   },
   {
+    "id": "h5-mc-2",
+    "chapter": 5,
+    "difficulty": "midden",
+    "tags": [
+      "cash",
+      "witwas"
+    ],
+    "type": "mc",
+    "question": "Hoeveel mag er bij elke verkoop van goederen of diensten maximaal cash betaald worden?",
+    "options": [
+      "€ 1 500",
+      "€ 3 000",
+      "€ 5 000",
+      "Geen limiet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Maximum € 3 000 cash per verkoop (samenvatting)."
+  },
+  {
     "id": "h5-mc-3",
     "chapter": 5,
     "difficulty": "midden",
@@ -1717,12 +1705,12 @@
       "financiele korting"
     ],
     "type": "mc",
-    "question": "Een financiële korting (bv. 2% bij contante betaling):",
+    "question": "Welke uitspraak over een financiële korting (bv. 2% bij contante betaling) is correct?",
     "options": [
       "Wordt nooit in de maatstaf van heffing verrekend",
-      "Verlaagt de MvH enkel als klant contant betaalt",
-      "Verlaagt de MvH ALTIJD",
-      "Mag niet op de factuur staan"
+      "Verlaagt de MvH enkel als de klant effectief contant betaalt",
+      "Verlaagt de maatstaf van heffing altijd, ongeacht of er effectief contant betaald wordt",
+      "Mag niet op de factuur vermeld worden"
     ],
     "correctIndex": 2,
     "explanation": "Verlaagt MvH altijd; moet wel afzonderlijk vermeld worden op de factuur."
@@ -1745,6 +1733,25 @@
     ],
     "correctIndex": 2,
     "explanation": "30 dagen na ontvangst factuur of goederen; max. 60 dagen contractueel."
+  },
+  {
+    "id": "h5-mc-7",
+    "chapter": 5,
+    "difficulty": "midden",
+    "tags": [
+      "B2B",
+      "intrest"
+    ],
+    "type": "mc",
+    "question": "Wat is de wettelijke intrestvoet voor betalingsachterstand tussen ondernemingen (B2B)?",
+    "options": [
+      "1,75 %",
+      "4 %",
+      "8 %",
+      "12 %"
+    ],
+    "correctIndex": 2,
+    "explanation": "8% wettelijke intrestvoet B2B; plus € 40 forfaitaire schadevergoeding (samenvatting)."
   },
   {
     "id": "h5-open-2",
@@ -1780,6 +1787,23 @@
       "5%"
     ],
     "explanation": "5% (20 jaar). Kantoor-/handelsgebouw: 3% (33 jaar)."
+  },
+  {
+    "id": "h5-open-4",
+    "chapter": 5,
+    "difficulty": "midden",
+    "tags": [
+      "geschenken",
+      "aftrek"
+    ],
+    "type": "open",
+    "question": "Vanaf welk bedrag (in euro, één geheel getal) is BTW op handelsgeschenken niet meer aftrekbaar?",
+    "accept": [
+      "50",
+      "€50",
+      "€ 50"
+    ],
+    "explanation": "Aftrekbaar voor geschenken onder € 50 (één per klant per jaar)."
   },
   {
     "id": "h5-order-1",
@@ -1841,6 +1865,32 @@
     "question": "Een balans is altijd in evenwicht — totaal actief = totaal passief.",
     "correct": true,
     "explanation": "Beide zijden beschrijven hetzelfde vermogen vanuit verschillend standpunt."
+  },
+  {
+    "id": "h5-tf-5",
+    "chapter": 5,
+    "difficulty": "midden",
+    "tags": [
+      "BTW",
+      "hotel"
+    ],
+    "type": "tf",
+    "question": "BTW op hotel- en restaurantkosten is volledig aftrekbaar.",
+    "correct": false,
+    "explanation": "Niet aftrekbaar — uitdrukkelijke beperking (samenvatting + bijlage 4)."
+  },
+  {
+    "id": "h5-tf-7",
+    "chapter": 5,
+    "difficulty": "midden",
+    "tags": [
+      "creditnota",
+      "vervoer"
+    ],
+    "type": "tf",
+    "question": "In een creditnota kunnen vervoerskosten altijd gerecupereerd worden.",
+    "correct": false,
+    "explanation": "Nooit, tenzij de volledige lading wordt teruggestuurd (samenvatting)."
   },
   {
     "id": "h5-calc-11",
@@ -2280,12 +2330,12 @@
       "uitzonderlijk order"
     ],
     "type": "mc",
-    "question": "Variabele kost € 0,25/stuk; vaste kosten al gedekt. Nieuwe klant: € 0,32/stuk voor 30 000 stuks. Aanvaarden?",
+    "question": "Variabele kost is € 0,25 per stuk en de vaste kosten zijn al gedekt door de huidige productie. Een nieuwe klant biedt € 0,32 per stuk voor een extra bestelling van 30 000 stuks. Aanvaarden of niet?",
     "options": [
-      "Nee — onder integrale kostprijs",
-      "Ja — alles boven € 0,25 is bijkomende marge",
+      "Nee — onder de integrale kostprijs",
+      "Ja — elk bedrag boven € 0,25 is extra marge",
       "Nee — vaste kosten worden niet gedekt",
-      "Enkel als € 0,50"
+      "Enkel als er € 0,50 per stuk geboden wordt"
     ],
     "correctIndex": 1,
     "explanation": "Korte termijn: enkel variabele kosten. 0,32 − 0,25 = € 0,07/stuk extra marge → € 2 100."
@@ -2336,7 +2386,7 @@
       "equivalentcijfer"
     ],
     "type": "mc",
-    "question": "Wanneer is de equivalentcijfermethode aangewezen?",
+    "question": "Variabele kost € 0,25/stuk; biedprijs € 0,32/stuk; bestelling 30 000 stuks (vaste kosten al gedekt). Hoeveel extra winst levert dit op (in euro)?",
     "options": [
       "Maatwerk per klant",
       "Vergelijkbare massaproducten (bv. brouwerij, bakkerij)",
@@ -2698,7 +2748,7 @@
       "ondergeschiktheid"
     ],
     "type": "tf",
-    "question": "Het bestaan van ondergeschiktheid (gezag, leiding, toezicht) is een wezenlijk kenmerk van een arbeidsovereenkomst.",
+    "question": "Een wezenlijk kenmerk van een arbeidsovereenkomst is dat de werknemer onder gezag, leiding en toezicht werkt.",
     "correct": true,
     "explanation": "Wezenlijk kenmerk — zelfstandige werkt net níet in ondergeschiktheid."
   },
@@ -2774,24 +2824,6 @@
     ],
     "correctIndex": 1,
     "explanation": "Bijberoep = naast min. halftijdse hoofdactiviteit. Lagere bijdragen onder grenzen."
-  },
-  {
-    "id": "h7-mc-3",
-    "chapter": 7,
-    "difficulty": "midden",
-    "tags": [
-      "vennootschapsbijdrage"
-    ],
-    "type": "mc",
-    "question": "Wie betaalt een vennootschapsbijdrage?",
-    "options": [
-      "Elke zelfstandige",
-      "Enkel eenmanszaken",
-      "Enkel vennootschappen",
-      "Enkel VZW's"
-    ],
-    "correctIndex": 2,
-    "explanation": "Enkel vennootschappen — jaarlijkse forfaitaire bijdrage."
   },
   {
     "id": "h7-mc-6",
@@ -2878,18 +2910,6 @@
       "RSZPPO (lokale/provinciale ambtenaren)"
     ],
     "explanation": "Drie aparte stelsels, elk met eigen overkoepelend orgaan."
-  },
-  {
-    "id": "h7-tf-2",
-    "chapter": 7,
-    "difficulty": "midden",
-    "tags": [
-      "sociale bijdragen"
-    ],
-    "type": "tf",
-    "question": "Sociale bijdragen voor zelfstandigen worden voorlopig berekend op het inkomen van drie jaar terug.",
-    "correct": true,
-    "explanation": "Met regularisatie na de definitieve aanslag."
   },
   {
     "id": "h7-tf-4",

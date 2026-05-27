@@ -8,6 +8,7 @@ import { useMounted } from "@/lib/useMounted";
 import { fireXpToast } from "./XpToast";
 import { syncLeaderboard } from "@/lib/leaderboardSync";
 import { BadgeChip } from "./BadgeChip";
+import { OrderInput } from "./OrderInput";
 
 export function ExerciseRunner({ exercise, nextId, grouped }: { exercise: Exercise; nextId?: string; grouped?: boolean }) {
   const mounted = useMounted();
@@ -223,19 +224,11 @@ function Renderer({ ex, answer, setAnswer, disabled }: { ex: Exercise; answer: a
   }
   if (ex.type === "order") {
     return (
-      <div className="space-y-2">
-        {answer.map((it: string, i: number) => (
-          <div key={it} className="flex items-center gap-3 p-2.5 bg-elevated border border-line/[0.06] rounded">
-            <span className="font-pixel text-[9px] text-acc w-6">{String(i + 1).padStart(2, "0")}</span>
-            <span className="text-[14px] flex-1">{it}</span>
-            <button disabled={disabled || i === 0} onClick={() => {
-              const next = [...answer]; [next[i-1], next[i]] = [next[i], next[i-1]]; setAnswer(next);
-            }} className="btn btn-sm btn-icon">↑</button>
-            <button disabled={disabled || i === answer.length - 1} onClick={() => {
-              const next = [...answer]; [next[i+1], next[i]] = [next[i], next[i+1]]; setAnswer(next);
-            }} className="btn btn-sm btn-icon">↓</button>
-          </div>
-        ))}
+      <div className="space-y-3">
+        <p className="text-[11px] text-ink-3 italic">
+          Sleep een rij om de volgorde te wijzigen, of gebruik de pijltjes.
+        </p>
+        <OrderInput items={answer} onChange={setAnswer} disabled={disabled} />
       </div>
     );
   }
