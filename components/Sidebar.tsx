@@ -19,10 +19,16 @@ const sections = [
     ],
   },
   {
+    label: "Reference",
+    items: [
+      { href: "/begrippen", label: "Begrippen", icon: "✦" },
+      { href: "/glossarium", label: "Glossarium", icon: "❖" },
+    ],
+  },
+  {
     label: "Community",
     items: [
       { href: "/leaderboard", label: "Leaderboard", icon: "♛" },
-      { href: "/glossarium", label: "Glossarium", icon: "❖" },
     ],
   },
 ];

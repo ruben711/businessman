@@ -1,0 +1,939 @@
+{
+  "terms": [
+    {
+      "term": "Wettelijk stelsel",
+      "def": "Alles van voor het huwelijk blijft persoonlijk, alles tijdens het huwelijk wordt meestal gemeenschappelijk.",
+      "cat": "Huwelijksstelsels",
+      "accept_extra": []
+    },
+    {
+      "term": "Scheiding van goederen",
+      "def": "Alles blijft apart voor en tijdens het huwelijk.",
+      "cat": "Huwelijksstelsels",
+      "accept_extra": []
+    },
+    {
+      "term": "Algehele gemeenschap van goederen",
+      "def": "Bijna alle bezittingen en schulden zijn gemeenschappelijk.",
+      "cat": "Huwelijksstelsels",
+      "accept_extra": [
+        "algehele gemeenschap"
+      ]
+    },
+    {
+      "term": "Belastbaar jaar",
+      "def": "Het jaar waarin inkomsten of winst verdiend worden.",
+      "cat": "Fiscaliteit",
+      "accept_extra": []
+    },
+    {
+      "term": "Aanslagjaar",
+      "def": "Het jaar waarin de fiscus de belastingen berekent.",
+      "cat": "Fiscaliteit",
+      "accept_extra": [
+        "aangiftejaar"
+      ]
+    },
+    {
+      "term": "Vennootschapsbelasting",
+      "def": "Belasting die vennootschappen betalen op hun winst.",
+      "cat": "Fiscaliteit",
+      "accept_extra": [
+        "vb"
+      ]
+    },
+    {
+      "term": "Personenbelasting",
+      "def": "Belasting die natuurlijke personen betalen op hun inkomsten.",
+      "cat": "Fiscaliteit",
+      "accept_extra": [
+        "pb"
+      ]
+    },
+    {
+      "term": "Hypothecaire lening",
+      "def": "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.",
+      "cat": "Kredieten",
+      "accept_extra": [
+        "hypothecair krediet"
+      ]
+    },
+    {
+      "term": "Constante aflossingen",
+      "def": "Elke periode hetzelfde totaalbedrag betalen.",
+      "cat": "Kredieten",
+      "accept_extra": [
+        "annuiteiten",
+        "annuiteit",
+        "constante annuiteit"
+      ]
+    },
+    {
+      "term": "Constante kapitaalaflossingen",
+      "def": "Elke periode hetzelfde kapitaal terugbetalen.",
+      "cat": "Kredieten",
+      "accept_extra": [
+        "vaste kapitaalsaflossingen",
+        "degressieve aflossing"
+      ]
+    },
+    {
+      "term": "Hypothecair mandaat",
+      "def": "Toestemming aan de bank om later eventueel een hypotheek te nemen.",
+      "cat": "Kredieten",
+      "accept_extra": [
+        "hypothecaire volmacht"
+      ]
+    },
+    {
+      "term": "Hypotheekbelofte",
+      "def": "Belofte van de klant om later mee te werken aan een hypotheek.",
+      "cat": "Kredieten",
+      "accept_extra": []
+    },
+    {
+      "term": "Investeringskrediet",
+      "def": "Lening voor beroepsinvesteringen zoals machines of gebouwen.",
+      "cat": "Kredieten",
+      "accept_extra": []
+    },
+    {
+      "term": "Lening op afbetaling",
+      "def": "Krediet waarbij een aankoop in vaste schijven wordt terugbetaald.",
+      "cat": "Kredieten",
+      "accept_extra": []
+    },
+    {
+      "term": "BTW",
+      "def": "Belasting op Toegevoegde Waarde.",
+      "cat": "BTW",
+      "accept_extra": [
+        "belasting over toegevoegde waarde",
+        "belasting op toegevoegde waarde"
+      ]
+    },
+    {
+      "term": "Aftrekbare BTW",
+      "def": "BTW op aankopen die een onderneming mag terugvorderen.",
+      "cat": "BTW",
+      "accept_extra": [
+        "terug te vorderen btw"
+      ]
+    },
+    {
+      "term": "Te betalen BTW",
+      "def": "BTW die een onderneming ontvangt van klanten en moet doorstorten.",
+      "cat": "BTW",
+      "accept_extra": [
+        "verschuldigde btw"
+      ]
+    },
+    {
+      "term": "Maatstaf van heffing",
+      "def": "Bedrag waarop BTW berekend wordt.",
+      "cat": "BTW",
+      "accept_extra": [
+        "mvh"
+      ]
+    },
+    {
+      "term": "Afschrijving",
+      "def": "Een investering geleidelijk als kost spreiden over meerdere jaren.",
+      "cat": "Afschrijvingen",
+      "accept_extra": []
+    },
+    {
+      "term": "Lineaire afschrijving",
+      "def": "Elk jaar hetzelfde afschrijvingsbedrag.",
+      "cat": "Afschrijvingen",
+      "accept_extra": [
+        "lineair"
+      ]
+    },
+    {
+      "term": "Aanschaffingswaarde",
+      "def": "De aankoopprijs van een investering.",
+      "cat": "Afschrijvingen",
+      "accept_extra": [
+        "aw"
+      ]
+    },
+    {
+      "term": "Restwaarde",
+      "def": "De geschatte waarde op het einde van de levensduur.",
+      "cat": "Afschrijvingen",
+      "accept_extra": [
+        "rw"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "begrip-mc-01-wettelijk-stelsel",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "huwelijksstelsels"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Wettelijk stelsel'?",
+      "options": [
+        "Alles van voor het huwelijk blijft persoonlijk, alles tijdens het huwelijk wordt meestal gemeenschappelijk.",
+        "Belasting die natuurlijke personen betalen op hun inkomsten.",
+        "Alles blijft apart voor en tijdens het huwelijk.",
+        "Bijna alle bezittingen en schulden zijn gemeenschappelijk."
+      ],
+      "correctIndex": 0,
+      "explanation": "Wettelijk stelsel: Alles van voor het huwelijk blijft persoonlijk, alles tijdens het huwelijk wordt meestal gemeenschappelijk."
+    },
+    {
+      "id": "begrip-fill-01-wettelijk-stelsel",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "huwelijksstelsels"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Alles van voor het huwelijk blijft persoonlijk, alles tijdens het huwelijk wordt meestal gemeenschappelijk.'",
+      "accept": [
+        "wettelijk stelsel"
+      ],
+      "explanation": "Wettelijk stelsel: Alles van voor het huwelijk blijft persoonlijk, alles tijdens het huwelijk wordt meestal gemeenschappelijk."
+    },
+    {
+      "id": "begrip-mc-02-scheiding-van-goederen",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "huwelijksstelsels"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Scheiding van goederen'?",
+      "options": [
+        "De geschatte waarde op het einde van de levensduur.",
+        "Bijna alle bezittingen en schulden zijn gemeenschappelijk.",
+        "Alles van voor het huwelijk blijft persoonlijk, alles tijdens het huwelijk wordt meestal gemeenschappelijk.",
+        "Alles blijft apart voor en tijdens het huwelijk."
+      ],
+      "correctIndex": 3,
+      "explanation": "Scheiding van goederen: Alles blijft apart voor en tijdens het huwelijk."
+    },
+    {
+      "id": "begrip-fill-02-scheiding-van-goederen",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "huwelijksstelsels"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Alles blijft apart voor en tijdens het huwelijk.'",
+      "accept": [
+        "scheiding van goederen"
+      ],
+      "explanation": "Scheiding van goederen: Alles blijft apart voor en tijdens het huwelijk."
+    },
+    {
+      "id": "begrip-mc-03-algehele-gemeenschap-van-goede",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "huwelijksstelsels"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Algehele gemeenschap van goederen'?",
+      "options": [
+        "Belofte van de klant om later mee te werken aan een hypotheek.",
+        "Alles blijft apart voor en tijdens het huwelijk.",
+        "Bijna alle bezittingen en schulden zijn gemeenschappelijk.",
+        "Alles van voor het huwelijk blijft persoonlijk, alles tijdens het huwelijk wordt meestal gemeenschappelijk."
+      ],
+      "correctIndex": 2,
+      "explanation": "Algehele gemeenschap van goederen: Bijna alle bezittingen en schulden zijn gemeenschappelijk."
+    },
+    {
+      "id": "begrip-fill-03-algehele-gemeenschap-van-goede",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "huwelijksstelsels"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Bijna alle bezittingen en schulden zijn gemeenschappelijk.'",
+      "accept": [
+        "algehele gemeenschap van goederen",
+        "algehele gemeenschap"
+      ],
+      "explanation": "Algehele gemeenschap van goederen: Bijna alle bezittingen en schulden zijn gemeenschappelijk."
+    },
+    {
+      "id": "begrip-mc-04-belastbaar-jaar",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Belastbaar jaar'?",
+      "options": [
+        "Het jaar waarin de fiscus de belastingen berekent.",
+        "Het jaar waarin inkomsten of winst verdiend worden.",
+        "Belasting die natuurlijke personen betalen op hun inkomsten.",
+        "Belasting die vennootschappen betalen op hun winst."
+      ],
+      "correctIndex": 1,
+      "explanation": "Belastbaar jaar: Het jaar waarin inkomsten of winst verdiend worden."
+    },
+    {
+      "id": "begrip-fill-04-belastbaar-jaar",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Het jaar waarin inkomsten of winst verdiend worden.'",
+      "accept": [
+        "belastbaar jaar"
+      ],
+      "explanation": "Belastbaar jaar: Het jaar waarin inkomsten of winst verdiend worden."
+    },
+    {
+      "id": "begrip-mc-05-aanslagjaar",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Aanslagjaar'?",
+      "options": [
+        "Het jaar waarin de fiscus de belastingen berekent.",
+        "Het jaar waarin inkomsten of winst verdiend worden.",
+        "Belasting die vennootschappen betalen op hun winst.",
+        "Belasting die natuurlijke personen betalen op hun inkomsten."
+      ],
+      "correctIndex": 0,
+      "explanation": "Aanslagjaar: Het jaar waarin de fiscus de belastingen berekent."
+    },
+    {
+      "id": "begrip-fill-05-aanslagjaar",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Het jaar waarin de fiscus de belastingen berekent.'",
+      "accept": [
+        "aanslagjaar",
+        "aangiftejaar"
+      ],
+      "explanation": "Aanslagjaar: Het jaar waarin de fiscus de belastingen berekent."
+    },
+    {
+      "id": "begrip-mc-06-vennootschapsbelasting",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Vennootschapsbelasting'?",
+      "options": [
+        "Belasting die vennootschappen betalen op hun winst.",
+        "Het jaar waarin de fiscus de belastingen berekent.",
+        "Het jaar waarin inkomsten of winst verdiend worden.",
+        "Belasting die natuurlijke personen betalen op hun inkomsten."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vennootschapsbelasting: Belasting die vennootschappen betalen op hun winst."
+    },
+    {
+      "id": "begrip-fill-06-vennootschapsbelasting",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Belasting die vennootschappen betalen op hun winst.'",
+      "accept": [
+        "vennootschapsbelasting",
+        "vb"
+      ],
+      "explanation": "Vennootschapsbelasting: Belasting die vennootschappen betalen op hun winst."
+    },
+    {
+      "id": "begrip-mc-07-personenbelasting",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Personenbelasting'?",
+      "options": [
+        "Het jaar waarin inkomsten of winst verdiend worden.",
+        "Belasting die natuurlijke personen betalen op hun inkomsten.",
+        "Het jaar waarin de fiscus de belastingen berekent.",
+        "Belasting die vennootschappen betalen op hun winst."
+      ],
+      "correctIndex": 1,
+      "explanation": "Personenbelasting: Belasting die natuurlijke personen betalen op hun inkomsten."
+    },
+    {
+      "id": "begrip-fill-07-personenbelasting",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "fiscaliteit"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Belasting die natuurlijke personen betalen op hun inkomsten.'",
+      "accept": [
+        "personenbelasting",
+        "pb"
+      ],
+      "explanation": "Personenbelasting: Belasting die natuurlijke personen betalen op hun inkomsten."
+    },
+    {
+      "id": "begrip-mc-08-hypothecaire-lening",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Hypothecaire lening'?",
+      "options": [
+        "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.",
+        "Elke periode hetzelfde totaalbedrag betalen.",
+        "Krediet waarbij een aankoop in vaste schijven wordt terugbetaald.",
+        "Elke periode hetzelfde kapitaal terugbetalen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hypothecaire lening: Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg."
+    },
+    {
+      "id": "begrip-fill-08-hypothecaire-lening",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.'",
+      "accept": [
+        "hypothecaire lening",
+        "hypothecair krediet"
+      ],
+      "explanation": "Hypothecaire lening: Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg."
+    },
+    {
+      "id": "begrip-mc-09-constante-aflossingen",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Constante aflossingen'?",
+      "options": [
+        "Krediet waarbij een aankoop in vaste schijven wordt terugbetaald.",
+        "Belofte van de klant om later mee te werken aan een hypotheek.",
+        "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.",
+        "Elke periode hetzelfde totaalbedrag betalen."
+      ],
+      "correctIndex": 3,
+      "explanation": "Constante aflossingen: Elke periode hetzelfde totaalbedrag betalen."
+    },
+    {
+      "id": "begrip-fill-09-constante-aflossingen",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Elke periode hetzelfde totaalbedrag betalen.'",
+      "accept": [
+        "constante aflossingen",
+        "annuiteiten",
+        "annuiteit",
+        "constante annuiteit"
+      ],
+      "explanation": "Constante aflossingen: Elke periode hetzelfde totaalbedrag betalen."
+    },
+    {
+      "id": "begrip-mc-10-constante-kapitaalaflossingen",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Constante kapitaalaflossingen'?",
+      "options": [
+        "Toestemming aan de bank om later eventueel een hypotheek te nemen.",
+        "Elke periode hetzelfde kapitaal terugbetalen.",
+        "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.",
+        "Belofte van de klant om later mee te werken aan een hypotheek."
+      ],
+      "correctIndex": 1,
+      "explanation": "Constante kapitaalaflossingen: Elke periode hetzelfde kapitaal terugbetalen."
+    },
+    {
+      "id": "begrip-fill-10-constante-kapitaalaflossingen",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Elke periode hetzelfde kapitaal terugbetalen.'",
+      "accept": [
+        "constante kapitaalaflossingen",
+        "vaste kapitaalsaflossingen",
+        "degressieve aflossing"
+      ],
+      "explanation": "Constante kapitaalaflossingen: Elke periode hetzelfde kapitaal terugbetalen."
+    },
+    {
+      "id": "begrip-mc-11-hypothecair-mandaat",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Hypothecair mandaat'?",
+      "options": [
+        "Elke periode hetzelfde kapitaal terugbetalen.",
+        "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.",
+        "Toestemming aan de bank om later eventueel een hypotheek te nemen.",
+        "Elke periode hetzelfde totaalbedrag betalen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Hypothecair mandaat: Toestemming aan de bank om later eventueel een hypotheek te nemen."
+    },
+    {
+      "id": "begrip-fill-11-hypothecair-mandaat",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Toestemming aan de bank om later eventueel een hypotheek te nemen.'",
+      "accept": [
+        "hypothecair mandaat",
+        "hypothecaire volmacht"
+      ],
+      "explanation": "Hypothecair mandaat: Toestemming aan de bank om later eventueel een hypotheek te nemen."
+    },
+    {
+      "id": "begrip-mc-12-hypotheekbelofte",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Hypotheekbelofte'?",
+      "options": [
+        "Belofte van de klant om later mee te werken aan een hypotheek.",
+        "Lening voor beroepsinvesteringen zoals machines of gebouwen.",
+        "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.",
+        "Elke periode hetzelfde kapitaal terugbetalen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hypotheekbelofte: Belofte van de klant om later mee te werken aan een hypotheek."
+    },
+    {
+      "id": "begrip-fill-12-hypotheekbelofte",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Belofte van de klant om later mee te werken aan een hypotheek.'",
+      "accept": [
+        "hypotheekbelofte"
+      ],
+      "explanation": "Hypotheekbelofte: Belofte van de klant om later mee te werken aan een hypotheek."
+    },
+    {
+      "id": "begrip-mc-13-investeringskrediet",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Investeringskrediet'?",
+      "options": [
+        "Belofte van de klant om later mee te werken aan een hypotheek.",
+        "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg.",
+        "Lening voor beroepsinvesteringen zoals machines of gebouwen.",
+        "Elke periode hetzelfde kapitaal terugbetalen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Investeringskrediet: Lening voor beroepsinvesteringen zoals machines of gebouwen."
+    },
+    {
+      "id": "begrip-fill-13-investeringskrediet",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Lening voor beroepsinvesteringen zoals machines of gebouwen.'",
+      "accept": [
+        "investeringskrediet"
+      ],
+      "explanation": "Investeringskrediet: Lening voor beroepsinvesteringen zoals machines of gebouwen."
+    },
+    {
+      "id": "begrip-mc-14-lening-op-afbetaling",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Lening op afbetaling'?",
+      "options": [
+        "Krediet waarbij een aankoop in vaste schijven wordt terugbetaald.",
+        "Lening voor beroepsinvesteringen zoals machines of gebouwen.",
+        "Elke periode hetzelfde kapitaal terugbetalen.",
+        "Lening voor aankoop of bouw van vastgoed met een hypotheek als waarborg."
+      ],
+      "correctIndex": 0,
+      "explanation": "Lening op afbetaling: Krediet waarbij een aankoop in vaste schijven wordt terugbetaald."
+    },
+    {
+      "id": "begrip-fill-14-lening-op-afbetaling",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "kredieten"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Krediet waarbij een aankoop in vaste schijven wordt terugbetaald.'",
+      "accept": [
+        "lening op afbetaling"
+      ],
+      "explanation": "Lening op afbetaling: Krediet waarbij een aankoop in vaste schijven wordt terugbetaald."
+    },
+    {
+      "id": "begrip-mc-15-btw",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'BTW'?",
+      "options": [
+        "BTW die een onderneming ontvangt van klanten en moet doorstorten.",
+        "Bedrag waarop BTW berekend wordt.",
+        "Belasting op Toegevoegde Waarde.",
+        "BTW op aankopen die een onderneming mag terugvorderen."
+      ],
+      "correctIndex": 2,
+      "explanation": "BTW: Belasting op Toegevoegde Waarde."
+    },
+    {
+      "id": "begrip-fill-15-btw",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Belasting op Toegevoegde Waarde.'",
+      "accept": [
+        "btw",
+        "belasting over toegevoegde waarde",
+        "belasting op toegevoegde waarde"
+      ],
+      "explanation": "BTW: Belasting op Toegevoegde Waarde."
+    },
+    {
+      "id": "begrip-mc-16-aftrekbare-btw",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Aftrekbare BTW'?",
+      "options": [
+        "BTW die een onderneming ontvangt van klanten en moet doorstorten.",
+        "Bedrag waarop BTW berekend wordt.",
+        "Belasting op Toegevoegde Waarde.",
+        "BTW op aankopen die een onderneming mag terugvorderen."
+      ],
+      "correctIndex": 3,
+      "explanation": "Aftrekbare BTW: BTW op aankopen die een onderneming mag terugvorderen."
+    },
+    {
+      "id": "begrip-fill-16-aftrekbare-btw",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'BTW op aankopen die een onderneming mag terugvorderen.'",
+      "accept": [
+        "aftrekbare btw",
+        "terug te vorderen btw"
+      ],
+      "explanation": "Aftrekbare BTW: BTW op aankopen die een onderneming mag terugvorderen."
+    },
+    {
+      "id": "begrip-mc-17-te-betalen-btw",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Te betalen BTW'?",
+      "options": [
+        "BTW die een onderneming ontvangt van klanten en moet doorstorten.",
+        "BTW op aankopen die een onderneming mag terugvorderen.",
+        "Bedrag waarop BTW berekend wordt.",
+        "Belasting op Toegevoegde Waarde."
+      ],
+      "correctIndex": 0,
+      "explanation": "Te betalen BTW: BTW die een onderneming ontvangt van klanten en moet doorstorten."
+    },
+    {
+      "id": "begrip-fill-17-te-betalen-btw",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'BTW die een onderneming ontvangt van klanten en moet doorstorten.'",
+      "accept": [
+        "te betalen btw",
+        "verschuldigde btw"
+      ],
+      "explanation": "Te betalen BTW: BTW die een onderneming ontvangt van klanten en moet doorstorten."
+    },
+    {
+      "id": "begrip-mc-18-maatstaf-van-heffing",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Maatstaf van heffing'?",
+      "options": [
+        "BTW die een onderneming ontvangt van klanten en moet doorstorten.",
+        "Belasting op Toegevoegde Waarde.",
+        "Bedrag waarop BTW berekend wordt.",
+        "BTW op aankopen die een onderneming mag terugvorderen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Maatstaf van heffing: Bedrag waarop BTW berekend wordt."
+    },
+    {
+      "id": "begrip-fill-18-maatstaf-van-heffing",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "btw"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Bedrag waarop BTW berekend wordt.'",
+      "accept": [
+        "maatstaf van heffing",
+        "mvh"
+      ],
+      "explanation": "Maatstaf van heffing: Bedrag waarop BTW berekend wordt."
+    },
+    {
+      "id": "begrip-mc-19-afschrijving",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Afschrijving'?",
+      "options": [
+        "Elk jaar hetzelfde afschrijvingsbedrag.",
+        "De aankoopprijs van een investering.",
+        "Een investering geleidelijk als kost spreiden over meerdere jaren.",
+        "De geschatte waarde op het einde van de levensduur."
+      ],
+      "correctIndex": 2,
+      "explanation": "Afschrijving: Een investering geleidelijk als kost spreiden over meerdere jaren."
+    },
+    {
+      "id": "begrip-fill-19-afschrijving",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Een investering geleidelijk als kost spreiden over meerdere jaren.'",
+      "accept": [
+        "afschrijving"
+      ],
+      "explanation": "Afschrijving: Een investering geleidelijk als kost spreiden over meerdere jaren."
+    },
+    {
+      "id": "begrip-mc-20-lineaire-afschrijving",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Lineaire afschrijving'?",
+      "options": [
+        "De aankoopprijs van een investering.",
+        "Een investering geleidelijk als kost spreiden over meerdere jaren.",
+        "Elk jaar hetzelfde afschrijvingsbedrag.",
+        "De geschatte waarde op het einde van de levensduur."
+      ],
+      "correctIndex": 2,
+      "explanation": "Lineaire afschrijving: Elk jaar hetzelfde afschrijvingsbedrag."
+    },
+    {
+      "id": "begrip-fill-20-lineaire-afschrijving",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'Elk jaar hetzelfde afschrijvingsbedrag.'",
+      "accept": [
+        "lineaire afschrijving",
+        "lineair"
+      ],
+      "explanation": "Lineaire afschrijving: Elk jaar hetzelfde afschrijvingsbedrag."
+    },
+    {
+      "id": "begrip-mc-21-aanschaffingswaarde",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Aanschaffingswaarde'?",
+      "options": [
+        "De geschatte waarde op het einde van de levensduur.",
+        "Elk jaar hetzelfde afschrijvingsbedrag.",
+        "Een investering geleidelijk als kost spreiden over meerdere jaren.",
+        "De aankoopprijs van een investering."
+      ],
+      "correctIndex": 3,
+      "explanation": "Aanschaffingswaarde: De aankoopprijs van een investering."
+    },
+    {
+      "id": "begrip-fill-21-aanschaffingswaarde",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'De aankoopprijs van een investering.'",
+      "accept": [
+        "aanschaffingswaarde",
+        "aw"
+      ],
+      "explanation": "Aanschaffingswaarde: De aankoopprijs van een investering."
+    },
+    {
+      "id": "begrip-mc-22-restwaarde",
+      "chapter": 0,
+      "difficulty": "basis",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "mc",
+      "question": "Wat betekent 'Restwaarde'?",
+      "options": [
+        "Een investering geleidelijk als kost spreiden over meerdere jaren.",
+        "De geschatte waarde op het einde van de levensduur.",
+        "De aankoopprijs van een investering.",
+        "Elk jaar hetzelfde afschrijvingsbedrag."
+      ],
+      "correctIndex": 1,
+      "explanation": "Restwaarde: De geschatte waarde op het einde van de levensduur."
+    },
+    {
+      "id": "begrip-fill-22-restwaarde",
+      "chapter": 0,
+      "difficulty": "midden",
+      "tags": [
+        "begrip",
+        "afschrijvingen"
+      ],
+      "type": "open",
+      "question": "Welke term hoort bij deze definitie: 'De geschatte waarde op het einde van de levensduur.'",
+      "accept": [
+        "restwaarde",
+        "rw"
+      ],
+      "explanation": "Restwaarde: De geschatte waarde op het einde van de levensduur."
+    }
+  ]
+}

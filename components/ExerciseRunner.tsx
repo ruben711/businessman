@@ -57,16 +57,14 @@ export function ExerciseRunner({ exercise, nextId, grouped }: { exercise: Exerci
   const canShowModel = attempts >= 3 || !!feedback;
 
   return (
-    <div className="grid lg:grid-cols-[340px_1fr] gap-6">
+    <div className="space-y-5">
       {ex.context && (
-        <aside className="lg:sticky lg:top-[80px] lg:self-start">
-          <div className="panel p-5">
-            <div className="label mb-3">// CONTEXT</div>
-            <div className="text-[14px] leading-relaxed text-ink/90">{ex.context}</div>
-          </div>
-        </aside>
+        <div className="panel p-5">
+          <div className="label mb-3">// CONTEXT</div>
+          <div className="text-[14px] leading-relaxed text-ink/90">{ex.context}</div>
+        </div>
       )}
-      <div className={ex.context ? "" : "lg:col-span-2"}>
+      <div>
         <div className="flex items-start justify-between gap-4 mb-6">
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-3">
@@ -130,15 +128,22 @@ export function ExerciseRunner({ exercise, nextId, grouped }: { exercise: Exerci
           </div>
         )}
 
-        <div className="panel p-4">
-          <div className="label mb-2">// NOTITIE</div>
-          <textarea
-            className="input text-[13px]"
-            value={note}
-            onChange={(e) => { setNoteVal(e.target.value); setNote(ex.id, e.target.value); }}
-            placeholder="Persoonlijke aantekening…"
-          />
-        </div>
+        <details className="panel group overflow-hidden">
+          <summary className="cursor-pointer flex items-center gap-3 px-4 py-3 list-none hover:bg-hover/40 transition">
+            <span className="label">// NOTITIE</span>
+            {note?.trim() && <span className="chip chip-acc !text-[7px] !px-1.5">SAVED</span>}
+            <span className="ml-auto font-pixel text-[8px] text-ink-3 group-open:hidden">EXPAND ▾</span>
+            <span className="ml-auto font-pixel text-[8px] text-acc hidden group-open:inline">COLLAPSE ▴</span>
+          </summary>
+          <div className="px-4 pb-4 pt-2 border-t border-line/[0.06]">
+            <textarea
+              className="input text-[13px]"
+              value={note}
+              onChange={(e) => { setNoteVal(e.target.value); setNote(ex.id, e.target.value); }}
+              placeholder="Persoonlijke aantekening…"
+            />
+          </div>
+        </details>
       </div>
     </div>
   );

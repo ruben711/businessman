@@ -31,7 +31,7 @@ export default function ExercisePage({ params }: { params: { id: string } }) {
   const chapterTitle = CHAPTERS.find((c) => c.num === target.chapter)?.title || "";
 
   return (
-    <div className="anim-in">
+    <div className="anim-in max-w-[820px] mx-auto">
       <ScrollToExercise id={target.id} />
 
       <div className="flex items-center justify-between gap-3 mb-6">
