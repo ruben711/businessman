@@ -1,0 +1,132 @@
+{
+  "chapter": 1,
+  "title": "Starten als zelfstandige",
+  "subtitle": "Voorwaarden, verplichtingen en ondernemingen in moeilijkheden",
+  "sections": [
+    {
+      "id": "h1-inleiding",
+      "title": "1. Inleiding",
+      "lead": "Elk jaar starten heel wat mensen een zelfstandige activiteit. Meer dan 50% stopt echter binnen vijf jaar — vaak door onvoldoende voorbereiding.",
+      "paragraphs": [
+        "Een zaak succesvol leiden vergt naast vakkennis ook **creativiteit, inzet, motivatie en kennis van bedrijfsbeheer**. Bijna één op de drie jongeren droomt van een eigen zaak, maar tussen droom en werkelijkheid liggen veel praktische bezwaren.",
+        "**Voordelen** zijn onder meer: eigen baas, vrije werkuren, eventueel bij huis werken. **Nadelen** zijn financiële risico's, vele werkuren en een onregelmatig inkomen."
+      ],
+      "callout": null
+    },
+    {
+      "id": "h1-onderneming",
+      "title": "2. Definitie van het begrip 'onderneming'",
+      "lead": "Artikel I.1,1° Wetboek Economisch Recht bepaalt drie soorten ondernemingen.",
+      "paragraphs": [
+        "**Iedere natuurlijke persoon** die zelfstandig een beroepsactiviteit uitoefent: eenmanszaken, zaakvoerders, bestuurders, vrije beroepen, landbouwers, kunstenaars…",
+        "**Iedere privaatrechtelijke rechtspersoon**: vooral vennootschappen, maar ook VZW's — zelfs zonder economisch doel.",
+        "**Iedere andere organisatie zonder rechtspersoonlijkheid** die winst uitkeert (bv. maatschappen). Feitelijke verenigingen (bv. een carnavalsvereniging) vallen er níet onder."
+      ]
+    },
+    {
+      "id": "h1-voorwaarden",
+      "title": "3. Voorwaarden om zelfstandig te beginnen",
+      "lead": "Vijf grote voorwaarden bepalen of je kan starten.",
+      "list": [
+        "**Minstens 18 jaar** (meerderjarig).",
+        "**In bezit van je burgerrechten** — geen rechterlijke ontzetting.",
+        "**Bekwaam** — niet wettelijk of gerechtelijk onbekwaam verklaard, geen voorlopig bewindvoerder.",
+        "**EU-onderdaan** (of Noorwegen/IJsland/Liechtenstein); anders een beroepskaart of vrijstelling.",
+        "**Geen onverenigbaar beroep** — bv. gerechtsdeurwaarders, advocaten, notarissen, politiemensen, staatsambtenaren.",
+        "**Kennis van bedrijfsbeheer** — enkel verplicht in Wallonië en Brussel; in Vlaanderen sinds 2018 afgeschaft."
+      ]
+    },
+    {
+      "id": "h1-verplichtingen",
+      "title": "4. Verplichtingen om je te vestigen",
+      "lead": "Acht standaardformaliteiten bij de start.",
+      "subsections": [
+        {
+          "title": "4.1 Naam kiezen",
+          "body": "**Handelsnaam** = naam waaronder de onderneming handelt. Automatisch beschermd zodra gebruikt, geen depot nodig. **Vennootschapsnaam** = maatschappelijke benaming, vastgelegd in oprichtingsakte, wijziging via notaris. **Merk** = onderscheidend teken, gedeponeerd bij het Benelux-Bureau voor Intellectuele Eigendom. Beschermingsduur: 10 jaar, verlengbaar."
+        },
+        {
+          "title": "4.2 Zichtrekening openen",
+          "body": "Verplicht bij een in België gevestigde financiële instelling, op naam van de onderneming. Rekeningnummer + bank moeten op alle handelsdocumenten staan, anders sancties en geen verwijlinteresten."
+        },
+        {
+          "title": "4.3 Inschrijven in het rechtspersonenregister (RPR)",
+          "body": "Enkel voor rechtspersonen, via de griffie van de ondernemingsrechtbank. Een **eenmanszaak is geen rechtspersoon** en wordt dus níet ingeschreven."
+        },
+        {
+          "title": "4.4 Inschrijven bij de KBO",
+          "body": "Verplicht via een erkend ondernemingsloket (Securex, Liantis, Acerta, Xerius, Partena, UCM, Formalis, Eunomia). Vervangt het vroegere Handelsregister."
+        },
+        {
+          "title": "4.5 BTW-nummer activeren",
+          "body": "Na KBO-inschrijving aanvragen. Kies je BTW-stelsel: gewone regeling, vrijstellingsregime, forfait…"
+        },
+        {
+          "title": "4.6 UBO-register",
+          "body": "Ultimate Beneficial Owners — uiteindelijk begunstigden van een vennootschap, VZW of stichting. Registratie via MyMinfin (sinds antiwitwaswet 2017)."
+        },
+        {
+          "title": "4.7 Huwelijksstelsel bekendmaken",
+          "body": "Enkel bij KBO bekendmaken als je niet onder het wettelijk stelsel huwt, of als je tijdens je zelfstandige loopbaan trouwt of het stelsel wijzigt. Voor ondernemers is **scheiding van goederen** vaak aangeraden — schulden vallen dan enkel op de ondernemende partner."
+        },
+        {
+          "title": "4.8 Sociaal verzekeringsfonds",
+          "body": "Verplicht aansluiten. Geeft recht op pensioen, ziekte/invaliditeit, groeipakket, beperkt werkloosheid en het overbruggingsrecht."
+        },
+        {
+          "title": "4.9 Ziekenfonds",
+          "body": "Aansluiting binnen 6 maanden na start. Geeft recht op terugbetaling gezondheidszorg, arbeidsongeschiktheidsuitkering na 1 maand, invaliditeit na 12 maanden."
+        }
+      ]
+    },
+    {
+      "id": "h1-huwelijksstelsels",
+      "title": "5. Huwelijksstelsels in detail",
+      "list": [
+        "**Wettelijk stelsel** (automatisch): vóór-huwelijkse bezittingen en schulden blijven persoonlijk; tijdens het huwelijk verkregen goederen zijn gemeenschappelijk; erfenissen en schenkingen blijven persoonlijk.",
+        "**Scheiding van goederen**: alles blijft volledig gescheiden, vóór en tijdens het huwelijk.",
+        "**Algehele gemeenschap van goederen**: alles is gemeenschappelijk, ook van vóór het huwelijk."
+      ],
+      "callout": "Voor ondernemers is scheiding van goederen veiliger — schuldeisers kunnen enkel de ondernemende partner aanspreken."
+    },
+    {
+      "id": "h1-geschillen",
+      "title": "6. Ondernemingsgeschillen",
+      "lead": "De ondernemingsrechtbank is bevoegd voor geschillen tussen ondernemingen. Werking en organisatie zijn vastgelegd in het Gerechtelijk Wetboek."
+    },
+    {
+      "id": "h1-moeilijkheden",
+      "title": "7. Onderneming in moeilijkheden",
+      "lead": "Wanneer de continuïteit bedreigd is, zijn er verschillende mogelijkheden.",
+      "subsections": [
+        {
+          "title": "7.1 Ondernemingsbemiddelaar & minnelijk akkoord",
+          "body": "Een **bemiddelaar** (aangesteld door de voorzitter van de rechtbank) treedt op tussen schuldenaar en schuldeisers. Een **minnelijk akkoord** wordt buitengerechtelijk gesloten — minimum 2 schuldeisers, neergelegd in het Centraal Register Solvabiliteit (Regsol). Akkoorden blijven gelden bij een latere faillietverklaring."
+        },
+        {
+          "title": "7.2 Gerechtelijke reorganisatie (GRP/WCO)",
+          "body": "Wet op de Continuïteit van de Ondernemingen. Doel: minnelijk akkoord, reorganisatieplan, of gerechtelijke overdracht. Vanaf neerlegging van het verzoekschrift kan de ondernemer niet meer failliet verklaard worden (tenzij op eigen aangifte). Opschorting meestal 6 maanden."
+        },
+        {
+          "title": "7.3 Faillissement",
+          "body": "Procedure als de onderneming niet meer aan haar financiële verplichtingen kan voldoen. Drie voorwaarden: (1) het is een onderneming, (2) betalingen zijn gestaakt, (3) krediet is geschokt. Een curator wordt aangesteld. Procedure via aangifte (boeken neerleggen) of dagvaarding (schuldeisers, openbaar ministerie, voorlopige bewindvoerder)."
+        },
+        {
+          "title": "7.4 Verschoning na faillissement",
+          "body": "Sinds 1 april 2017 wordt elk faillissementsdossier opgenomen in **Regsol** (Centraal Register Solvabiliteit, regsol.be). Bij geen fout van de gefailleerde kan Regsol hem éénmalig verschonen — schuldeisers kunnen hem dan niet meer vervolgen. Vennootschappen kunnen niet verschoond worden (rechtspersoon → ontbinding na faillissement)."
+        },
+        {
+          "title": "7.5 Overbruggingsrecht",
+          "body": "Sociaal recht voor zelfstandigen (geen premieverzekering). Automatisch via je sociaal verzekeringsfonds bij faillissement, brand, natuurramp, beroepsallergie… Omvat behoud sociale rechten gedurende 4 kwartalen + een maandelijkse uitkering (gelijk aan minimumpensioen) tot max. 12 maanden over je volledige loopbaan."
+        }
+      ]
+    }
+  ],
+  "doelstellingen": [
+    "weten aan welke voorwaarden je moet voldoen om zelfstandig te beginnen",
+    "weten aan welke verplichtingen je moet voldoen om zelfstandig te beginnen",
+    "de verschillende huwelijksstelsels kunnen toelichten",
+    "weten welke rechtbank van toepassing is voor ondernemingen",
+    "weten welke mogelijkheden er zijn voor ondernemingen in moeilijkheden"
+  ]
+}

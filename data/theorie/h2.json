@@ -1,0 +1,137 @@
+{
+  "chapter": 2,
+  "title": "Keuze van de ondernemingsvorm",
+  "subtitle": "Eenmanszaak, vennootschappen en hun aansprakelijkheid",
+  "sections": [
+    {
+      "id": "h2-inleiding",
+      "title": "1. Inleiding",
+      "lead": "Bij de start kan je kiezen tussen een eenmanszaak of een vennootschap. Elke vorm heeft eigen voor- en nadelen.",
+      "paragraphs": [
+        "Belangrijke vragen bij de keuze: werk je alleen of met vennoten? Wat breng je in — arbeid, goederen, knowhow of geld? Welke rol speelt je privé-vermogen? Welke belasting is van toepassing?",
+        "Het WVV (Wetboek Vennootschappen en Verenigingen) erkent vijf vormen mét rechtspersoonlijkheid (**VOF, CommV, BV, CV, NV**) en één vorm zónder rechtspersoonlijkheid: de **maatschap**."
+      ]
+    },
+    {
+      "id": "h2-eenmanszaak",
+      "title": "2. De eenmanszaak",
+      "lead": "Eén ondernemer, eigen kapitaal, geen wettelijk minimum.",
+      "paragraphs": [
+        "De eenmanszaak is een **natuurlijk persoon** die zelfstandig een activiteit uitoefent. De zaak staat op eigen naam. Een handelsnaam mag — automatisch beschermd zodra in gebruik.",
+        "Geen rechtspersoonlijkheid: **geen scheiding tussen privé- en zakenvermogen**. Bij faillissement dient het volledige privé-vermogen tot afbetaling. Voor gehuwden onder gemeenschapsstelsel kunnen schuldeisers het gemeenschappelijk vermogen aanspreken — vandaar het belang van **scheiding van goederen**.",
+        "Sinds 9 juni 2007 kan een zelfstandige zijn **hoofdverblijfplaats** via een verklaring bij de notaris onvatbaar voor beslag laten verklaren. Beschermt enkel tegen beroepsschulden die ná de registratie ontstaan, niet tegen strafrechtelijke veroordelingen of faillissement met ernstige fout."
+      ],
+      "subsections": [
+        {
+          "title": "Voordelen",
+          "body": "Alle winst voor één persoon · snelle beslissingen · eenvoudige oprichting met weinig kosten · eenvoudige boekhouding · geen wettelijk minimumkapitaal."
+        },
+        {
+          "title": "Nadelen",
+          "body": "Onbeperkt en hoofdelijk aansprakelijk (privé-vermogen ook aanspreekbaar) · belast onder personenbelasting (tot 50%) · continuïteitsprobleem bij ziekte, invaliditeit of overlijden · alles op eigen kracht."
+        }
+      ]
+    },
+    {
+      "id": "h2-vennootschap",
+      "title": "3. De vennootschap — begrip en rechtspersoonlijkheid",
+      "lead": "Art. 1:1 WVV: een vennootschap wordt opgericht door één of meer personen die een inbreng doen, met een eigen vermogen en een welbepaalde activiteit.",
+      "paragraphs": [
+        "Een vennootschap mét rechtspersoonlijkheid heeft een eigen vermogen, naam, zetel, nationaliteit, boekhouding en wordt vertegenwoordigd door zaakvoerders/bestuurders. Rechtspersoonlijkheid wordt verkregen door neerlegging van de oprichtingsakte bij de griffie van de ondernemingsrechtbank.",
+        "De **maatschap** is de enige vorm zonder rechtspersoonlijkheid: geen afgescheiden vermogen, vennoten onbeperkt aansprakelijk, kan zelf niet in rechte optreden."
+      ]
+    },
+    {
+      "id": "h2-aansprakelijkheid",
+      "title": "4. Aansprakelijkheid",
+      "lead": "Het cruciale onderscheid tussen vennootschapsvormen.",
+      "paragraphs": [
+        "**Beperkte aansprakelijkheid** = vennoten zijn enkel aansprakelijk voor hun inbreng. Privé-vermogen blijft buiten schot. Geldt voor **NV, BV en CV**.",
+        "**Onbeperkte en hoofdelijke aansprakelijkheid** geldt voor de **maatschap, VOF en CommV** — schuldeisers kunnen privé-vermogen aanspreken.",
+        "Bestuurders kunnen **persoonlijk aansprakelijk** gesteld worden bij fouten in hun opdracht (art 2:56 WVV). Het WVV voert een **cap** in (art 2:57) afhankelijk van omzet en balanstotaal — behalve bij zware fout, herhaalde lichte fout, bedrog of fiscale aansprakelijkheid."
+      ],
+      "subsections": [
+        {
+          "title": "Wanneer verlies je je beperkte aansprakelijkheid?",
+          "body": "(1) Persoonlijk borg gestaan voor de schulden van je vennootschap. (2) Bij faillissement waarbij schulden de baten overtreffen na een **kennelijk grove fout**. (3) Faillissement binnen 3 jaar na oprichting met onvoldoende aanvangsvermogen (= **oprichtersaansprakelijkheid**). (4) Fiscale en sociale schulden bij eigen fout van de bestuurder."
+        }
+      ]
+    },
+    {
+      "id": "h2-fiscaliteit",
+      "title": "5. Fiscaliteit",
+      "lead": "Een belangrijke reden om voor een vennootschap te kiezen.",
+      "paragraphs": [
+        "**Eenmanszaak**: winst belast in personenbelasting (PB) tot **50%**.",
+        "**Vennootschap**: basistarief **25%**; verlaagd tarief **20%** op eerste schijf van € 100 000 voor KMO's die voldoen aan voorwaarden.",
+        "In een vennootschap kies je hoe je geld eruit haalt: bedrijfsleidersbezoldiging (belast in PB), intrest (30% RV), dividend (30% of 15% RV), huur (KI in PB). Doel: **optimale inkomstenmix**."
+      ]
+    },
+    {
+      "id": "h2-bv",
+      "title": "6. De Besloten Vennootschap (BV)",
+      "lead": "Nieuwe naam voor de vroegere BVBA. Meest flexibele vorm sinds het WVV.",
+      "list": [
+        "**Beperkte aansprakelijkheid** — privé-vermogen blijft buiten schot",
+        "**Eén aandeelhouder volstaat** — natuurlijk persoon of rechtspersoon",
+        "**Geen wettelijk minimumkapitaal**, wél een **toereikend aanvangsvermogen** voor 2 jaar werking",
+        "**Financieel plan verplicht** bij oprichting",
+        "Flexibele aandelenstructuur: meervoudig stemrecht, geen stemrecht…",
+        "Overdraagbaarheid van aandelen vrij te bepalen in statuten",
+        "Beursnotering mogelijk",
+        "**Notariële akte** verplicht + publicatie Belgisch Staatsblad",
+        "Bestuur door één of meer zaakvoerders, statutair benoemd",
+        "Jaarlijkse algemene vergadering verplicht"
+      ]
+    },
+    {
+      "id": "h2-nv",
+      "title": "7. De Naamloze Vennootschap (NV)",
+      "lead": "Kapitaalvennootschap, traditioneel voor grotere ondernemingen.",
+      "list": [
+        "**Beperkte aansprakelijkheid**",
+        "**Één aandeelhouder volstaat** (natuurlijk persoon of rechtspersoon)",
+        "**Minimumkapitaal € 61 500**, volledig volstort bij oprichting",
+        "Inbreng in natura: minstens 1/4 volstort, rest binnen 5 jaar",
+        "**Financieel plan verplicht**",
+        "Stemrecht in regel proportioneel met inbreng, kan afwijken",
+        "Bestuur: enige bestuurder, college, of duaal bestuur (directieraad + raad van toezicht)",
+        "**Notariële akte** + publicatie Belgisch Staatsblad",
+        "Jaarlijkse algemene vergadering"
+      ]
+    },
+    {
+      "id": "h2-bijzondereplichten",
+      "title": "8. Bijzondere plichten bij oprichting",
+      "subsections": [
+        {
+          "title": "Statuten",
+          "body": "Authentieke (notariële) akte voor BV/CV/NV; onderhandse akte voor maatschap/VOF/CommV."
+        },
+        {
+          "title": "Financieel plan",
+          "body": "Raming inkomsten/uitgaven/financiering eerste 2 jaar. Verplicht bij BV/CV/NV. Wordt door de notaris bewaard — derden hebben geen inzage. Wordt opgevraagd bij faillissement binnen 3 jaar → koppeling oprichtersaansprakelijkheid."
+        },
+        {
+          "title": "Bedrijfsrevisor bij inbreng in natura",
+          "body": "Verplicht voor BV/CV/NV. De revisor beschrijft de inbreng, controleert waarderingsmethode en geeft een appreciatie."
+        },
+        {
+          "title": "Geblokkeerde rekening",
+          "body": "Bij NV: minstens € 61 500 storten op een geblokkeerde rekening. Ook BV/CV: inbreng in geld op geblokkeerde rekening. Bankattest vereist."
+        },
+        {
+          "title": "Publicatie",
+          "body": "Oprichtingsakte registreren bij FOD Financiën, uittreksel neerleggen bij griffie ondernemingsrechtbank → KBO-ondernemingsnummer. Binnen 15 dagen publiceren in Belgisch Staatsblad."
+        }
+      ]
+    }
+  ],
+  "doelstellingen": [
+    "het verschil tussen rechtspersoonlijkheid en onbeperkte aansprakelijkheid kunnen toelichten",
+    "de kenmerken van de eenmanszaak, BV en NV kunnen vergelijken",
+    "weten wanneer een bestuurder zijn beperkte aansprakelijkheid kan verliezen",
+    "de bijzondere oprichtingsplichten van een vennootschap kennen",
+    "het fiscaal verschil tussen eenmanszaak en vennootschap begrijpen"
+  ]
+}

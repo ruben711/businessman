@@ -1,0 +1,128 @@
+{
+  "chapter": 3,
+  "title": "Financiering van de onderneming",
+  "subtitle": "Eigen vermogen, vreemd vermogen, crowdfunding en steunmaatregelen",
+  "sections": [
+    {
+      "id": "h3-inleiding",
+      "title": "1. Inleiding",
+      "lead": "Een onderneming draaiende houden vraagt financiële middelen — eigen inbreng volstaat zelden.",
+      "paragraphs": [
+        "**Krediet verlenen** = goederen of geld ter beschikking stellen die pas later (terug)betaald worden. Ondernemers, maar vooral financiële instellingen, verlenen krediet vanuit verzamelde deposito's."
+      ]
+    },
+    {
+      "id": "h3-eigen-vermogen",
+      "title": "2. Financiering met eigen vermogen",
+      "lead": "Middelen die permanent ter beschikking staan van de onderneming.",
+      "paragraphs": [
+        "Eigen vermogen komt van de eigenaars: inbreng in geld of natura (gebouw, machine, wagen). Zichtbaar op de **passiefzijde** van de balans onder eigen vermogen.",
+        "Tijdens de levensduur groeit eigen vermogen aan door nieuwe inbrengen of door winst toe te voegen aan de **reserves**.",
+        "Eigenaars krijgen aandelen; vergoeding via **dividend**. Geen vaste afspraak over terugbetaling — algemene vergadering beslist.",
+        "Voordeel: positieve invloed op **solvabiliteit en kredietwaardigheid**."
+      ]
+    },
+    {
+      "id": "h3-vreemd-kt",
+      "title": "3. Vreemd vermogen — korte termijn",
+      "subsections": [
+        {
+          "title": "Leverancierskrediet",
+          "body": "Uitstel van betaling door de leverancier. Krediettermijnen variëren per sector (1 week tot 3 maanden). Soms 2% korting voor contante betaling — wie hier geen gebruik van maakt, betaalt impliciet hoge kosten."
+        },
+        {
+          "title": "Kaskrediet",
+          "body": "Bank staat toe dat je tot een afgesproken **kredietlijn** onder nul gaat op de rekening courant. Intrest enkel op werkelijk opgenomen bedragen, op het einde van elk kwartaal verhoogd met kwartaalcommissie. Vrij hoge intrest. Bank vraagt waarborgen."
+        },
+        {
+          "title": "Straight loans",
+          "body": "Vast voorschot voor een vaste termijn (3 maanden tot 1 jaar) aan een vooraf bepaalde rentevoet. Voor het overbruggen van een gekend liquiditeitstekort. **Rentevoet ligt lager dan bij kaskrediet**."
+        }
+      ]
+    },
+    {
+      "id": "h3-vreemd-lt",
+      "title": "4. Vreemd vermogen — lange termijn",
+      "subsections": [
+        {
+          "title": "Hypothecair krediet",
+          "body": "Lening met onroerend goed als waarborg. **Authentieke akte** vereist + registratie. Geeft de bank rechtstreeks uitvoerbare titel — geen rechtbank nodig voor gedwongen verkoop. Inschrijving dooft uit na 30 jaar."
+        },
+        {
+          "title": "Soorten aflossing",
+          "body": "**Constante aflossing**: vaste annuïteiten (intrest + kapitaal). In het begin meer intrest, op het einde meer kapitaal. **Degressieve aflossing**: vast kapitaalbedrag elk jaar + degressieve intrest op restschuld. **Bullet/overbruggingskrediet**: tijdens looptijd enkel intrest, kapitaal op het einde."
+        },
+        {
+          "title": "Hypothecair mandaat (volmacht)",
+          "body": "Toelating aan de bank om wanneer nodig hypotheek te nemen — maar nog niet effectief. Kost slechts **1/3 van een echte hypotheek**. Bank krijgt minder zekerheid. Niet geregistreerd → niet zichtbaar voor derden."
+        },
+        {
+          "title": "Hypotheekbelofte",
+          "body": "Onderhandse overeenkomst — geen notaris. Je belooft dat je geen hypotheek aan derden zal toestaan en het goed niet zal verkopen/ruilen."
+        },
+        {
+          "title": "Investeringskrediet",
+          "body": "Halflange tot lange termijn (5–20 jaar). Vooraf afgesproken aflossingsschema. Vaak met **zakelijke waarborg** (hypotheek, pand) of persoonlijke borgstelling."
+        },
+        {
+          "title": "Lening op afbetaling",
+          "body": "Bank betaalt verkoper. Max. 20 jaar looptijd. Geen notaris → beperkte kosten. Vier categorieën: autolening, woonlening, kooplening, privé-lening."
+        },
+        {
+          "title": "Leasing",
+          "body": "Lessor (leasinggever) verhuurt aan lessee. Aankoopoptie bij einde contract. **100% financiering zonder eigen vermogen of zakelijke waarborgen**. Eigendomsrecht blijft bij lessor → klever op het goed.\n\n**Financiële leasing**: aankoopoptie ≤ 15%, geactiveerd op balans van lessee. **Operationele leasing**: aankoopoptie > 15%, boekhoudkundig huur, kost in klasse 6."
+        }
+      ]
+    },
+    {
+      "id": "h3-crowdfunding",
+      "title": "5. Crowdfunding",
+      "lead": "Alternatieve financiering door particulieren — \"financiering door de menigte\".",
+      "paragraphs": [
+        "Drie hoofdvormen: **crowdlending** (lening met intrest), **equity crowdfunding** (aandelen + dividend), **donation-based** (donatie, eventueel voordeel in natura — bv. levenslang gratis bier zoals bij De Halve Maan).",
+        "Sinds **februari 2017** verplicht een vergunning bij de **FSMA**. Risico's: verlies van inbreng, fraude, te rooskleurig voorgestelde projecten, geen gewaarborgd rendement."
+      ]
+    },
+    {
+      "id": "h3-steunmaatregelen",
+      "title": "6. Steunmaatregelen",
+      "subsections": [
+        {
+          "title": "Participatiefonds Vlaanderen — Startlening",
+          "body": "**Achtergestelde lening** voor starters (max. 4 jaar actief). Max. € 100 000 aan 3% intrest."
+        },
+        {
+          "title": "Cofinanciering",
+          "body": "Achtergestelde lening max. € 350 000 aan 3%. Altijd gecombineerd met een bank/investeringsfonds dat min. 20% draagt; participatiefonds tot 50% van de globale behoefte."
+        },
+        {
+          "title": "Winwinlening",
+          "body": "Vlaamse particulieren lenen aan ondernemingen. **Looptijd 5–10 jaar**, max. € 75 000 per kredietgever, totaal max. € 300 000 per kredietnemer. Belastingvermindering voor de particulier. Rentevoet 2021: 0,875% — 1,75%."
+        },
+        {
+          "title": "KMO-portefeuille",
+          "body": "Online subsidie voor opleiding, advies, strategie. Kleine onderneming **30% steun**, middelgrote **20%**. Plafond € 7 500 per jaar."
+        },
+        {
+          "title": "Waarborgregeling (PMV)",
+          "body": "Waarborg tot € 1,5 miljoen dekt 75% van het krediet; boven € 1,5 miljoen tot 80%. Verlaagt het risico voor de bank."
+        },
+        {
+          "title": "Investeringsaftrek",
+          "body": "Fiscaal voordeel: percentage van investeringswaarde aftrekken van belastbare winst. Verhoogde aftrek van 25% verlengd t.e.m. 2022 voor eenmanszaken, vrije beroepen en kleine vennootschappen."
+        },
+        {
+          "title": "Taxshelter voor starters",
+          "body": "Particulier krijgt **30 of 45% belastingvermindering** in PB bij investering in starters (< 4 jaar). Onderneming kan tot € 250 000 ophalen; investeerder houdt aandelen minstens 4 jaar aan; max. € 100 000 per jaar per investeerder."
+        }
+      ]
+    }
+  ],
+  "doelstellingen": [
+    "het verschil kennen tussen financiering met eigen en vreemd vermogen",
+    "de kortetermijn- en langetermijnkredieten kunnen benoemen en vergelijken",
+    "financiële vs operationele leasing kunnen onderscheiden",
+    "de werking en risico's van crowdfunding kunnen toelichten",
+    "de belangrijkste Vlaamse steunmaatregelen kennen"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "chapter": 7,
+  "title": "Het sociaal statuut",
+  "subtitle": "Sociale zekerheid voor werknemers en zelfstandigen",
+  "sections": [
+    {
+      "id": "h7-principe",
+      "title": "1. Het principe van de sociale zekerheid",
+      "lead": "Iedereen de middelen geven om in eigen levensonderhoud te voorzien — vooral wanneer arbeid onmogelijk is.",
+      "paragraphs": [
+        "Sociale zekerheid voorziet in een **vervangingsinkomen** (bij ziekte, werkloosheid, ouderdom, vakantie) en een **aanvullend inkomen** (groeipakket bij kinderlast).",
+        "Drie onafhankelijke stelsels:\n• **Werknemers** — RSZ (Rijksdienst voor Sociale Zekerheid)\n• **Zelfstandigen** — RSVZ (Rijksinstituut voor Sociale Verzekeringen der Zelfstandigen) + onafhankelijke kassen\n• **Ambtenaren** — RSZPPO (komt in deze cursus niet aan bod)"
+      ]
+    },
+    {
+      "id": "h7-werknemers",
+      "title": "2. Stelsel voor werknemers",
+      "lead": "Voor wie werkt met een arbeidsovereenkomst.",
+      "paragraphs": [
+        "Drie kenmerken van een arbeidsovereenkomst:\n• De werknemer levert **arbeidsprestaties**;\n• Onder **gezag, leiding en toezicht** van een werkgever;\n• Tegen betaling van een **loon**.",
+        "**Ondergeschiktheidsband** is het verschil met een zelfstandige (die onafhankelijk werkt en zijn eigen baas is).",
+        "Financiering: **werkgever + werknemer + overheid**. RSZ-bijdragen procentueel op brutoloon (arbeiders: 108%): werknemersbijdrage 13,07% · werkgeversbijdrage ~25–33%."
+      ]
+    },
+    {
+      "id": "h7-zelfstandige",
+      "title": "3. Het sociaal statuut van de zelfstandige",
+      "lead": "Geregeld via RSVZ + een sociaal verzekeringsfonds naar keuze.",
+      "subsections": [
+        {
+          "title": "Hoofdberoep",
+          "body": "Belangrijkste activiteit. Volledige sociale bijdragen verschuldigd → recht op pensioen, ziekte/invaliditeit, groeipakket, overbruggingsrecht."
+        },
+        {
+          "title": "Bijberoep",
+          "body": "Naast een hoofdactiviteit als werknemer (min. halftijds), ambtenaar of gepensioneerde. Lagere bijdragen onder bepaalde inkomensgrenzen — geen bijkomende sociale rechten."
+        },
+        {
+          "title": "Meewerkende echtgeno(o)t(e)",
+          "body": "Helpt de zelfstandige partner zonder eigen statuut elders. Sinds 2003 verplicht **maxi-statuut** (volledige sociale rechten). Beperkter mini-statuut alleen voor wie geboren is vóór 1956."
+        },
+        {
+          "title": "Zelfstandig helper",
+          "body": "Helpt een zelfstandige zonder loontrekkende band. Volledige bijdragen vanaf 20 jaar (of na huwelijk)."
+        },
+        {
+          "title": "Student-ondernemer",
+          "body": "Statuut sinds 2017. Combinatie hogere studies + zelfstandige activiteit. Verlaagde of geen bijdragen onder inkomensgrenzen — fiscaal ten laste blijven van ouders mogelijk binnen grenzen."
+        }
+      ]
+    },
+    {
+      "id": "h7-verplichtingen",
+      "title": "4. Verplichtingen zelfstandige",
+      "subsections": [
+        {
+          "title": "Sociale bijdragen betalen",
+          "body": "Vier voorlopige kwartaalbijdragen op basis van het nettoberoepsinkomen van **drie jaar terug**. Na definitieve aanslag volgt regularisatie. Bijdrage = procentueel op netto-bedrijfsinkomen (minimum- en maximumgrenzen)."
+        },
+        {
+          "title": "Vennootschapsbijdrage",
+          "body": "Jaarlijkse forfaitaire bijdrage voor **vennootschappen** (niet voor eenmanszaken). Bedrag afhankelijk van balanstotaal."
+        }
+      ]
+    },
+    {
+      "id": "h7-uitkeringen",
+      "title": "5. Sociale uitkeringen voor zelfstandigen",
+      "list": [
+        "**Pensioen** — leeftijds-, overlevings- en gezinspensioen",
+        "**Ziekte- en invaliditeitsverzekering** — uitkering vanaf maand 2; na 12 maanden invaliditeitsuitkering",
+        "**Moederschapsverzekering** — 12 weken moederschapsrust + dienstencheques",
+        "**Groeipakket** (kinderbijslag) — Vlaamse bevoegdheid sinds 2019",
+        "**Overbruggingsrecht** — bij faillissement, gedwongen stopzetting (brand, allergie, natuurramp): max. 12 maanden over de loopbaan, gelijk aan minimumpensioen",
+        "**Mantelzorg** — uitkering bij zorg voor zwaar zieke familieleden"
+      ]
+    }
+  ],
+  "doelstellingen": [
+    "de drie stelsels van sociale zekerheid kunnen benoemen",
+    "het onderscheid werknemer vs zelfstandige op basis van ondergeschiktheid kunnen toelichten",
+    "de statuten hoofdberoep / bijberoep / meewerkende echtgenoot / student-ondernemer kennen",
+    "weten hoe sociale bijdragen voor zelfstandigen berekend worden",
+    "de belangrijkste sociale uitkeringen voor zelfstandigen kunnen opnoemen"
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "casus-h1-fietsenwinkel",
+    "chapter": 1,
+    "title": "De fietsenwinkel in moeilijkheden",
+    "summary": "Volg Jan door de escalatie van minnelijk akkoord tot overbruggingsrecht.",
+    "exerciseId": "h1-case-1"
+  },
+  {
+    "id": "casus-h5-helios",
+    "chapter": 5,
+    "title": "BV Helios — afschrijving van een productiemachine",
+    "summary": "Lineair afschrijven, boekwaarde berekenen en de pro rata-regel voor vennootschappen toepassen.",
+    "exerciseId": "h5-case-1"
+  },
+  {
+    "id": "casus-h6-machinebouw",
+    "chapter": 6,
+    "title": "Make or buy — onderdeel A",
+    "summary": "Een machinebouwer twijfelt tussen zelf produceren of aankopen. Korte vs lange termijn afweging.",
+    "exerciseId": "h6-case-1"
+  }
+]

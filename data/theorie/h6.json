@@ -1,0 +1,110 @@
+{
+  "chapter": 6,
+  "title": "Kostprijsberekening",
+  "subtitle": "Vaste/variabele kosten, integrale en variabele kostprijsmethode",
+  "sections": [
+    {
+      "id": "h6-soorten",
+      "title": "1. Soorten kosten",
+      "lead": "Drie criteria om kosten in te delen.",
+      "list": [
+        "Volgens de **resultatenrekening** — aankopen handelsgoederen, diensten en diverse goederen, personeelskosten, afschrijvingen, andere bedrijfskosten, niet-recurrente.",
+        "Volgens **veranderlijkheid met bedrijfsdrukte** — vaste vs variabele kosten.",
+        "Volgens **toewijsbaarheid aan een product** — directe vs indirecte kosten."
+      ]
+    },
+    {
+      "id": "h6-personeel",
+      "title": "2. Personeelskosten",
+      "lead": "Bezoldigingen = lonen (arbeiders) + wedden (bedienden).",
+      "paragraphs": [
+        "Loonberekening volgt deze structuur:\n\n**Brutoloon** − RSZ werknemersbijdrage (13,07%, voor arbeiders op 108% van BL) = **Belastbaar loon** − bedrijfsvoorheffing = **Nettoloon**.",
+        "**Totale loonkost** = brutoloon + **patronale RSZ-bijdrage** (~27% bediende, ~33% arbeider) → vuistregel: totale kost ≈ brutoloon × 2.",
+        "RSZ-bijdragen moeten **per kwartaal** aan de RSZ gestort worden door de werkgever."
+      ]
+    },
+    {
+      "id": "h6-vast-var",
+      "title": "3. Vaste vs variabele kosten",
+      "subsections": [
+        {
+          "title": "Vaste kosten",
+          "body": "Ongevoelig voor wijzigingen in productiehoeveelheid (binnen capaciteitsgrens). Bv. huur, afschrijving machines, salarissen bedienden. Veranderen wel bij wijziging van capaciteit.\n\nTotaal blijft gelijk → per stuk dalend bij stijgende productie."
+        },
+        {
+          "title": "Variabele kosten",
+          "body": "Bewegen mee met de productie. Bv. grondstoffen, interim-arbeid. **Niet altijd proportioneel** (hoeveelheidskortingen, overuren). Veel kosten zijn deels vast en deels variabel (bv. GSM-abonnement + extra verbruik).\n\nTotaal stijgt → per stuk meestal constant."
+        }
+      ]
+    },
+    {
+      "id": "h6-direct-indirect",
+      "title": "4. Directe vs indirecte kosten",
+      "paragraphs": [
+        "**Directe kosten** zijn zonder probleem toewijsbaar aan een rekeneenheid (bv. grondstof, directe loonkost arbeider per product).",
+        "**Indirecte kosten** zijn niet onmiddellijk toewijsbaar (bv. directie, algemene afschrijvingen, marketing). Soms theoretisch direct te maken via extra informatie (bv. ERP-systeem) — kosten van die informatie afwegen tegen voordeel."
+      ]
+    },
+    {
+      "id": "h6-integraal",
+      "title": "5. Integrale kostprijsmethode (Full Costing)",
+      "lead": "Alle kosten worden toegewezen aan één rekeneenheid.",
+      "paragraphs": [
+        "**Waarom integraal?** Op lange termijn moet de verkoopprijs alle kosten dekken voor continuïteit. Voor jaarrekeningen moet de voorraad gewaardeerd worden.",
+        "Directe kosten altijd direct toewijzen; indirecte kosten verdelen via een methode."
+      ],
+      "subsections": [
+        {
+          "title": "Equivalentcijfermethode",
+          "body": "Voor massaproductie van vergelijkbare producten (brouwerij, bakkerij). Verhoudingscijfers per product bepalen, dan totale kost verdelen. Bv. verpakking € 30 000 voor A (1,3) · B (1) · C (1,1): 2000×1,3 + 3900×1 + 5000×1,1 = 12 000 gewogen stuks → € 2,5/gewogen stuk → A=€3,25 · B=€2,5 · C=€2,75."
+        },
+        {
+          "title": "Globale toeslagcalculatie",
+          "body": "Eén verdeelsleutel voor alle indirecte kosten (bv. metaalkost, loonkost, aantal stuks). **Snel maar minder accuraat** — verschillende sleutels leveren verschillende kostprijzen op."
+        },
+        {
+          "title": "Verfijnde toeslagcalculatie",
+          "body": "Meerdere verdeelsleutels — indirecte kosten in deelgroepen, elke groep met meest passende sleutel. **Komt dichter bij werkelijkheid**. Trade-off: kosten van extra informatie vs verbeterde besluitvorming (\"cost and value of information decision\")."
+        }
+      ],
+      "callout": "Verdeel indirecte kosten **niet volgens omzet** — populaire producten worden onterecht zwaar belast, zwakke producten onterecht ontlast."
+    },
+    {
+      "id": "h6-variabel",
+      "title": "6. Variabele kostprijsmethode",
+      "lead": "Voor kortetermijnbeslissingen — vaste kosten blijven sowieso vast.",
+      "paragraphs": [
+        "**Bruto bijdrage per stuk** = verkoopprijs − variabele kost per stuk.\n**Totale bruto bijdrage** = omzet − totale variabele kosten.\n**Winst** = totale bruto bijdrage − totale vaste kosten."
+      ],
+      "subsections": [
+        {
+          "title": "Toepassing 1 — uitzonderlijk order aannemen?",
+          "body": "Vaste kosten zijn al gemaakt. Beoordeel of de extra verkoop minstens de extra variabele kosten dekt — alles erboven is bonus voor de vaste kosten."
+        },
+        {
+          "title": "Toepassing 2 — verlieslatend product schrappen?",
+          "body": "Pas op: als de vaste kosten niet mee verminderen, vergroot je het totale verlies door het schrappen (bruto bijdrage valt weg). Enkel schrappen als je tegelijk de vaste kosten kan drukken."
+        },
+        {
+          "title": "Toepassing 3 — make or buy?",
+          "body": "Op korte termijn vergelijk je enkel **variabele kosten** zelf maken vs aankoopprijs. Op lange termijn (vaste kosten beïnvloedbaar) vergelijk je integrale kosten."
+        }
+      ]
+    },
+    {
+      "id": "h6-breakeven",
+      "title": "7. Break-even en grensprijs",
+      "paragraphs": [
+        "**Break-even hoeveelheid** = aantal stuks waarbij winst nul is. Formule: BE = vaste kosten / (verkoopprijs − variabele kost per stuk).",
+        "**Grensprijs** = verkoopprijs waaronder je beter de productie stillegt. Bestaat uit vaste kost per stuk + variabele kost per stuk. Op korte termijn nuttig — op lange termijn moet de prijs alle kosten dekken."
+      ]
+    }
+  ],
+  "doelstellingen": [
+    "vaste en variabele kosten kunnen onderscheiden en weergeven in grafiek (totaal en per stuk)",
+    "directe vs indirecte kosten kunnen identificeren",
+    "kostprijs berekenen met equivalentcijfer- en toeslagcalculatie",
+    "de bruto bijdrage gebruiken voor kortetermijnbeslissingen",
+    "break-even hoeveelheid en grensprijs berekenen"
+  ]
+}

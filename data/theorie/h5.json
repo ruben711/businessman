@@ -1,0 +1,170 @@
+{
+  "chapter": 5,
+  "title": "Boekhouding als beleidsinstrument",
+  "subtitle": "Factuur, BTW, balans, afschrijvingen en resultatenrekening",
+  "sections": [
+    {
+      "id": "h5-inleiding",
+      "title": "1. Inleiding",
+      "lead": "Boekhouden = chronologisch en systematisch verwerken van alle financiële administratie.",
+      "paragraphs": [
+        "Wettelijke plicht én onmisbaar beleidsinstrument. Elke ondernemer moet de inhoud van balans en resultatenrekening begrijpen om beleidsbeslissingen te kunnen nemen."
+      ]
+    },
+    {
+      "id": "h5-factuur",
+      "title": "2. De factuur",
+      "lead": "Verklarende nota over geleverde goederen/diensten, prijs en BTW. Opgemaakt in tweevoud.",
+      "subsections": [
+        {
+          "title": "B2C vs B2B",
+          "body": "**B2C** (Business-to-Consumer): factuur in principe niet verplicht. **B2B** (Business-to-Business): factuur **altijd verplicht** tussen belastingplichtigen. Uitzonderingen waarbij ook bij B2C een factuur vereist is: verkoop voor beroepsdoeleinden, nieuwe gebouwen, werken in onroerende staat, auto's en voertuigen, onderdelen >€125, groothandel, verkoop op afbetaling, verhuizingsdiensten."
+        },
+        {
+          "title": "Betaling — cash beperking",
+          "body": "Sinds 16 oktober 2017: max. **€ 3 000 cash** per verkoop. Bij onroerend goed sinds 2014: helemaal geen cash. Boete kan oplopen tot 10% van het ten onrechte in contanten betaalde bedrag."
+        },
+        {
+          "title": "Niet-betaling B2B/B2G",
+          "body": "Wettelijke betaaltermijn: **30 dagen** (max. 60 contractueel). Moratoire intresten lopen **automatisch** vanaf vervaldag. Wettelijke intrestvoet voor betalingsachterstand 2021: **8%**. Schadevergoeding € 40 + eventueel forfaitair 10%."
+        },
+        {
+          "title": "Niet-betaling B2C",
+          "body": "Contractuele vrijheid. Zonder verkoopsvoorwaarden eerst officieel in gebreke stellen. Wettelijke intrestvoet B2C 2021: **1,75%**."
+        }
+      ]
+    },
+    {
+      "id": "h5-maatstaf",
+      "title": "3. Maatstaf van Heffing",
+      "lead": "Het bedrag waarop de BTW wordt berekend.",
+      "paragraphs": [
+        "Formule: PRIJS − commerciële korting + vervoerkosten + verzekeringskosten + commissies + verloren verpakking = SUBTOTAAL. SUBTOTAAL − financiële korting = **Maatstaf van Heffing**. + BTW op MvH + terugstuurbare verpakking = te betalen factuurbedrag.",
+        "**Commerciële korting** (onvoorwaardelijk): hoeveelheidskorting, soldenkorting, trouwe klantenkorting. **Financiële korting**: bij contante betaling — verlaagt MvH ongeacht of de klant effectief contant betaalt; moet **afzonderlijk** op de factuur staan.",
+        "**Verloren verpakking** zit in MvH; **terugstuurbare verpakking** (waarborg op leeggoed) NOOIT.",
+        "MvH wordt **per BTW-tarief afzonderlijk** berekend."
+      ]
+    },
+    {
+      "id": "h5-creditnota",
+      "title": "4. De creditnota",
+      "paragraphs": [
+        "Document dat de verkoper opmaakt als te veel aangerekend werd (rekenfout, verkeerde levering, kwaliteitsgebrek). Vermindert de oorspronkelijke factuur en heeft **dezelfde structuur**. Eén uitzondering: **vervoerskosten worden nooit gerecupereerd**, tenzij de volledige lading teruggestuurd wordt. Verwijs altijd naar de oorspronkelijke factuur."
+      ]
+    },
+    {
+      "id": "h5-btw",
+      "title": "5. BTW",
+      "lead": "Belasting over Toegevoegde Waarde — indirecte verbruiksbelasting.",
+      "paragraphs": [
+        "BTW is een **feitenbelasting**: elke verkoop apart geëvalueerd. Eindconsument draagt de belasting, maar bedrijven innen en storten door (gefractioneerde betaling).",
+        "**Neutraliteitsbeginsel**: BTW is kostenneutraal voor bedrijven via het **recht op aftrek** — terug te vorderen BTW op aankopen wordt afgetrokken van verschuldigde BTW op verkopen.",
+        "**Toegevoegde waarde** = verschil tussen aanschafprijs en verkoopprijs in de bedrijfskolom."
+      ],
+      "subsections": [
+        {
+          "title": "BTW-belastingplichtigen MET recht op aftrek",
+          "body": "**Gewone belastingplichtige**: maand- of kwartaalaangifte (kwartaal mogelijk als omzet ≤ € 2 500 000). **Forfaitaire belastingplichtige** (kappers, slagers, bakkers…): omzet bepaald via aankopen. Uitdovend: niet meer voor nieuwe inschrijvingen vanaf 1/1/2022."
+        },
+        {
+          "title": "BTW-belastingplichtigen ZONDER recht op aftrek",
+          "body": "**Vrijgestelde kleine ondernemingen** (jaaromzet ≤ € 25 000) — geen BTW aanrekenen, geen BTW aftrekken. **Forfaitaire landbouwer**. **Vrijgestelde belastingplichtigen** (art. 44: socio-cultureel, financieel, medisch). **Niet-belastingplichtige rechtspersonen** (overheid)."
+        },
+        {
+          "title": "Vrijgestelde handelingen",
+          "body": "**BTW medecontractant** (binnenlands): factuur 'BTW verlegd'. **Intracommunautaire levering** (ICL): naar EU-lidstaat. **Uitvoer** (buiten EU). Koper-belastingplichtige doet BTW dubbel aangeven (aftrekbaar én verschuldigd) — nuloperatie, geen prefinanciering."
+        },
+        {
+          "title": "BTW-tarieven België",
+          "body": "**21% normaal tarief**. **12%** o.a. margarine, bepaalde steenkool. **6%** o.a. levende dieren, vlees, eieren, honing, groenten, dierenvoeder, meststoffen, natuurlijk water. **0%** o.a. dagbladen, weekbladen, oud papier."
+        },
+        {
+          "title": "Recht op aftrek — voorwaarden",
+          "body": "Belgische BTW · beroepsuitgaven · regelmatige factuur (geen kasticket of visa-afschrift)."
+        },
+        {
+          "title": "Beperkingen recht op aftrek",
+          "body": "**Personenwagens**: max. **50%** aftrekbaar (aankoop, brandstof, onderhoud, leasing, vaste GPS). **Hotel- en restaurantkosten**: niet aftrekbaar. **Handelsgeschenken** ≥ € 50: niet aftrekbaar; één per klant per jaar."
+        }
+      ],
+      "callout": "BTW uit een prijs incl. BTW halen: deel door 1,21. Bv. € 1 499 / 1,21 = € 1 238,84 excl. BTW; BTW = € 260,16."
+    },
+    {
+      "id": "h5-balans",
+      "title": "6. De balans",
+      "lead": "Momentopname van bezittingen (actief) en financieringsmiddelen (passief).",
+      "paragraphs": [
+        "**Actief** (werkmiddelen, links): oprichtingskosten, vaste activa (immateriële, materiële, financiële), vlottende activa (vorderingen, voorraden, geldbeleggingen, liquide middelen, overlopende rekeningen).",
+        "**Passief** (financiering, rechts): eigen vermogen (inbreng, herwaarderingen, reserves, overgedragen winst, kapitaalsubsidies), voorzieningen, vreemd vermogen (> 1 jaar en ≤ 1 jaar), overlopende rekeningen.",
+        "**Totaal actief = totaal passief** — de balans is altijd in evenwicht. Eigen vermogen = schuld van de onderneming aan de ondernemer."
+      ]
+    },
+    {
+      "id": "h5-afschrijvingen",
+      "title": "7. Afschrijvingen",
+      "lead": "Spreiding van investeringskosten over de gebruiksduur.",
+      "paragraphs": [
+        "Een **investering** is een uitgave > € 1 000 (excl. BTW) aan een bedrijfsmiddel dat langer dan één productieproces meegaat. Boekhoudkundig: uitgave maar geen kost.",
+        "Twee slijtages: **werkelijke** (slijpschijf na 3 jaar versleten) en **economische** (computer achterhaald).",
+        "Vuistregels percentages: kantoor- of handelsgebouw 3% · nijverheidsgebouw 5% · winkeluitrusting/machines/meubilair 10% · auto's 20% · informatica 20–33%. **Terreinen, voorraden, effecten en vorderingen worden niet afgeschreven**."
+      ],
+      "subsections": [
+        {
+          "title": "Lineaire methode",
+          "body": "Elk jaar hetzelfde bedrag: **a = (AW − RW) / n**. AW = aanschaffingswaarde, RW = restwaarde (meestal 0), n = levensduur. Eenvoudigste en meest gebruikte methode."
+        },
+        {
+          "title": "Degressieve methode",
+          "body": "Vast percentage op de **boekwaarde**. Enkel voor eenmanszaken. Niet voor personenwagens en immateriële vaste activa. Percentage ≤ 2× lineaire afschrijving. Max. 40% van AW in het eerste jaar. Overstap naar lineair zodra degressief bedrag kleiner wordt. Aanvraag bij fiscus vereist."
+        },
+        {
+          "title": "Volgens prestaties",
+          "body": "Afschrijving in functie van werkelijke aanwending. Vaak voor rollend materieel. Bv. heftruck van € 25 000 over 20 000 uren = € 1,25/uur."
+        },
+        {
+          "title": "Pro rata in jaar van aankoop",
+          "body": "**Eenmanszaak**: volledig jaarbedrag, ongeacht aankoopdatum. **Vennootschap** (sinds 2020): pro rata — slechts deel van het jaar in verhouding tot de duur. Bv. aankoop 1 april, jaarafschrijving € 2 000 → 9/12 × 2 000 = € 1 500."
+        }
+      ]
+    },
+    {
+      "id": "h5-resultaten",
+      "title": "8. De resultatenrekening",
+      "lead": "Overzicht van opbrengsten en kosten over een periode.",
+      "paragraphs": [
+        "Twee deelresultaten: **bedrijfsresultaat** (uit beroepsactiviteit) en **financieel resultaat** (intresten, bankkosten).",
+        "Aftrekbare onkosten moeten: noodzakelijk zijn en verband houden met de beroepsactiviteit · gedaan in de periode · gericht op het verkrijgen, behouden of verhogen van het belastbaar inkomen. Bewijs via factuur."
+      ],
+      "subsections": [
+        {
+          "title": "Bedrijfsopbrengsten",
+          "body": "Verkoopfacturen + winkelverkopen − uitgaande creditnota's (alles excl. BTW)."
+        },
+        {
+          "title": "Bedrijfskosten",
+          "body": "Aankopen − inkomende creditnota's, voorraadwijzigingen (BV − EV), huur, onderhoud, leveringen, verzekeringen, vervoer, telefoon/internet, publiciteit, personeel + sociale lasten, afschrijvingen."
+        },
+        {
+          "title": "Financieel resultaat",
+          "body": "Opbrengsten: intresten op zicht-/spaarrekening, dividenden, financiële kortingen ontvangen. Kosten: intresten op leningen, financiële kortingen toegekend, bankkosten."
+        }
+      ]
+    },
+    {
+      "id": "h5-cashflow",
+      "title": "9. Cashflow",
+      "paragraphs": [
+        "**Cashflow = inkomende geldstroom − uitgaande geldstroom**. Een uitgave is niet hetzelfde als een kost (afschrijvingen, voorzieningen).",
+        "Belangrijk: ook bij winst kunnen er **kastekorten** zijn — een liquiditeitsplan toont dit."
+      ]
+    }
+  ],
+  "doelstellingen": [
+    "het verschil B2B / B2C in factuurplicht kennen",
+    "de maatstaf van heffing correct kunnen opstellen",
+    "het principe van BTW-aftrek begrijpen",
+    "de structuur van balans en resultatenrekening kunnen toelichten",
+    "lineair, degressief en op basis van prestaties kunnen afschrijven",
+    "het onderscheid kost vs uitgave maken bij cashflow"
+  ]
+}

@@ -1,0 +1,574 @@
+[
+  {
+    "id": "h1-mc-1", "chapter": 1, "difficulty": "basis", "tags": ["onderneming","definitie"], "type": "mc",
+    "question": "Welke organisatie valt NIET onder het begrip 'onderneming' volgens artikel I.1,1° WER?",
+    "options": ["Een eenmanszaak","Een VZW","Een feitelijke vereniging zoals een carnavalsvereniging","Een maatschap die winst uitkeert"],
+    "correctIndex": 2,
+    "explanation": "Feitelijke verenigingen vallen uitdrukkelijk buiten de definitie. VZW's en maatschappen die winst uitkeren wel."
+  },
+  {
+    "id": "h1-tf-1", "chapter": 1, "difficulty": "basis", "tags": ["voorwaarden"], "type": "tf",
+    "question": "In Vlaanderen moet je een attest bedrijfsbeheer kunnen voorleggen om een zaak te starten.",
+    "correct": false,
+    "explanation": "Niet meer sinds 2018 — enkel in Wallonië en Brussel is dit nog vereist."
+  },
+  {
+    "id": "h1-tf-2", "chapter": 1, "difficulty": "basis", "tags": ["faillissement"], "type": "tf",
+    "question": "Een ondernemer is failliet zodra hij verlies maakt.",
+    "correct": false,
+    "explanation": "Fout. Pas wanneer hij zijn betalingen gestaakt heeft én zijn krediet geschokt is (en het een onderneming betreft) is er sprake van faillissement."
+  },
+  {
+    "id": "h1-mc-2", "chapter": 1, "difficulty": "midden", "tags": ["verplichtingen","RPR"], "type": "mc",
+    "question": "Welke onderneming moet zich NIET inschrijven in het rechtspersonenregister (RPR)?",
+    "options": ["Een BV","Een NV","Een VZW","Een eenmanszaak"],
+    "correctIndex": 3,
+    "explanation": "Een eenmanszaak is geen rechtspersoon en wordt dus niet ingeschreven in het RPR (wel in de KBO)."
+  },
+  {
+    "id": "h1-open-1", "chapter": 1, "difficulty": "basis", "tags": ["KBO"], "type": "open",
+    "question": "Waarvoor staat de afkorting KBO?",
+    "accept": ["kruispuntbank van ondernemingen","kruispuntbank ondernemingen"],
+    "explanation": "Kruispuntbank van Ondernemingen — ter vervanging van het vroegere Handelsregister."
+  },
+  {
+    "id": "h1-open-2", "chapter": 1, "difficulty": "midden", "tags": ["UBO"], "type": "open",
+    "question": "Waarvoor staat UBO in het UBO-register?",
+    "accept": ["ultimate beneficial owner","ultimate beneficial owners","uiteindelijk begunstigde","uiteindelijke begunstigden"],
+    "explanation": "Ultimate Beneficial Owner — de uiteindelijke begunstigde van een vennootschap of juridische entiteit."
+  },
+  {
+    "id": "h1-mc-3", "chapter": 1, "difficulty": "midden", "tags": ["huwelijk"], "type": "mc",
+    "question": "Welk huwelijksstelsel wordt voor ondernemers vaak aangeraden?",
+    "options": ["Wettelijk stelsel","Scheiding van goederen","Algehele gemeenschap van goederen","Feitelijk samenwonen"],
+    "correctIndex": 1,
+    "explanation": "Bij scheiding van goederen kunnen schuldeisers enkel de ondernemende partner aanspreken — de andere partner blijft buiten schot."
+  },
+  {
+    "id": "h1-tf-3", "chapter": 1, "difficulty": "midden", "tags": ["huwelijk","wettelijk stelsel"], "type": "tf",
+    "question": "Onder het wettelijk stelsel blijven erfenissen en schenkingen tijdens het huwelijk persoonlijk.",
+    "correct": true,
+    "explanation": "Correct — wat je tijdens het huwelijk verwerft is in principe gemeenschappelijk, maar erfenissen en schenkingen vormen een uitzondering."
+  },
+  {
+    "id": "h1-mc-4", "chapter": 1, "difficulty": "diepgang", "tags": ["faillissement","voorwaarden"], "type": "mc",
+    "question": "Welke combinatie van voorwaarden moet voldaan zijn vooraleer een onderneming failliet verklaard kan worden?",
+    "options": ["Verlies maken én personeel ontslagen hebben","Het betreft een onderneming, betalingen zijn gestaakt, krediet is geschokt","Niet langer BTW kunnen betalen én geen omzet hebben","Schulden hebben bij minstens drie schuldeisers"],
+    "correctIndex": 1,
+    "explanation": "De drie wettelijke voorwaarden: (1) het is een onderneming, (2) betalingen zijn gestaakt, (3) krediet is geschokt."
+  },
+  {
+    "id": "h1-tf-4", "chapter": 1, "difficulty": "diepgang", "tags": ["verschoning"], "type": "tf",
+    "question": "Ook een vennootschap kan verschoonbaar worden verklaard na een faillissement.",
+    "correct": false,
+    "explanation": "Een vennootschap is een rechtspersoon en kan niet verschoond worden — na faillissement volgt de ontbinding. Enkel natuurlijke personen kunnen verschoond worden via Regsol."
+  },
+  {
+    "id": "h1-open-3", "chapter": 1, "difficulty": "diepgang", "tags": ["overbruggingsrecht"], "type": "open",
+    "question": "Maximaal hoeveel maanden uitkering biedt het overbruggingsrecht over je volledige loopbaan?",
+    "accept": ["12","12 maanden","twaalf maanden","twaalf"],
+    "explanation": "Maximum 12 maanden — gelijk aan het minimumpensioen voor zelfstandigen."
+  },
+  {
+    "id": "h1-order-1", "chapter": 1, "difficulty": "midden", "tags": ["verplichtingen","volgorde"], "type": "order",
+    "question": "Zet de typische opstartstappen in juiste volgorde.",
+    "items": [
+      "Een naam kiezen voor de onderneming",
+      "Een zichtrekening openen op naam van de onderneming",
+      "Inschrijven bij de KBO via een erkend ondernemingsloket",
+      "BTW-nummer activeren en BTW-stelsel kiezen",
+      "Aansluiten bij sociaal verzekeringsfonds en ziekenfonds"
+    ],
+    "explanation": "Eerst naam → zichtrekening → KBO → BTW → sociaal verzekeringsfonds/ziekenfonds."
+  },
+  {
+    "id": "h1-match-1", "chapter": 1, "difficulty": "midden", "tags": ["begrippen"], "type": "match",
+    "question": "Match elk begrip met de juiste omschrijving.",
+    "pairs": [
+      { "left": "RPR", "right": "Register voor rechtspersonen, gekoppeld aan de griffie" },
+      { "left": "KBO", "right": "Centraal ondernemingsregister, vervanger Handelsregister" },
+      { "left": "UBO", "right": "Register van uiteindelijke begunstigden van een vennootschap" },
+      { "left": "Regsol", "right": "Centraal Register Solvabiliteit voor faillissementsdossiers" }
+    ],
+    "explanation": "RPR — rechtspersonen; KBO — alle ondernemingen; UBO — eigenaars; Regsol — faillissementen."
+  },
+  {
+    "id": "h1-cloze-1", "chapter": 1, "difficulty": "midden", "tags": ["merk"], "type": "cloze",
+    "question": "Vul de zin aan over merkbescherming.",
+    "text": "Een merk wordt gedeponeerd bij het {{0}}-Bureau voor Intellectuele Eigendom. De beschermingsduur is {{1}} jaar, telkens verlengbaar.",
+    "blanks": [{ "accept": ["benelux"] },{ "accept": ["10","tien"] }],
+    "explanation": "Benelux-Bureau, beschermingsduur van 10 jaar."
+  },
+  {
+    "id": "h1-case-1", "chapter": 1, "difficulty": "diepgang", "tags": ["casus","onderneming in moeilijkheden"], "type": "case",
+    "context": "Jan baat sinds vijf jaar een fietsenwinkel uit als eenmanszaak in Kortrijk. Door Aliexpress-concurrentie en een grote klant die failliet ging met €25 000 openstaande facturen kan hij zijn leveranciers niet meer betalen. Zijn bank heeft de kaskredietlijn ingetrokken.",
+    "question": "Welke opties heeft Jan, in volgorde van escalatie?",
+    "steps": [
+      { "prompt": "Stap 1 — Welke informele optie heeft Jan om zijn schuldenlast aan te pakken zonder onmiddellijk naar de rechtbank te stappen?",
+        "modelAnswer": "Een minnelijk akkoord met zijn schuldeisers, eventueel met hulp van een ondernemingsbemiddelaar. Geen vormvoorwaarden. Akkoord met minstens 2 schuldeisers, neergelegd in Regsol." },
+      { "prompt": "Stap 2 — Welke gerechtelijke procedure biedt bescherming tegen schuldeisers?",
+        "modelAnswer": "Gerechtelijke reorganisatie (GRP) bij de ondernemingsrechtbank. Vanaf neerlegging niet meer failliet verklaarbaar (tenzij eigen aangifte). Opschorting in regel 6 maanden." },
+      { "prompt": "Stap 3 — Welke drie voorwaarden moeten cumulatief vervuld zijn voor een faillietverklaring?",
+        "modelAnswer": "(1) Onderneming, (2) betalingen gestaakt, (3) krediet geschokt." },
+      { "prompt": "Stap 4 — Heeft Jan recht op een tweede kans?",
+        "modelAnswer": "Ja — als eenmanszaak (natuurlijke persoon) kan hij eenmalig verschoond worden via Regsol indien geen fout. Vennootschappen niet → ontbinding." },
+      { "prompt": "Stap 5 — Welke uitkering kan hij aanvragen?",
+        "modelAnswer": "Overbruggingsrecht via sociaal verzekeringsfonds: behoud rechten 4 kwartalen + maandelijkse uitkering = minimumpensioen, max. 12 maanden over de loopbaan." }
+    ],
+    "explanation": "Escalatie: minnelijk akkoord → gerechtelijke reorganisatie → faillissement (+ verschoning) → overbruggingsrecht."
+  },
+  {
+    "id": "h1-mc-5", "chapter": 1, "difficulty": "basis", "tags": ["KBO","ondernemingsloket"], "type": "mc",
+    "question": "Via welk type organisatie schrijf je je in bij de KBO?",
+    "options": ["De griffie van de ondernemingsrechtbank","Een erkend ondernemingsloket (Securex, Liantis, Acerta…)","Het Benelux-Bureau voor Intellectuele Eigendom","Het lokale gemeentehuis"],
+    "correctIndex": 1,
+    "explanation": "Inschrijving via erkend ondernemingsloket — privé-VZW's erkend door de overheid."
+  },
+  {
+    "id": "h1-tf-5", "chapter": 1, "difficulty": "basis", "tags": ["zichtrekening"], "type": "tf",
+    "question": "Het rekeningnummer en de bank moeten op alle handelsdocumenten (factuur, brief, bestelbon) staan.",
+    "correct": true,
+    "explanation": "Bij niet-naleving zijn er sancties en kunnen geen verwijlinteresten geëist worden."
+  },
+
+  {
+    "id": "h2-mc-1", "chapter": 2, "difficulty": "basis", "tags": ["eenmanszaak"], "type": "mc",
+    "question": "Wat is een belangrijk NADEEL van een eenmanszaak?",
+    "options": ["Verplicht financieel plan","Onbeperkte en hoofdelijke aansprakelijkheid","Hoge oprichtingskosten","Verplichte algemene vergadering"],
+    "correctIndex": 1,
+    "explanation": "Privé- en zakenvermogen zijn niet gescheiden — schuldeisers kunnen het volledige privé-vermogen aanspreken."
+  },
+  {
+    "id": "h2-tf-1", "chapter": 2, "difficulty": "basis", "tags": ["eenmanszaak","minimumkapitaal"], "type": "tf",
+    "question": "Voor de oprichting van een eenmanszaak is geen wettelijk minimumkapitaal vereist.",
+    "correct": true,
+    "explanation": "De ondernemer brengt zelf het nodige kapitaal in zonder wettelijk minimum."
+  },
+  {
+    "id": "h2-mc-2", "chapter": 2, "difficulty": "midden", "tags": ["BV","kenmerken"], "type": "mc",
+    "question": "Wat is het minimumkapitaal voor de oprichting van een BV?",
+    "options": ["€ 18 550","€ 61 500","Geen wettelijk minimum, maar wel toereikend aanvangsvermogen","€ 100 000"],
+    "correctIndex": 2,
+    "explanation": "Sinds het WVV: geen wettelijk minimum, wél voldoende aanvangsvermogen voor 2 jaar werking. Financieel plan verplicht."
+  },
+  {
+    "id": "h2-mc-3", "chapter": 2, "difficulty": "midden", "tags": ["NV","kapitaal"], "type": "mc",
+    "question": "Wat is het minimumkapitaal voor een NV?",
+    "options": ["€ 18 550","€ 61 500","€ 100 000","Geen wettelijk minimum"],
+    "correctIndex": 1,
+    "explanation": "NV vereist minimum € 61 500 oprichtingskapitaal, volledig volstort bij oprichting."
+  },
+  {
+    "id": "h2-tf-2", "chapter": 2, "difficulty": "midden", "tags": ["maatschap"], "type": "tf",
+    "question": "Een maatschap heeft rechtspersoonlijkheid.",
+    "correct": false,
+    "explanation": "De maatschap is de enige vorm zónder rechtspersoonlijkheid — vennoten zijn onbeperkt aansprakelijk en de maatschap kan zelf niet in rechte optreden."
+  },
+  {
+    "id": "h2-open-1", "chapter": 2, "difficulty": "midden", "tags": ["WVV","vennootschapsvormen"], "type": "open",
+    "question": "Hoeveel vennootschappen MET rechtspersoonlijkheid kent het WVV?",
+    "accept": ["5","vijf"],
+    "explanation": "Vijf: VOF, CommV, BV, CV en NV."
+  },
+  {
+    "id": "h2-mc-4", "chapter": 2, "difficulty": "diepgang", "tags": ["oprichtersaansprakelijkheid"], "type": "mc",
+    "question": "Wanneer kan een oprichter persoonlijk aansprakelijk gesteld worden voor de schulden van zijn BV?",
+    "options": ["Altijd, ook bij beperkte aansprakelijkheid","Bij faillissement binnen 3 jaar na oprichting met ontoereikend aanvangsvermogen","Bij elk faillissement, ongeacht datum","Enkel bij faillissement binnen 1 jaar"],
+    "correctIndex": 1,
+    "explanation": "De oprichtersaansprakelijkheid wordt geactiveerd als de vennootschap binnen 3 jaar na oprichting failliet gaat en uit het financieel plan blijkt dat het aanvangsvermogen duidelijk ontoereikend was voor twee jaar normale werking."
+  },
+  {
+    "id": "h2-match-1", "chapter": 2, "difficulty": "midden", "tags": ["vormen"], "type": "match",
+    "question": "Match de vennootschapsvorm met haar aansprakelijkheid.",
+    "pairs": [
+      { "left": "BV", "right": "Beperkte aansprakelijkheid, geen wettelijk minimumkapitaal" },
+      { "left": "NV", "right": "Beperkte aansprakelijkheid, minimumkapitaal € 61 500" },
+      { "left": "VOF", "right": "Onbeperkt en hoofdelijk aansprakelijk, met rechtspersoonlijkheid" },
+      { "left": "Maatschap", "right": "Onbeperkt aansprakelijk, ZONDER rechtspersoonlijkheid" }
+    ],
+    "explanation": "BV/NV/CV = beperkt; VOF/CommV = onbeperkt mét rechtspersoon; Maatschap = onbeperkt zonder rechtspersoon."
+  },
+  {
+    "id": "h2-tf-3", "chapter": 2, "difficulty": "midden", "tags": ["fiscaliteit"], "type": "tf",
+    "question": "Het basistarief van de vennootschapsbelasting bedraagt 25%.",
+    "correct": true,
+    "explanation": "25% basistarief; KMO's kunnen een verlaagd tarief van 20% genieten op de eerste schijf van € 100 000."
+  },
+  {
+    "id": "h2-open-2", "chapter": 2, "difficulty": "midden", "tags": ["BVBA","BV"], "type": "open",
+    "question": "Wat was de vroegere naam van de BV?",
+    "accept": ["bvba","besloten vennootschap met beperkte aansprakelijkheid"],
+    "explanation": "BVBA — Besloten Vennootschap met Beperkte Aansprakelijkheid. Sinds het WVV (2019) heet ze BV."
+  },
+  {
+    "id": "h2-cloze-1", "chapter": 2, "difficulty": "diepgang", "tags": ["personenbelasting"], "type": "cloze",
+    "question": "Vul aan: fiscaal verschil eenmanszaak vs vennootschap.",
+    "text": "De winst van een eenmanszaak wordt belast onder de {{0}}, met tarieven tot {{1}}%. De winst van een vennootschap wordt belast onder de vennootschapsbelasting met basistarief {{2}}%.",
+    "blanks": [{ "accept": ["personenbelasting","pb"] },{ "accept": ["50"] },{ "accept": ["25"] }],
+    "explanation": "PB tot 50% vs vennootschapsbelasting 25% (20% verlaagd voor KMO's)."
+  },
+
+  {
+    "id": "h3-mc-1", "chapter": 3, "difficulty": "basis", "tags": ["eigen vermogen"], "type": "mc",
+    "question": "Waar verschijnt het eigen vermogen op de balans?",
+    "options": ["Aan de actiefzijde","Aan de passiefzijde","Onder vlottende activa","Onder overlopende rekeningen"],
+    "correctIndex": 1,
+    "explanation": "Eigen vermogen staat aan de passiefzijde — het is een schuld van de onderneming aan de ondernemer."
+  },
+  {
+    "id": "h3-tf-1", "chapter": 3, "difficulty": "basis", "tags": ["kaskrediet","intrest"], "type": "tf",
+    "question": "Bij een kaskrediet betaal je enkel intrest op het effectief opgenomen bedrag.",
+    "correct": true,
+    "explanation": "Klopt — alleen op de werkelijke debetstand, plus een kwartaalcommissie."
+  },
+  {
+    "id": "h3-mc-2", "chapter": 3, "difficulty": "midden", "tags": ["leasing"], "type": "mc",
+    "question": "Wanneer spreekt men van operationele leasing?",
+    "options": ["Aankoopoptie ≤ 5%","Aankoopoptie ≤ 15%","Aankoopoptie > 15%","Bij elke leasing van vastgoed"],
+    "correctIndex": 2,
+    "explanation": "Aankoopoptie > 15% → boekhoudkundig als huur (klasse 6). Onder 15% → financiële leasing, activeren op balans."
+  },
+  {
+    "id": "h3-tf-2", "chapter": 3, "difficulty": "midden", "tags": ["leasing","eigendom"], "type": "tf",
+    "question": "Bij leasing verwerf je onmiddellijk het eigendomsrecht over het geleasde goed.",
+    "correct": false,
+    "explanation": "Je krijgt enkel het gebruiksrecht — de leasingmaatschappij blijft eigenaar (vandaar een klever op het goed)."
+  },
+  {
+    "id": "h3-mc-3", "chapter": 3, "difficulty": "midden", "tags": ["hypotheek","mandaat"], "type": "mc",
+    "question": "Een hypothecair mandaat (volmacht) kost ongeveer hoeveel ten opzichte van een echte hypotheek?",
+    "options": ["Even duur","De helft","1/3 van de prijs","Het dubbele"],
+    "correctIndex": 2,
+    "explanation": "1/3: geen hypotheekrechten, € 25 registratie, 1/4 ereloon notaris. Lagere zekerheid voor de bank."
+  },
+  {
+    "id": "h3-open-1", "chapter": 3, "difficulty": "midden", "tags": ["winwinlening","maximum"], "type": "open",
+    "question": "Wat is het maximum aan totale Winwinleningen dat één kredietnemer kan ontvangen?",
+    "accept": ["300000","300 000","300.000","€ 300.000","€300000","driehonderdduizend"],
+    "explanation": "€ 300 000 totaal, met max. € 75 000 per kredietgever."
+  },
+  {
+    "id": "h3-mc-4", "chapter": 3, "difficulty": "diepgang", "tags": ["crowdfunding"], "type": "mc",
+    "question": "Welk soort crowdfunding levert geen financiële return op aan investeerders?",
+    "options": ["Crowdlending","Equity crowdfunding","Donation-based crowdfunding","Geen enkele"],
+    "correctIndex": 2,
+    "explanation": "Bij donation-based crowdfunding is er geen dividend of intrest — eventueel wel een voordeel in natura (bv. De Halve Maan: levenslang gratis bier)."
+  },
+  {
+    "id": "h3-tf-3", "chapter": 3, "difficulty": "diepgang", "tags": ["taxshelter"], "type": "tf",
+    "question": "Via de taxshelter voor starters kan een particulier maximum € 100 000 per jaar investeren.",
+    "correct": true,
+    "explanation": "Max. € 100 000 per investeerder per jaar; onderneming mag tot € 250 000 ophalen; aandelen minstens 4 jaar aanhouden."
+  },
+  {
+    "id": "h3-order-1", "chapter": 3, "difficulty": "midden", "tags": ["aflossing"], "type": "order",
+    "question": "Zet deze aflossingsvormen op volgorde van hoogste totale intrestkost (eerst) naar laagste.",
+    "items": [
+      "Bullet / overbruggingskrediet (enkel intrest tijdens looptijd)",
+      "Constante aflossing (vaste annuïteit)",
+      "Degressieve aflossing (vast kapitaaldeel)"
+    ],
+    "explanation": "Bullet: kapitaal blijft volledig uitstaan → meeste intrest. Constante annuïteit: gemiddelde. Degressieve aflossing: minst, omdat kapitaal sneller daalt."
+  },
+  {
+    "id": "h3-cloze-1", "chapter": 3, "difficulty": "midden", "tags": ["leasing","klever"], "type": "cloze",
+    "question": "Vul aan: leasing en eigendom.",
+    "text": "Bij leasing blijft het goed eigendom van de {{0}}; de lessee krijgt enkel het {{1}}.",
+    "blanks": [{ "accept": ["lessor","leasinggever","leasing-maatschappij","leasingmaatschappij"] },{ "accept": ["gebruiksrecht","gebruik"] }],
+    "explanation": "Lessor = juridisch eigenaar; lessee = gebruiksrecht."
+  },
+
+  {
+    "id": "h4-mc-1", "chapter": 4, "difficulty": "basis", "tags": ["verzekering","verplicht"], "type": "mc",
+    "question": "Welke van deze verzekeringen is WETTELIJK VERPLICHT voor elke voertuigeigenaar?",
+    "options": ["Hospitalisatieverzekering","BA Auto","Rechtsbijstand","Brandverzekering"],
+    "correctIndex": 1,
+    "explanation": "BA Auto is verplicht voor élk voertuig — dekt schade aan derden + lichamelijke schade aan inzittenden behalve de bestuurder."
+  },
+  {
+    "id": "h4-tf-1", "chapter": 4, "difficulty": "basis", "tags": ["BA auto","bestuurder"], "type": "tf",
+    "question": "De BA Auto dekt ook de lichamelijke schade van de bestuurder zelf.",
+    "correct": false,
+    "explanation": "Net niet — alle inzittenden zijn gedekt, behalve de bestuurder. Daarvoor heb je een aanvullende bestuurdersverzekering nodig."
+  },
+  {
+    "id": "h4-mc-2", "chapter": 4, "difficulty": "midden", "tags": ["VAPZ"], "type": "mc",
+    "question": "Hoeveel procent van je netto-bedrijfsinkomen mag je jaarlijks in VAPZ storten?",
+    "options": ["3,5%","8,17%","13,07%","25%"],
+    "correctIndex": 1,
+    "explanation": "Tot 8,17% — fiscaal aftrekbaar als beroepskost (dubbel voordeel: lagere belastingen + lagere sociale bijdragen)."
+  },
+  {
+    "id": "h4-tf-2", "chapter": 4, "difficulty": "midden", "tags": ["BA brand","brandverzekering"], "type": "tf",
+    "question": "BA Brand en Ontploffing is hetzelfde als een gewone brandverzekering.",
+    "correct": false,
+    "explanation": "BA Brand dekt aansprakelijkheid voor lichamelijke en stoffelijke schade aan derden (verplicht voor o.a. horeca > 50 m², kleinhandel > 1000 m², dancings). Brandverzekering dekt het eigen gebouw en de inboedel."
+  },
+  {
+    "id": "h4-mc-3", "chapter": 4, "difficulty": "midden", "tags": ["gewaarborgd inkomen"], "type": "mc",
+    "question": "Wanneer begint een wettelijke uitkering bij arbeidsongeschiktheid voor een zelfstandige?",
+    "options": ["Vanaf de eerste dag","Pas na 1 maand","Pas na 3 maanden","Pas na 1 jaar"],
+    "correctIndex": 1,
+    "explanation": "Pas na 1 maand én enkel bij volledige werkonbekwaamheid. Een verzekering gewaarborgd inkomen vult dat aan."
+  },
+  {
+    "id": "h4-open-1", "chapter": 4, "difficulty": "midden", "tags": ["risicogebieden"], "type": "open",
+    "question": "Hoeveel risicogebieden onderscheiden we als ondernemer?",
+    "accept": ["3","drie"],
+    "explanation": "Drie: persoonlijke risico's, aansprakelijkheidsrisico's, bedrijfsschaderisico's."
+  },
+  {
+    "id": "h4-match-1", "chapter": 4, "difficulty": "diepgang", "tags": ["verzekeringen"], "type": "match",
+    "question": "Match elk risico met de juiste verzekering.",
+    "pairs": [
+      { "left": "Auto-ongeval met bedrijfsvoertuig", "right": "BA Auto" },
+      { "left": "Werknemer breekt been op het werk", "right": "Arbeidsongevallenverzekering" },
+      { "left": "Brand vernielt machines, productie ligt stil", "right": "Verzekering bedrijfsschade" },
+      { "left": "Defecte vaatwasser veroorzaakt schade bij klant na levering", "right": "BA na levering" }
+    ],
+    "explanation": "BA Auto (verplicht), arbeidsongevallen (verplicht werkgever), bedrijfsschade dekt omzetdaling, BA na levering dekt schade na de verkoop."
+  },
+  {
+    "id": "h4-tf-3", "chapter": 4, "difficulty": "diepgang", "tags": ["beroepsaansprakelijkheid"], "type": "tf",
+    "question": "Een architect is verplicht een beroepsaansprakelijkheidsverzekering af te sluiten.",
+    "correct": true,
+    "explanation": "Bij wet verplicht voor o.a. architect, landmeter, reisorganisator en aannemer van overheidsopdrachten."
+  },
+
+  {
+    "id": "h5-mc-1", "chapter": 5, "difficulty": "basis", "tags": ["BTW","tarief"], "type": "mc",
+    "question": "Wat is het normaal BTW-tarief in België?",
+    "options": ["6%","12%","21%","25%"],
+    "correctIndex": 2,
+    "explanation": "21% is het normaal tarief; 6% en 12% zijn verlaagde tarieven voor specifieke goederen/diensten."
+  },
+  {
+    "id": "h5-tf-1", "chapter": 5, "difficulty": "basis", "tags": ["BTW","kostenneutraal"], "type": "tf",
+    "question": "BTW is in principe een kost voor de eindconsument, niet voor de onderneming.",
+    "correct": true,
+    "explanation": "Neutraliteitsbeginsel: bedrijven recupereren betaalde BTW via het recht op aftrek; enkel de consument draagt de belasting effectief."
+  },
+  {
+    "id": "h5-open-1", "chapter": 5, "difficulty": "basis", "tags": ["BTW","afkorting"], "type": "open",
+    "question": "Waar staat BTW voor?",
+    "accept": ["belasting over toegevoegde waarde","belasting op de toegevoegde waarde"],
+    "explanation": "Belasting over Toegevoegde Waarde — ook wel omzetbelasting."
+  },
+  {
+    "id": "h5-mc-2", "chapter": 5, "difficulty": "midden", "tags": ["cash","witwas"], "type": "mc",
+    "question": "Hoeveel mag er sinds oktober 2017 maximaal cash betaald worden bij een verkoop van goederen of diensten?",
+    "options": ["€ 1 500","€ 3 000","€ 5 000","Geen limiet"],
+    "correctIndex": 1,
+    "explanation": "Max. € 3 000 cash. Bij onroerend goed sinds 2014: helemaal niets cash."
+  },
+  {
+    "id": "h5-mc-3", "chapter": 5, "difficulty": "midden", "tags": ["MvH","financiële korting"], "type": "mc",
+    "question": "Een financiële korting (bv. 2% bij betaling binnen 8 dagen):",
+    "options": ["Wordt nooit in de maatstaf van heffing verrekend","Verlaagt de MvH enkel als de klant effectief contant betaalt","Verlaagt de MvH ALTIJD, ongeacht of contant betaald wordt","Mag niet vermeld worden op een factuur"],
+    "correctIndex": 2,
+    "explanation": "Een financiële korting verlaagt de MvH altijd. Moet wel afzonderlijk op de factuur staan."
+  },
+  {
+    "id": "h5-tf-2", "chapter": 5, "difficulty": "midden", "tags": ["BTW","personenwagen"], "type": "tf",
+    "question": "De BTW op een personenwagen voor bedrijfsgebruik is volledig (100%) aftrekbaar.",
+    "correct": false,
+    "explanation": "Maximum 50% aftrekbaar — geldt ook voor brandstof, onderhoud, leasing en vaste GPS."
+  },
+  {
+    "id": "h5-open-2", "chapter": 5, "difficulty": "midden", "tags": ["BTW","prijs"], "type": "open",
+    "question": "Een TV kost € 1 210 incl. 21% BTW. Hoeveel bedraagt de prijs exclusief BTW (in euro, zonder valutateken)?",
+    "accept": ["1000","1 000","1.000","1000.00","1000,00"],
+    "explanation": "1 210 / 1,21 = € 1 000 excl. BTW; BTW = € 210."
+  },
+  {
+    "id": "h5-mc-4", "chapter": 5, "difficulty": "diepgang", "tags": ["kleine onderneming","vrijstelling"], "type": "mc",
+    "question": "Tot welke jaaromzet kan een kleine onderneming opteren voor de BTW-vrijstellingsregeling?",
+    "options": ["€ 15 000","€ 25 000","€ 50 000","€ 75 000"],
+    "correctIndex": 1,
+    "explanation": "Max. € 25 000 (excl. BTW). Geen BTW aanrekenen, maar ook geen aftrek."
+  },
+  {
+    "id": "h5-tf-3", "chapter": 5, "difficulty": "midden", "tags": ["afschrijving","terrein"], "type": "tf",
+    "question": "Een terrein kan jaarlijks lineair afgeschreven worden.",
+    "correct": false,
+    "explanation": "Terreinen worden niet afgeschreven (geen jaarlijks waardeverlies). Minwaarde wel boekbaar."
+  },
+  {
+    "id": "h5-mc-5", "chapter": 5, "difficulty": "diepgang", "tags": ["afschrijving","vennootschap","pro rata"], "type": "mc",
+    "question": "Vennootschap koopt op 1 juli een machine van € 10 000, lineair over 5 jaar. Wat is het afschrijvingsbedrag in jaar 1?",
+    "options": ["€ 2 000","€ 1 500","€ 1 000","€ 500"],
+    "correctIndex": 2,
+    "explanation": "Pro rata: 6/12 × € 2 000 = € 1 000. Vennootschappen MOETEN pro rata afschrijven sinds 2020 — eenmanszaken niet."
+  },
+  {
+    "id": "h5-cloze-1", "chapter": 5, "difficulty": "midden", "tags": ["balans"], "type": "cloze",
+    "question": "Vul de balansterminologie aan.",
+    "text": "Op de balans staat het {{0}} aan de linkerkant (bezittingen) en het {{1}} aan de rechterkant (financieringsmiddelen). Beide totalen zijn {{2}}.",
+    "blanks": [{ "accept": ["actief","activa"] },{ "accept": ["passief","passiva"] },{ "accept": ["gelijk","in evenwicht","even groot","hetzelfde"] }],
+    "explanation": "Actief (werkmiddelen) = Passief (financieringsmiddelen). De balans is altijd in evenwicht."
+  },
+  {
+    "id": "h5-case-1", "chapter": 5, "difficulty": "diepgang", "tags": ["casus","afschrijving","investering"], "type": "case",
+    "context": "BV Helios uit Wevelgem koopt op 1 januari een nieuwe productiemachine voor € 50 000. Levensduur 10 jaar, restwaarde € 0. De vennootschap kiest voor lineaire afschrijving.",
+    "question": "Bereken en interpreteer de afschrijvingen.",
+    "steps": [
+      { "prompt": "Stap 1 — Bereken het jaarlijks afschrijvingsbedrag.",
+        "modelAnswer": "a = (AW − RW) / n = (50 000 − 0) / 10 = € 5 000 per jaar." },
+      { "prompt": "Stap 2 — Bereken het afschrijvingspercentage.",
+        "modelAnswer": "% = 1/n × 100 = 1/10 × 100 = 10% per jaar." },
+      { "prompt": "Stap 3 — Wat is de boekwaarde na het 3e boekjaar?",
+        "modelAnswer": "BW₃ = AW − 3·a = 50 000 − 3 × 5 000 = € 35 000." },
+      { "prompt": "Stap 4 — Stel dat Helios de machine had aangekocht op 1 juli. Welk afschrijvingsbedrag boekt ze in jaar 1?",
+        "modelAnswer": "Vennootschap → pro rata: 6/12 × 5 000 = € 2 500. (Een eenmanszaak zou het volledige bedrag mogen boeken.)" },
+      { "prompt": "Stap 5 — Op welke wijze beïnvloedt een afschrijving het belastbaar resultaat?",
+        "modelAnswer": "Afschrijving is een kost in de resultatenrekening → verlaagt de winst → verlaagt de belastbare basis. Daarom spreidt men de investering over de gebruiksduur in plaats van alles in jaar 1 te boeken." }
+    ],
+    "explanation": "Lineaire methode + pro rata-regel voor vennootschappen."
+  },
+
+  {
+    "id": "h6-mc-1", "chapter": 6, "difficulty": "basis", "tags": ["vast","variabel"], "type": "mc",
+    "question": "Welke van deze is typisch een VARIABELE kost?",
+    "options": ["Huur van het magazijn","Salaris van een bediende","Grondstoffenverbruik","Afschrijving machine"],
+    "correctIndex": 2,
+    "explanation": "Grondstoffen schalen met productie. De andere drie zijn vast (binnen capaciteit)."
+  },
+  {
+    "id": "h6-tf-1", "chapter": 6, "difficulty": "basis", "tags": ["vaste kost","per stuk"], "type": "tf",
+    "question": "De totale vaste kost blijft constant, maar de vaste kost per stuk daalt naarmate de productie stijgt.",
+    "correct": true,
+    "explanation": "Totaal blijft gelijk, dus per eenheid dalend — typisch \"degressief\" patroon."
+  },
+  {
+    "id": "h6-open-1", "chapter": 6, "difficulty": "basis", "tags": ["RSZ","werknemer"], "type": "open",
+    "question": "Hoeveel procent bedraagt de RSZ-werknemersbijdrage op het brutoloon (van een bediende)?",
+    "accept": ["13,07","13,07%","13.07","13.07%"],
+    "explanation": "13,07% op brutoloon (voor arbeiders op 108% van het brutoloon)."
+  },
+  {
+    "id": "h6-mc-2", "chapter": 6, "difficulty": "midden", "tags": ["bruto bijdrage"], "type": "mc",
+    "question": "Hoe bereken je de bruto bijdrage per stuk?",
+    "options": ["Verkoopprijs − totale kost per stuk","Verkoopprijs − variabele kost per stuk","Verkoopprijs − vaste kost per stuk","Omzet − winst"],
+    "correctIndex": 1,
+    "explanation": "BB per stuk = verkoopprijs − variabele kost. Totale BB − totale vaste kosten = winst."
+  },
+  {
+    "id": "h6-mc-3", "chapter": 6, "difficulty": "midden", "tags": ["uitzonderlijk order"], "type": "mc",
+    "question": "Variabele kost per stuk € 0,25 — vaste kosten zijn al gedekt op huidige productie. Een nieuwe klant biedt € 0,32/stuk voor 30 000 stuks. Aanvaarden?",
+    "options": ["Nee — onder de integrale kostprijs","Ja — elke euro boven € 0,25 is bijkomend marge","Nee — vaste kosten worden niet gedekt","Enkel als de klant € 0,50 betaalt"],
+    "correctIndex": 1,
+    "explanation": "Op korte termijn alleen variabele kosten beoordelen. 0,32 − 0,25 = € 0,07/stuk extra marge → € 2 100 extra winst voor de 30 000 stuks."
+  },
+  {
+    "id": "h6-tf-2", "chapter": 6, "difficulty": "midden", "tags": ["omzet","verdeelsleutel"], "type": "tf",
+    "question": "Bij integrale kostprijsberekening is het aangeraden indirecte kosten te verdelen volgens omzet.",
+    "correct": false,
+    "explanation": "Sterk afgeraden — populaire producten worden zwaar belast, zwakke producten onterecht ontlast."
+  },
+  {
+    "id": "h6-mc-4", "chapter": 6, "difficulty": "diepgang", "tags": ["break-even"], "type": "mc",
+    "question": "Vaste kosten € 150 000, variabele kost per stuk € 700, verkoopprijs € 1 200. Wat is de break-even hoeveelheid?",
+    "options": ["125 stuks","300 stuks","500 stuks","750 stuks"],
+    "correctIndex": 1,
+    "explanation": "BE = 150 000 / (1 200 − 700) = 150 000 / 500 = 300 stuks."
+  },
+  {
+    "id": "h6-open-2", "chapter": 6, "difficulty": "diepgang", "tags": ["grensprijs"], "type": "open",
+    "question": "Welke prijs is het minimum waaronder je beter de productie stillegt? (term in 1 woord)",
+    "accept": ["grensprijs"],
+    "explanation": "Grensprijs = vaste kost per stuk + variabele kost per stuk. Onder deze prijs verlies je geld op elke verkoop."
+  },
+  {
+    "id": "h6-case-1", "chapter": 6, "difficulty": "diepgang", "tags": ["casus","make or buy"], "type": "case",
+    "context": "Een machinebouwer maakt 1 000 stuks per jaar van onderdeel A. Variabele kost: € 29,75/stuk. Vaste kost toegerekend per stuk: € 12,39. Een extern bedrijf biedt onderdeel A aan voor € 35,94/stuk met dezelfde kwaliteit en levering.",
+    "question": "Make of buy?",
+    "steps": [
+      { "prompt": "Stap 1 — Welke kosten zijn relevant op korte termijn?",
+        "modelAnswer": "Enkel de variabele kosten. Vaste kosten zijn al gemaakt en wijzigen niet door deze beslissing." },
+      { "prompt": "Stap 2 — Bereken totale variabele kost zelf maken vs aankoop.",
+        "modelAnswer": "Zelf: 29,75 × 1 000 = € 29 750. Aankoop: 35,94 × 1 000 = € 35 940. Zelf maken is € 6 190 goedkoper op korte termijn." },
+      { "prompt": "Stap 3 — Welke beslissing op korte termijn?",
+        "modelAnswer": "Zelf maken. Aankopen zou de variabele kost verhogen zonder de vaste kosten te verlagen." },
+      { "prompt": "Stap 4 — Wat verandert er op lange termijn?",
+        "modelAnswer": "Op lange termijn zijn vaste kosten beïnvloedbaar (machines verkopen, ruimte vrijmaken, personeel herallocatie). Vergelijk dan integrale kost € 42,14 met aankoop € 35,94 — aankopen wordt aantrekkelijk als je de vaste kosten effectief kan elimineren." }
+    ],
+    "explanation": "Korte termijn → variabele kost. Lange termijn → integrale kost. Pas op met het effectief drukken van vaste kosten."
+  },
+
+  {
+    "id": "h7-mc-1", "chapter": 7, "difficulty": "basis", "tags": ["instelling"], "type": "mc",
+    "question": "Welke instelling beheert de sociale zekerheid voor zelfstandigen?",
+    "options": ["RSZ","RSVZ","RSZPPO","FOD Financiën"],
+    "correctIndex": 1,
+    "explanation": "RSVZ — Rijksinstituut voor Sociale Verzekeringen der Zelfstandigen. RSZ is voor werknemers, RSZPPO voor lokale ambtenaren."
+  },
+  {
+    "id": "h7-tf-1", "chapter": 7, "difficulty": "basis", "tags": ["arbeidsovereenkomst"], "type": "tf",
+    "question": "Het bestaan van ondergeschiktheid (gezag, leiding, toezicht) is een wezenlijk kenmerk van een arbeidsovereenkomst.",
+    "correct": true,
+    "explanation": "Drie kenmerken: arbeidsprestaties + ondergeschiktheid + loon. Een zelfstandige werkt net níet in band van ondergeschiktheid."
+  },
+  {
+    "id": "h7-open-1", "chapter": 7, "difficulty": "basis", "tags": ["RSVZ"], "type": "open",
+    "question": "Waarvoor staat de afkorting RSVZ?",
+    "accept": ["rijksinstituut voor sociale verzekeringen der zelfstandigen","rijksinstituut voor de sociale verzekeringen der zelfstandigen"],
+    "explanation": "Rijksinstituut voor Sociale Verzekeringen der Zelfstandigen."
+  },
+  {
+    "id": "h7-mc-2", "chapter": 7, "difficulty": "midden", "tags": ["statuut","bijberoep"], "type": "mc",
+    "question": "Wanneer kan je zelfstandige in BIJBEROEP zijn?",
+    "options": ["Als je geen andere activiteit hebt","Als je daarnaast min. halftijds werknemer, ambtenaar of gepensioneerde bent","Enkel als student","Als je inkomen onder € 10 000 blijft"],
+    "correctIndex": 1,
+    "explanation": "Bijberoep = naast een hoofdactiviteit (min. halftijds werknemer/ambtenaar of gepensioneerde). Lagere bijdragen onder bepaalde inkomensgrenzen."
+  },
+  {
+    "id": "h7-tf-2", "chapter": 7, "difficulty": "midden", "tags": ["sociale bijdragen","jaar"], "type": "tf",
+    "question": "Sociale bijdragen voor zelfstandigen worden voorlopig berekend op het inkomen van drie jaar terug.",
+    "correct": true,
+    "explanation": "Drie jaar terug, met regularisatie na de definitieve aanslag — een gevolg van het feit dat de aanslag pas later beschikbaar is."
+  },
+  {
+    "id": "h7-mc-3", "chapter": 7, "difficulty": "midden", "tags": ["vennootschapsbijdrage"], "type": "mc",
+    "question": "Wie betaalt een vennootschapsbijdrage?",
+    "options": ["Elke zelfstandige","Enkel eenmanszaken","Enkel vennootschappen","Enkel VZW's"],
+    "correctIndex": 2,
+    "explanation": "Enkel vennootschappen betalen een jaarlijkse forfaitaire vennootschapsbijdrage (niet voor eenmanszaken)."
+  },
+  {
+    "id": "h7-open-2", "chapter": 7, "difficulty": "midden", "tags": ["RSZ","arbeiders"], "type": "open",
+    "question": "RSZ-bijdragen worden voor arbeiders berekend op welk percentage van het brutoloon?",
+    "accept": ["108","108%","108 %"],
+    "explanation": "108% van het brutoloon — die 8% komt overeen met het vakantiegeld dat ook RSZ-plichtig is."
+  },
+  {
+    "id": "h7-mc-4", "chapter": 7, "difficulty": "diepgang", "tags": ["uitkeringen"], "type": "mc",
+    "question": "Welk recht volgt voor een zelfstandige bij gedwongen stopzetting wegens brand?",
+    "options": ["Werkloosheidsuitkering","Overbruggingsrecht","Hospitalisatieverzekering","Gewaarborgd inkomen"],
+    "correctIndex": 1,
+    "explanation": "Overbruggingsrecht (vroeger faillissementsverzekering) — ook bij brand, beroepsallergie, natuurramp."
+  },
+  {
+    "id": "h7-tf-3", "chapter": 7, "difficulty": "diepgang", "tags": ["student-ondernemer"], "type": "tf",
+    "question": "Een student-ondernemer kan onder bepaalde grenzen fiscaal ten laste blijven van zijn ouders.",
+    "correct": true,
+    "explanation": "Het statuut student-ondernemer combineert hogere studies met zelfstandige activiteit; onder inkomensgrenzen blijven verlaagde of geen sociale bijdragen + ten laste blijven mogelijk."
+  },
+  {
+    "id": "h7-match-1", "chapter": 7, "difficulty": "midden", "tags": ["statuten"], "type": "match",
+    "question": "Match elk statuut met zijn beschrijving.",
+    "pairs": [
+      { "left": "Hoofdberoep", "right": "Belangrijkste activiteit, volledige sociale bijdragen" },
+      { "left": "Bijberoep", "right": "Naast min. halftijdse hoofdactiviteit als werknemer of ambtenaar" },
+      { "left": "Meewerkende echtgenoot (maxi-statuut)", "right": "Helpt zelfstandige partner, volledige sociale rechten sinds 2003" },
+      { "left": "Student-ondernemer", "right": "Combinatie hogere studies + zelfstandige activiteit, sinds 2017" }
+    ],
+    "explanation": "Vier hoofdstatuten met elk eigen bijdrageregels en rechten."
+  },
+  {
+    "id": "h7-cloze-1", "chapter": 7, "difficulty": "midden", "tags": ["loonberekening"], "type": "cloze",
+    "question": "Vul de loonberekening aan.",
+    "text": "Brutoloon − RSZ werknemersbijdrage ({{0}}%) = belastbaar loon − {{1}} = nettoloon.",
+    "blanks": [{ "accept": ["13,07","13.07"] },{ "accept": ["bedrijfsvoorheffing","bv"] }],
+    "explanation": "13,07% RSZ-bijdrage, gevolgd door bedrijfsvoorheffing (voorschot op personenbelasting)."
+  }
+]

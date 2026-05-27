@@ -1,0 +1,103 @@
+{
+  "chapter": 4,
+  "title": "Verzekeringen",
+  "subtitle": "Persoonlijke, aansprakelijkheids- en bedrijfsschaderisico's",
+  "sections": [
+    {
+      "id": "h4-inleiding",
+      "title": "1. Inleiding",
+      "lead": "Drie risicogebieden voor een ondernemer.",
+      "paragraphs": [
+        "**Persoonlijke risico's** — ongeval, ziekte, overlijden, pensioen, werkloosheid.",
+        "**Aansprakelijkheidsrisico's** — mogelijkheid om aangesproken te worden voor schade door eigen daden of door personeel.",
+        "**Bedrijfsschaderisico's** — schade aan gebouwen, voertuigen, machines, toestellen.",
+        "Stel een **inventaris** van risico's op en kies: zelf dragen, preventief optreden, of verzekeren. Sommige verzekeringen zijn wettelijk verplicht."
+      ]
+    },
+    {
+      "id": "h4-persoonlijk",
+      "title": "2. Persoonlijke risico's",
+      "subsections": [
+        {
+          "title": "Hospitalisatieverzekering",
+          "body": "Aanvulling op het ziekenfonds — dekt resterende ziekenhuiskosten. **Aanbevolen, niet verplicht**. Vul medische vragenlijsten correct in, anders weigert de verzekeraar."
+        },
+        {
+          "title": "Verzekering gewaarborgd inkomen",
+          "body": "Wettelijke uitkering bij arbeidsongeschiktheid begint pas **na 1 maand** en is een **vast klein bedrag**. Deze verzekering biedt een door jou bepaalde dagvergoeding. **Volledig fiscaal aftrekbaar** als bedrijfslast."
+        },
+        {
+          "title": "Ongevallenverzekering",
+          "body": "Uitkering bij lichamelijk letsel: kapitaal bij overlijden binnen 3 jaar, kapitaal bij blijvende invaliditeit, dagvergoeding bij tijdelijke ongeschiktheid, terugbetaling medische kosten. Premie afhankelijk van beroepsrisico."
+        },
+        {
+          "title": "Vrij Aanvullend Pensioen Zelfstandigen (VAPZ)",
+          "body": "Tot **8,17% van je netto-bedrijfsinkomen** opzij zetten. Brengt intrest + winstdeelname op. **Dubbel voordeel**: bijdrage aftrekbaar als beroepskost → lagere belastingen én lagere sociale bijdragen. Belasting op eindkapitaal: meestal nihil."
+        }
+      ]
+    },
+    {
+      "id": "h4-aansprakelijkheid",
+      "title": "3. Aansprakelijkheidsrisico's",
+      "subsections": [
+        {
+          "title": "BA Auto (verplicht)",
+          "body": "Verplicht voor elke voertuigeigenaar. Dekt lichamelijke en stoffelijke schade aan derden + lichamelijke schade aan alle inzittenden behalve de bestuurder. Schade aan eigen voertuig wordt NIET gedekt — daarvoor een omnium."
+        },
+        {
+          "title": "Rechtsbijstand",
+          "body": "Kosten van een advocaat. Geen verdediging bij rijden onder invloed. Niet noodzakelijk bij dezelfde maatschappij als BA Auto."
+        },
+        {
+          "title": "Arbeidsongevallenverzekering (verplicht)",
+          "body": "Verplicht voor werkgevers. Dekt arbeidsongevallen + ongevallen op weg van/naar het werk."
+        },
+        {
+          "title": "BA Brand en Ontploffing (verplicht voor publiek toegankelijke ondernemingen)",
+          "body": "Verplicht voor o.a.: kleinhandels > 1000 m², restaurants/frituren > 50 m², dancings, hotels, kantoorgebouwen > 500 m². Dekt lichamelijke + stoffelijke schade. **Niet hetzelfde als brandverzekering**."
+        },
+        {
+          "title": "BA Uitbating",
+          "body": "Schade aan derden door de uitoefening van je beroep of door je personeel. Bv. besneeuwd voetpad, omvallende ladder, beschadigde traphal."
+        },
+        {
+          "title": "Beroepsaansprakelijkheid",
+          "body": "Schade door professionele fouten. **Verplicht** voor o.a. architect, landmeter, reisorganisator, aannemer van overheidsopdrachten."
+        },
+        {
+          "title": "BA NA levering",
+          "body": "Aansprakelijkheid voor schade NA levering — ontplofte bierfles, vergeten voorwerp na operatie, voedselvergiftiging."
+        },
+        {
+          "title": "Transportverzekering",
+          "body": "Voor goederen die niet je eigendom zijn maar die je vervoert — dekt diefstal en beschadiging."
+        }
+      ]
+    },
+    {
+      "id": "h4-bedrijfsschade",
+      "title": "4. Bedrijfsschaderisico's",
+      "subsections": [
+        {
+          "title": "Verzekering bedrijfsschade",
+          "body": "Vergoedt **netto daling van het zakencijfer** door onvoorziene gebeurtenissen (brand, blikseminslag, machinedefect). Bv. blikseminslag → keukenapparaten kapot → restaurant 2 dagen dicht."
+        },
+        {
+          "title": "Brandverzekering (uitgebreide polis)",
+          "body": "Dekt brand én waterschade, storm, hagel, natuurrampen, glasbreuk, BA van eigenaar/huurder. Soms ook diefstal. **Automatische indexering** via ABEX-index — geen herschatting nodig."
+        },
+        {
+          "title": "Machinebreuk",
+          "body": "Dubbel verlies bij machinepanne: herstelkost + productie-uitval. Vier groepen oorzaken: door mens (onervarenheid, vandalisme), externe factoren (vallende voorwerpen, weer), interne factoren (constructie- en montagefouten, trillen, warmlopen), elektriciteit (kortsluiting)."
+        }
+      ]
+    }
+  ],
+  "doelstellingen": [
+    "de drie risicogebieden van een ondernemer onderscheiden",
+    "weten welke verzekeringen wettelijk verplicht zijn",
+    "het belang van VAPZ en gewaarborgd inkomen kunnen toelichten",
+    "het verschil tussen BA brand en brandverzekering kennen",
+    "de dekking van een BA-auto correct kunnen omschrijven"
+  ]
+}
