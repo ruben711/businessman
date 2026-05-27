@@ -2,13 +2,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { Exercise } from "@/lib/exercises";
-import { checkAnswer } from "@/lib/exercises";
+import { checkAnswer, exercises as allExercises, CHAPTERS, diffChipClass } from "@/lib/exercises";
 import { useStore } from "@/lib/store";
 import { useMounted } from "@/lib/useMounted";
 import { fireXpToast } from "./XpToast";
 import { syncLeaderboard } from "@/lib/leaderboardSync";
+import { BadgeChip } from "./BadgeChip";
 
-export function ExerciseRunner({ exercise, nextId }: { exercise: Exercise; nextId?: string }) {
+export function ExerciseRunner({ exercise, nextId, grouped }: { exercise: Exercise; nextId?: string; grouped?: boolean }) {
   const mounted = useMounted();
   const ex = exercise;
   const state = useStore((s) => s.exerciseStates[ex.id]);
@@ -18,21 +19,37 @@ export function ExerciseRunner({ exercise, nextId }: { exercise: Exercise; nextI
   const toggleFav = useStore((s) => s.toggleFavorite);
 
   const [answer, setAnswer] = useState<any>(initialAnswer(ex));
-  const [feedback, setFeedback] = useState<null | { correct: boolean; xpGained: number }>(null);
+  const [feedback, setFeedback] = useState<null | { correct: boolean; xpGained: number; newBadges: string[] }>(null);
   const [showModel, setShowModel] = useState(false);
   const [note, setNoteVal] = useState("");
 
   useEffect(() => {
     if (mounted && state?.lastAnswer != null) setAnswer(state.lastAnswer);
     if (mounted && state?.notes) setNoteVal(state.notes);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted, ex.id]);
 
   function submit() {
     const ok = checkAnswer(ex, answer);
-    const { xpGained } = record(ex.id, ex.chapter, ok);
+    // Build chapter context for badge unlocks
+    const perChapter: Record<number, { done: number; total: number }> = {};
+    const st = useStore.getState().exerciseStates;
+    for (const c of CHAPTERS) {
+      const ids = allExercises.filter((e) => e.chapter === c.num).map((e) => e.id);
+      const total = ids.length;
+      let done = ids.filter((id) => st[id]?.solved).length;
+      // include this attempt if it's a first-solve
+      if (ok && ex.chapter === c.num && !st[ex.id]?.solved) done += 1;
+      perChapter[c.num] = { done, total };
+    }
+    const totalExercises = allExercises.length;
+
+    const { xpGained, newBadges } = record(ex.id, ex.chapter, ok, { totalExercises, perChapter });
     setLast(ex.id, answer);
-    setFeedback({ correct: ok, xpGained });
+    setFeedback({ correct: ok, xpGained, newBadges });
     if (ok && xpGained > 0) fireXpToast(xpGained);
+    // Auto-reveal model solution on correct answer
+    if (ok && ex.explanation) setShowModel(true);
     syncLeaderboard();
   }
 
@@ -54,7 +71,7 @@ export function ExerciseRunner({ exercise, nextId }: { exercise: Exercise; nextI
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-3">
               <span className="chip chip-acc">H{ex.chapter}</span>
-              <span className="chip">{ex.difficulty}</span>
+              <span className={diffChipClass(ex.difficulty)}>{ex.difficulty}</span>
               <span className="chip">{ex.type}</span>
             </div>
             <h1 className="text-[22px] font-semibold leading-snug text-ink">{ex.question}</h1>
@@ -80,17 +97,26 @@ export function ExerciseRunner({ exercise, nextId }: { exercise: Exercise; nextI
               {showModel ? "Verberg" : "Toon"} modeloplossing
             </button>
           )}
-          {nextId && <Link href={`/oefeningen/${nextId}`} className="btn ml-auto">Volgende →</Link>}
+          {/* Old "next" button only shown in standalone (non-grouped) mode */}
+          {!grouped && nextId && (
+            <Link href={`/oefeningen/${nextId}`} className="btn ml-auto">Volgende →</Link>
+          )}
         </div>
 
         {feedback && (
           <div className={`panel p-4 mb-5 anim-in ${feedback.correct ? "border-l-2 border-l-acc" : "border-l-2 border-l-err"}`}>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <span className={`font-pixel text-[10px] ${feedback.correct ? "text-acc" : "text-err"}`}>
                 {feedback.correct ? "✓ CORRECT" : "✗ INCORRECT"}
               </span>
               {feedback.correct && feedback.xpGained > 0 && (
                 <span className="chip chip-acc">+{feedback.xpGained} XP</span>
+              )}
+              {feedback.newBadges?.length > 0 && (
+                <span className="flex items-center gap-2 ml-2">
+                  <span className="font-pixel text-[8px] text-warn tracking-[0.1em]">UNLOCKED</span>
+                  {feedback.newBadges.map((id) => <BadgeChip key={id} id={id} />)}
+                </span>
               )}
             </div>
             {!feedback.correct && ex.hint && <div className="text-[13px] text-ink-2 mt-2">{ex.hint}</div>}

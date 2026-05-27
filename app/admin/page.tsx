@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { StyledName } from "@/components/StyledName";
 import { CustomTag } from "@/components/CustomTag";
+import { BadgeChip } from "@/components/BadgeChip";
 
 export default function AdminPage() {
   const [authed, setAuthed] = useState<boolean | null>(null);
@@ -75,6 +76,10 @@ export default function AdminPage() {
 function LbAdmin() {
   const [users, setUsers] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [grantOpen, setGrantOpen] = useState<string | null>(null);
+  const [bName, setBName] = useState(""); const [bIcon, setBIcon] = useState("◆");
+  const [bColor, setBColor] = useState("#6ee7b7"); const [bDesc, setBDesc] = useState("");
+
   async function load() {
     setLoading(true);
     const r = await fetch("/api/leaderboard");
@@ -97,7 +102,28 @@ function LbAdmin() {
     await fetch("/api/admin/leaderboard/recalc", { method: "POST" });
     load();
   }
+  async function grantBadge(uid: string) {
+    if (!bName) return;
+    await fetch("/api/admin/badge", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ uid, badge: { name: bName, icon: bIcon, color: bColor, desc: bDesc } }),
+    });
+    setGrantOpen(null); setBName(""); setBDesc("");
+    load();
+  }
+  async function revokeBadge(uid: string, badgeId: string) {
+    if (!confirm("Badge intrekken?")) return;
+    await fetch("/api/admin/badge", {
+      method: "DELETE", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ uid, badgeId }),
+    });
+    load();
+  }
+
   if (loading) return <div className="text-ink-3 text-[13px]">Loading…</div>;
+
+  const ICON_PRESETS = ["◆","◉","★","♛","▲","▶","♦","✦","☾","☀","♥","✪","⚡","Ω"];
+
   return (
     <div className="space-y-3">
       <div className="flex justify-end"><button className="btn btn-ghost btn-sm" onClick={recalc}>Recalc XP</button></div>
@@ -114,7 +140,49 @@ function LbAdmin() {
             <label className="block"><div className="label mb-1">Solved</div><input type="number" className="input" defaultValue={u.solved} onBlur={(e) => update(u.uid, { solved: parseInt(e.target.value, 10) })} /></label>
             <label className="flex items-center gap-2 mt-6"><input type="checkbox" defaultChecked={!!u.isAdmin} onChange={(e) => update(u.uid, { isAdmin: e.target.checked })} className="accent-acc" /><span className="text-[13px]">Admin</span></label>
           </div>
-          <button className="btn btn-danger btn-sm mt-3" onClick={() => del(u.uid)}>Delete</button>
+
+          {/* Existing badges */}
+          {((u.badges?.length || 0) + (u.customBadges?.length || 0)) > 0 && (
+            <div className="mt-3 pt-3 border-t border-line/[0.06]">
+              <div className="label mb-2">// BADGES</div>
+              <div className="flex flex-wrap gap-2">
+                {(u.badges || []).map((id: string) => <BadgeChip key={id} id={id} />)}
+                {(u.customBadges || []).map((b: any) => (
+                  <button key={b.id} onClick={() => revokeBadge(u.uid, b.id)} title="Intrekken" className="hover:opacity-60 transition">
+                    <BadgeChip custom={b} />
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="flex gap-2 mt-3">
+            <button className="btn btn-sm" onClick={() => setGrantOpen(grantOpen === u.uid ? null : u.uid)}>+ Custom badge</button>
+            <button className="btn btn-danger btn-sm" onClick={() => del(u.uid)}>Delete user</button>
+          </div>
+
+          {grantOpen === u.uid && (
+            <div className="mt-3 pt-3 border-t border-line/[0.06] grid sm:grid-cols-[1fr_auto] gap-3 anim-in">
+              <div className="space-y-2">
+                <label className="block"><div className="label mb-1">Name</div><input className="input" value={bName} onChange={(e) => setBName(e.target.value)} placeholder="bv. OG-tester" /></label>
+                <label className="block"><div className="label mb-1">Description (optioneel)</div><input className="input" value={bDesc} onChange={(e) => setBDesc(e.target.value)} placeholder="Korte uitleg…" /></label>
+                <div className="flex items-center gap-2">
+                  <div className="label">Icon</div>
+                  {ICON_PRESETS.map((i) => (
+                    <button key={i} onClick={() => setBIcon(i)} className={`w-7 h-7 border rounded-sm text-[12px] ${bIcon === i ? "border-acc bg-acc/10 text-acc" : "border-line/[0.06] text-ink-2"}`}>{i}</button>
+                  ))}
+                </div>
+                <label className="flex items-center gap-2"><div className="label">Color</div><input type="color" className="h-7 w-12 bg-inset rounded border border-line/[0.06]" value={bColor} onChange={(e) => setBColor(e.target.value)} /></label>
+              </div>
+              <div className="flex flex-col gap-2 items-end justify-between">
+                <div className="panel-elev p-3 flex items-center gap-2">
+                  <BadgeChip custom={{ id: "preview", name: bName || "Preview", icon: bIcon, color: bColor }} size="md" />
+                  <span className="text-[12px] text-ink-2">{bName || "Preview"}</span>
+                </div>
+                <button className="btn btn-primary" onClick={() => grantBadge(u.uid)} disabled={!bName}>Grant</button>
+              </div>
+            </div>
+          )}
         </div>
       ))}
     </div>

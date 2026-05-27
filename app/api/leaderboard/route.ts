@@ -11,7 +11,7 @@ export async function GET() {
 export async function POST(req: Request) {
   if (!isUpstashEnabled()) return Response.json({ ok: false, reason: "no_upstash" });
   const body = await req.json().catch(() => ({}));
-  const { uid, name, xp, solved, customTag, nameStyle } = body as any;
+  const { uid, name, xp, solved, customTag, nameStyle, badges, customBadges } = body as any;
   if (!uid || typeof xp !== "number") return new Response("bad", { status: 400 });
   await lbUpsert({
     uid,
@@ -21,6 +21,8 @@ export async function POST(req: Request) {
     lastSync: Date.now(),
     customTag,
     nameStyle,
+    badges: Array.isArray(badges) ? badges.slice(0, 50) : undefined,
+    customBadges: Array.isArray(customBadges) ? customBadges.slice(0, 20) : undefined,
   });
   return Response.json({ ok: true });
 }

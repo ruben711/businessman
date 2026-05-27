@@ -61,20 +61,24 @@ export type LbUser = {
   isAdmin?: boolean;
   customTag?: { label: string; color: string; emoji?: string };
   nameStyle?: any;
+  badges?: string[];                                       // catalog badge ids
+  customBadges?: { id: string; name: string; icon: string; color: string; desc?: string }[];
 };
 
-export const LB_KEY = "bm:lb"; // hash uid -> JSON
-export const LB_SCORES_KEY = "bm:lb:scores"; // zset
+export const LB_KEY = "bm:lb";
+export const LB_SCORES_KEY = "bm:lb:scores";
 
 export async function lbUpsert(u: LbUser) {
-  // preserve customTag/nameStyle and isAdmin if existing
+  // preserve existing fields not provided by the caller
   const existingRaw = await redis.hget(LB_KEY, u.uid).catch(() => null);
   if (existingRaw) {
     try {
       const existing: LbUser = JSON.parse(existingRaw);
-      u.customTag = u.customTag ?? existing.customTag;
-      u.nameStyle = u.nameStyle ?? existing.nameStyle;
-      u.isAdmin = u.isAdmin ?? existing.isAdmin;
+      if (u.customTag === undefined) u.customTag = existing.customTag;
+      if (u.nameStyle === undefined) u.nameStyle = existing.nameStyle;
+      if (u.isAdmin === undefined) u.isAdmin = existing.isAdmin;
+      if (u.badges === undefined) u.badges = existing.badges;
+      if (u.customBadges === undefined) u.customBadges = existing.customBadges;
     } catch {}
   }
   await redis.pipe([
@@ -87,7 +91,6 @@ export async function lbGetAll(): Promise<LbUser[]> {
   const all = await redis.hgetall(LB_KEY).catch(() => null);
   if (!all) return [];
   const out: LbUser[] = [];
-  // Upstash returns object or array; normalize
   if (Array.isArray(all)) {
     for (let i = 0; i < all.length; i += 2) {
       try { out.push(JSON.parse(all[i + 1])); } catch {}

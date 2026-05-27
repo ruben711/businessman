@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useMemo } from "react";
-import { exercises, checkAnswer, type Exercise } from "@/lib/exercises";
+import { exercises, checkAnswer, diffChipClass, type Exercise } from "@/lib/exercises";
 import { useStore } from "@/lib/store";
 import { syncLeaderboard } from "@/lib/leaderboardSync";
 
@@ -22,6 +22,11 @@ export default function ExamenPage() {
   const [submitted, setSubmitted] = useState(false);
   const [time, setTime] = useState(DURATION);
   const record = useStore((s) => s.recordAttempt);
+  const reportExam = useStore((s) => s.reportExamScore);
+
+  // Only these types support an inline exam-style input
+  const EXAM_TYPES = new Set<Exercise["type"]>(["mc", "tf", "open"]);
+  const examPool = exercises.filter((e) => EXAM_TYPES.has(e.type));
 
   useEffect(() => {
     if (!items || submitted) return;
@@ -32,7 +37,7 @@ export default function ExamenPage() {
   useEffect(() => { if (time === 0 && !submitted && items) submit(); }, [time]);
 
   function start() {
-    setItems(pickRandom(exercises.filter((e) => e.type !== "case"), EXAM_SIZE));
+    setItems(pickRandom(examPool, EXAM_SIZE));
     setAnswers({});
     setSubmitted(false);
     setTime(DURATION);
@@ -41,11 +46,15 @@ export default function ExamenPage() {
   function submit() {
     if (!items) return;
     setSubmitted(true);
+    let correctCount = 0;
     items.forEach((ex) => {
       const ans = answers[ex.id];
       const ok = ans !== undefined && checkAnswer(ex, ans);
+      if (ok) correctCount++;
       record(ex.id, ex.chapter, ok);
     });
+    // Award perfect-exam badge if 100%
+    if (correctCount === items.length) reportExam(correctCount, items.length);
     syncLeaderboard(true);
   }
 
@@ -68,7 +77,7 @@ export default function ExamenPage() {
           <div className="grid grid-cols-3 gap-4 text-center">
             <Pill label="VRAGEN" value={String(EXAM_SIZE)} />
             <Pill label="TIJD" value={`${DURATION/60}m`} />
-            <Pill label="POOL" value={String(exercises.filter(e=>e.type!=="case").length)} />
+            <Pill label="POOL" value={String(examPool.length)} />
           </div>
           <button className="btn btn-primary btn-lg w-full mt-6" onClick={start}>▶ START EXAM</button>
         </div>
@@ -112,7 +121,7 @@ export default function ExamenPage() {
               <div className="flex items-center gap-2 mb-3">
                 <span className="font-pixel text-[9px] text-acc">Q{String(i + 1).padStart(2, "0")}</span>
                 <span className="chip">H{ex.chapter}</span>
-                <span className="chip">{ex.difficulty}</span>
+                <span className={diffChipClass(ex.difficulty)}>{ex.difficulty}</span>
               </div>
               <div className="text-[15px] mb-4 text-ink">{ex.question}</div>
               <ExamInput ex={ex} value={ans} onChange={(v) => setAnswers((a) => ({ ...a, [ex.id]: v }))} disabled={submitted} />

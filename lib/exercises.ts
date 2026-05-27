@@ -83,6 +83,24 @@ export const CHAPTERS = [
   { num: 7, title: "Het sociaal statuut" },
 ] as const;
 
+export function diffChipClass(d: string): string {
+  switch (d) {
+    case "basis":    return "chip chip-diff-basis";
+    case "midden":   return "chip chip-diff-midden";
+    case "diepgang": return "chip chip-diff-diepgang";
+    default:         return "chip";
+  }
+}
+
+export function diffDotColor(d: string): string {
+  switch (d) {
+    case "basis":    return "bg-[#4ade80]";
+    case "midden":   return "bg-[#fbbf24]";
+    case "diepgang": return "bg-[#f87171]";
+    default:         return "bg-ink-4";
+  }
+}
+
 export function checkAnswer(ex: Exercise, ans: unknown): boolean {
   const norm = (s: string) => s.toString().trim().toLowerCase().replace(/\s+/g, " ");
   switch (ex.type) {

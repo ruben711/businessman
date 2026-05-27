@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useStore, levelForXp } from "@/lib/store";
 import { useMounted } from "@/lib/useMounted";
 import { CHAPTERS, exercises } from "@/lib/exercises";
+import { BadgeChip } from "@/components/BadgeChip";
+import { BADGE_DEFS } from "@/lib/badges";
 
 export default function Dashboard() {
   const mounted = useMounted();
@@ -11,6 +13,7 @@ export default function Dashboard() {
   const attempts = useStore((s) => s.attempts);
   const streak = useStore((s) => s.streak);
   const badges = useStore((s) => s.badges);
+  const customBadges = useStore((s) => s.customBadges);
   const reset = useStore((s) => s.resetProgress);
   const resetMode = useStore((s) => s.resetMode);
 
@@ -28,8 +31,21 @@ export default function Dashboard() {
         <Stat label="LEVEL" value={String(level)} sub={`${intoLevel} / ${needForLevel} XP`} bar={progress} />
         <Stat label="TOTAL XP" value={String(xp)} sub={`${solved.length} solved`} />
         <Stat label="STREAK" value={`${streak.current}d`} sub={`PB: ${streak.longest}d`} />
-        <Stat label="BADGES" value={String(badges.length)} sub="achievements" />
+        <Stat label="BADGES" value={`${badges.length + customBadges.length}`} sub={`${BADGE_DEFS.length} total + custom`} />
       </div>
+
+      {(badges.length > 0 || customBadges.length > 0) && (
+        <section className="panel p-5">
+          <div className="flex items-center justify-between mb-4">
+            <div className="label">// EARNED · BADGES</div>
+            <Link href="/leaderboard" className="font-pixel text-[8px] text-ink-3 hover:text-acc transition tracking-[0.1em]">VIEW ALL →</Link>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {customBadges.map((b) => <BadgeChip key={b.id} custom={b} size="md" />)}
+            {badges.map((b) => <BadgeChip key={b.id} id={b.id} size="md" />)}
+          </div>
+        </section>
+      )}
 
       <section>
         <div className="flex items-center justify-between mb-4">

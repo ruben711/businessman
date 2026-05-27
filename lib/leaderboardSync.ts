@@ -19,6 +19,10 @@ export async function syncLeaderboard(force = false) {
         name: getName(),
         xp: s.xp,
         solved: s.solvedExerciseIds.length,
+        nameStyle: s.nameStyle,
+        customTag: s.customTag,
+        badges: s.badges.map((b) => b.id),
+        customBadges: s.customBadges,
       }),
     });
     lastSync = Date.now();
