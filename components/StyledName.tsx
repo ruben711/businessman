@@ -32,7 +32,9 @@ export function StyledName({ name, style, isAdmin }: { name: string; style?: Nam
   return (
     <span className="inline-flex items-center gap-2">
       {isAdmin && (
-        <span className="text-acc text-[10px]" title="Admin" style={{ textShadow: "0 0 8px rgb(110 231 183 / 0.7)" }}>★</span>
+        <span className="admin-badge" title="Beheerder">
+          <span className="crown">♛</span>ADMIN
+        </span>
       )}
       <span className={classes} style={styleObj}>{name}</span>
     </span>
