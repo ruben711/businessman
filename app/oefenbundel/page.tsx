@@ -9,7 +9,7 @@ import { diffChipClass } from "@/lib/exercises";
 export default function OefenbundelPage() {
   const mounted = useMounted();
   const states = useStore((s) => s.exerciseStates);
-  const [expanded, setExpanded] = useState<Set<string>>(new Set([OEFENBUNDEL_CATEGORIES[0]]));
+  const [expanded, setExpanded] = useState<Set<string>>(new Set(OEFENBUNDEL_CATEGORIES));
   const [openId, setOpenId] = useState<string | null>(null);
 
   const byCat = useMemo(() => {
