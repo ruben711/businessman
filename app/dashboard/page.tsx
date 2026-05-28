@@ -1,10 +1,12 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
 import { useStore, levelForXp } from "@/lib/store";
 import { useMounted } from "@/lib/useMounted";
 import { CHAPTERS, exercises } from "@/lib/exercises";
 import { BadgeChip } from "@/components/BadgeChip";
 import { BADGE_DEFS } from "@/lib/badges";
+import { syncLeaderboard } from "@/lib/leaderboardSync";
 
 export default function Dashboard() {
   const mounted = useMounted();
@@ -16,6 +18,17 @@ export default function Dashboard() {
   const customBadges = useStore((s) => s.customBadges);
   const reset = useStore((s) => s.resetProgress);
   const resetMode = useStore((s) => s.resetMode);
+
+  // Inline two-step confirm (native confirm() is blocked in some embedded contexts)
+  const [pending, setPending] = useState<null | "exercises" | "theory" | "hard">(null);
+
+  function doReset(kind: "exercises" | "theory" | "hard") {
+    if (kind === "hard") reset();
+    else resetMode(kind);
+    setPending(null);
+    // Push the wiped state to the leaderboard right away
+    syncLeaderboard(true);
+  }
 
   if (!mounted) return <div className="text-ink-3">Laden…</div>;
   const { level, intoLevel, needForLevel, progress } = levelForXp(xp);
@@ -94,11 +107,25 @@ export default function Dashboard() {
 
       <section className="panel p-6">
         <div className="label mb-4">// DANGER ZONE</div>
-        <div className="flex gap-2 flex-wrap">
-          <button className="btn btn-ghost btn-sm" onClick={() => { if (confirm("Reset oefen-voortgang?")) resetMode("exercises"); }}>Reset oefeningen</button>
-          <button className="btn btn-ghost btn-sm" onClick={() => { if (confirm("Reset theorie-voortgang?")) resetMode("theory"); }}>Reset theorie</button>
-          <button className="btn btn-danger btn-sm" onClick={() => { if (confirm("Volledig resetten?")) reset(); }}>Hard reset</button>
-        </div>
+        {pending ? (
+          <div className="flex items-center gap-3 flex-wrap anim-in">
+            <span className="text-[13px] text-ink-2">
+              {pending === "exercises" && "Zeker? Dit wist XP, opgeloste oefeningen, badges en streak."}
+              {pending === "theory" && "Zeker? Dit wist je theorie-leesvoortgang."}
+              {pending === "hard" && "Zeker? Dit wist ALLES en kan niet ongedaan gemaakt worden."}
+            </span>
+            <div className="flex gap-2 ml-auto">
+              <button className="btn btn-ghost btn-sm" onClick={() => setPending(null)}>Annuleer</button>
+              <button className="btn btn-danger btn-sm" onClick={() => doReset(pending)}>Bevestig reset</button>
+            </div>
+          </div>
+        ) : (
+          <div className="flex gap-2 flex-wrap">
+            <button className="btn btn-ghost btn-sm" onClick={() => setPending("exercises")}>Reset oefeningen</button>
+            <button className="btn btn-ghost btn-sm" onClick={() => setPending("theory")}>Reset theorie</button>
+            <button className="btn btn-danger btn-sm" onClick={() => setPending("hard")}>Hard reset</button>
+          </div>
+        )}
       </section>
     </div>
   );
