@@ -15,6 +15,7 @@ const sections = [
     label: "Practice",
     items: [
       { href: "/casussen", label: "Casussen", icon: "◆" },
+      { href: "/oefenbundel", label: "Oefenbundel", icon: "▤" },
       { href: "/examen", label: "Examen", icon: "◉" },
       { href: "/uitdagingen", label: "Uitdagingen", icon: "⚔" },
     ],
