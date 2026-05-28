@@ -553,51 +553,6 @@
         }
       ],
       "explanation": "Zelfde bruto en RSZ als oef 18, maar als alleenstaande een hogere bedrijfsvoorheffing → lager netto. De werkgeverskost blijft gelijk."
-    },
-    {
-      "id": "ob-20",
-      "chapter": 98,
-      "difficulty": "diepgang",
-      "type": "case",
-      "tags": [
-        "Integrale kostprijs",
-        "toeslagcalculatie",
-        "verdeelsleutel"
-      ],
-      "category": "Integrale kostprijs",
-      "context": "BV CONTAINER produceert twee types stapelbakken: Type 1 (grote bak, 2 000 kg) — 2 000 stuks; Type 2 (kleine bak, 1 000 kg) — 10 000 stuks. DIRECTE kosten — Type 1: arbeiders 50 000 + metaal 200 000 + toebehoren 60 000 + machines 67 000. Type 2: arbeiders 70 000 + metaal 225 000 + toebehoren 21 000 + machines 76 000. INDIRECTE kosten (gedeeld, totaal € 409 400): directeur 30 000, chauffeur 25 000, arbeiders gemeenschappelijke machines 100 000, bedienden 30 000, coating 20 000, water 1 000, afschrijving gemeenschappelijke machines 70 000, gebouw 50 000, parking 9 000, vrachtwagen 12 000, directiewagen 5 000, bureau-uitrusting 17 000, elektriciteit 12 000 (90% drijfkracht machines), verwarming 6 000, telefoon 1 200, reclame 11 000, verzekering gebouw 4 500, verzekering voorraad 2 500, verzekering directiewagen 650, verzekering vrachtwagen 700, onroerende voorheffing 1 500, verkeersbelasting directiewagen 200 + vrachtwagen 150.",
-      "question": "Bereken de integrale kostprijs per bak met drie globale verdeelsleutels, en bereid de verfijnde toeslagcalculatie voor.",
-      "steps": [
-        {
-          "prompt": "Stap 0 — Bepaal de directe kosten per producttype en het totaal aan indirecte kosten.",
-          "modelAnswer": "Directe kosten Type 1 = 50 000 + 200 000 + 60 000 + 67 000 = € 377 000. Type 2 = 70 000 + 225 000 + 21 000 + 76 000 = € 392 000. Alle overige kosten zijn gedeeld → indirect = € 409 400."
-        },
-        {
-          "prompt": "Vraag 1 — Globale toeslagcalculatie met verdeelsleutel METAALKOST. Bereken de kostprijs per bak.",
-          "modelAnswer": "Metaal: T1 200 000 + T2 225 000 = 425 000. Indirect T1 = 409 400 × 200 000/425 000 = 192 659. T2 = 216 741. Grote bak = (377 000 + 192 659)/2 000 = 569 659/2 000 = € 284,83. Kleine bak = (392 000 + 216 741)/10 000 = 608 741/10 000 = € 60,87."
-        },
-        {
-          "prompt": "Vraag 2 — Globale toeslagcalculatie met verdeelsleutel DIRECTE LOONKOST arbeiders (beide afdelingen).",
-          "modelAnswer": "Loon arbeiders: T1 50 000 + T2 70 000 = 120 000. Indirect T1 = 409 400 × 50 000/120 000 = 170 583. T2 = 238 817. Grote bak = (377 000 + 170 583)/2 000 = € 273,79. Kleine bak = (392 000 + 238 817)/10 000 = € 63,08."
-        },
-        {
-          "prompt": "Vraag 3 — Globale toeslagcalculatie met verdeelsleutel AANTAL STUKS.",
-          "modelAnswer": "Stuks: T1 2 000 + T2 10 000 = 12 000. Indirect T1 = 409 400 × 2 000/12 000 = 68 233. T2 = 341 167. Grote bak = (377 000 + 68 233)/2 000 = € 222,62. Kleine bak = (392 000 + 341 167)/10 000 = € 73,32."
-        },
-        {
-          "prompt": "Overzicht & besluit — vergelijk de drie globale resultaten.",
-          "modelAnswer": "Sleutel METAALKOST: grote 284,83 / kleine 60,87. LOONKOST: 273,79 / 63,08. AANTAL STUKS: 222,62 / 73,32. Besluit: één globale sleutel geeft sterk uiteenlopende 'papieren' kostprijzen — geen enkele is exact correct. De meest correcte kostprijs benadert de werkelijkheid → daarvoor de VERFIJNDE toeslagcalculatie (indirecte kosten in groepen, elk met de best passende sleutel)."
-        },
-        {
-          "prompt": "Vraag 4 — Verfijnde toeslagcalculatie: welke omslagsleutel hoort bij welke indirecte kostengroep?",
-          "modelAnswer": "GROEP 'metaalverwerking' (snijden/coaten) → sleutel metaalverbruik: gemeenschappelijke machines 70 000 + arbeiders gemeenschappelijke machines 100 000 + coating 20 000 + 90% elektriciteit (10 800). GROEP 'oppervlakte' (plattegrond %) → gebouw 50 000 + verwarming 6 000 + verzekering gebouw 4 500 + onroerende voorheffing 1 500 + 10% elektriciteit (1 200). GROEP 'transport' → vrachtwagen-afschrijving 12 000 + verzekering 700 + verkeersbelasting 150 + chauffeur 25 000, omslaan volgens transportvolume (grote bak telt dubbel: T1 = 2 000×2 = 4 000; T2 = 10 000×1 = 10 000). GROEP 'algemeen beheer' → directeur 30 000 + bedienden 30 000 + bureau 17 000 + telefoon 1 200 + reclame 11 000 + directiewagen-afschrijving/verzekering/verkeersbelasting (5 850), omslaan volgens aantal stuks. Parking 9 000 → productietijd/arbeiders; water 1 000 → aantal arbeiders."
-        },
-        {
-          "prompt": "Vraag 4 — Hoe bereken je dan de uiteindelijke integrale kostprijs?",
-          "modelAnswer": "Per groep: groepstotaal × (aandeel van het product volgens de gekozen sleutel) = indirect deel per producttype. Tel alle groepsdelen op per type, voeg toe aan de directe kosten, deel door het aantal stuks (T1 /2 000, T2 /10 000). De verfijnde kostprijs ligt tussen de globale uitkomsten in en weerspiegelt de werkelijke beslaglegging op de indirecte kosten het best. Belangrijk besluit: hoe groter de groep indirecte kosten, hoe meer een verfijnde aanpak loont ('cost and value of information decision')."
-        }
-      ],
-      "explanation": "Eén globale sleutel verschuift kosten willekeurig tussen producten (metaalkost belast de grote bak zwaar, aantal stuks belast de kleine bak zwaar). De verfijnde toeslagcalculatie groepeert de indirecte kosten en kiest per groep de logische sleutel (metaalverbruik, oppervlakte, transportvolume, aantal stuks) → realistischere kostprijs."
     }
   ]
 }
