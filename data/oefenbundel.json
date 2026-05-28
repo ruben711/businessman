@@ -11,253 +11,593 @@
   ],
   "exercises": [
     {
-      "id": "ob-01", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Afschrijvingen"],
+      "id": "ob-01",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Afschrijvingen"
+      ],
       "category": "Afschrijvingen",
       "context": "Een bedrijf koopt op 2 januari 2005 een wagen voor € 20 000. De economische levensduur wordt geschat op 5 jaar (restwaarde 0).",
       "question": "Maak de afschrijvingstabellen op — lineair én degressief.",
       "steps": [
-        { "prompt": "Lineaire methode — jaarlijks afschrijvingsbedrag?", "modelAnswer": "a = (20 000 − 0) / 5 = € 4 000 per jaar. Boekwaarde: 16 000 → 12 000 → 8 000 → 4 000 → 0." },
-        { "prompt": "Degressieve methode — percentage en jaar 1 & 2?", "modelAnswer": "Max % = 2 × lineair = 40%. J1: 40%×20 000 = 8 000 (BW 12 000). J2: 40%×12 000 = 4 800 (BW 7 200)." },
-        { "prompt": "Degressief — wanneer overschakelen naar lineair en hoe verder?", "modelAnswer": "J3: 40%×7 200 = 2 880 < lineair 4 000 → overschakelen. J3: 4 000 (BW 3 200). J4: 3 200 (BW 0). J5: 0. Controle: 8 000+4 800+4 000+3 200 = € 20 000." }
+        {
+          "prompt": "Lineaire methode — jaarlijks afschrijvingsbedrag?",
+          "modelAnswer": "a = (20 000 − 0) / 5 = € 4 000 per jaar. Boekwaarde: 16 000 → 12 000 → 8 000 → 4 000 → 0."
+        },
+        {
+          "prompt": "Degressieve methode — percentage en jaar 1 & 2?",
+          "modelAnswer": "Max % = 2 × lineair = 40%. J1: 40%×20 000 = 8 000 (BW 12 000). J2: 40%×12 000 = 4 800 (BW 7 200)."
+        },
+        {
+          "prompt": "Degressief — wanneer overschakelen naar lineair en hoe verder?",
+          "modelAnswer": "J3: 40%×7 200 = 2 880 < lineair 4 000 → overschakelen. J3: 4 000 (BW 3 200). J4: 3 200 (BW 0). J5: 0. Controle: 8 000+4 800+4 000+3 200 = € 20 000."
+        }
       ],
       "explanation": "Lineair: constant 4 000/jaar. Degressief: zwaarder in het begin, overschakelen naar lineair zodra het degressieve bedrag kleiner wordt dan het lineaire."
     },
     {
-      "id": "ob-02", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Afschrijvingen","prestaties"],
+      "id": "ob-02",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Afschrijvingen",
+        "prestaties"
+      ],
       "category": "Afschrijvingen",
       "context": "Een taxi wordt op 2 januari 2000 aangekocht voor € 25 000. Levensduur 4 jaar, geraamd op 200 000 km. Werkelijk gereden: 2000 → 40 000 km, 2001 → 50 000 km, 2002 → 55 000 km, 2003 → 50 000 km.",
       "question": "Geef de afschrijvingstabel volgens prestaties.",
       "steps": [
-        { "prompt": "Afschrijving per km?", "modelAnswer": "25 000 / 200 000 km = € 0,125 per km." },
-        { "prompt": "Afschrijving per jaar?", "modelAnswer": "2000: 40 000 × 0,125 = 5 000. 2001: 50 000 × 0,125 = 6 250. 2002: 55 000 × 0,125 = 6 875. 2003: 50 000 × 0,125 = 6 250." },
-        { "prompt": "Boekwaarde-evolutie?", "modelAnswer": "BW: 25 000 → 20 000 → 13 750 → 6 875 → 625. Totaal gereden 195 000 km → totale afschrijving 24 375; restboekwaarde € 625." }
+        {
+          "prompt": "Afschrijving per km?",
+          "modelAnswer": "25 000 / 200 000 km = € 0,125 per km."
+        },
+        {
+          "prompt": "Afschrijving per jaar?",
+          "modelAnswer": "2000: 40 000 × 0,125 = 5 000. 2001: 50 000 × 0,125 = 6 250. 2002: 55 000 × 0,125 = 6 875. 2003: 50 000 × 0,125 = 6 250."
+        },
+        {
+          "prompt": "Boekwaarde-evolutie?",
+          "modelAnswer": "BW: 25 000 → 20 000 → 13 750 → 6 875 → 625. Totaal gereden 195 000 km → totale afschrijving 24 375; restboekwaarde € 625."
+        }
       ],
       "explanation": "Afschrijven volgens prestaties: kost evenredig met werkelijke aanwending (km), vaak voor rollend materieel."
     },
     {
-      "id": "ob-03", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Belastingen","winst"],
+      "id": "ob-03",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Belastingen",
+        "winst"
+      ],
       "category": "Belastingen",
       "context": "Een BV bouwt zeiljachten. Omzet 2004 (excl. 21% BTW) = € 800 000. Kosten: materiaal 200 000, lonen 300 000, energie 50 000, huisvesting 40 000, advertentie 5 000, afschrijvingen 110 000.",
       "question": "Bereken de belastbare winst en de nettowinst na belasting (normaal tarief).",
       "steps": [
-        { "prompt": "Totale kosten?", "modelAnswer": "200 000 + 300 000 + 50 000 + 40 000 + 5 000 + 110 000 = € 705 000." },
-        { "prompt": "Belastbare winst?", "modelAnswer": "Omzet − kosten = 800 000 − 705 000 = € 95 000." },
-        { "prompt": "Nettowinst na belasting (normaal tarief 25%)?", "modelAnswer": "Belasting = 25% × 95 000 = 23 750. Nettowinst = 95 000 − 23 750 = € 71 250." }
+        {
+          "prompt": "Totale kosten?",
+          "modelAnswer": "200 000 + 300 000 + 50 000 + 40 000 + 5 000 + 110 000 = € 705 000."
+        },
+        {
+          "prompt": "Belastbare winst?",
+          "modelAnswer": "Omzet − kosten = 800 000 − 705 000 = € 95 000."
+        },
+        {
+          "prompt": "Nettowinst na belasting (normaal tarief 25%)?",
+          "modelAnswer": "Belasting = 25% × 95 000 = 23 750. Nettowinst = 95 000 − 23 750 = € 71 250."
+        }
       ],
       "explanation": "Bij normaal tarief 25% vennootschapsbelasting. Met verlaagd KMO-tarief (20% op eerste € 100 000) zou de belasting 19 000 zijn en de nettowinst € 76 000."
     },
     {
-      "id": "ob-04", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["BTW","vereffening","afschrijving"],
+      "id": "ob-04",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "BTW",
+        "vereffening",
+        "afschrijving"
+      ],
       "category": "BTW-vereffening",
       "context": "Eenmanszaak (elektrische installaties), maandelijkse BTW-aangifte. AANKOPEN: AF1 handelsgoederen 40 000 +21%; AF2 telefoon 250 +21% (60% bedrijfskost); AF3 kopiemachine 1 200 +21%; AF4 dakherstelling magazijn 650, 0% (werk in onroerende staat – medecontractant); AF5 firmawagen lichte vracht 22 186,47 +21%; AF6 handelsgoederen 3 000 +21%; AF7 vakliteratuur 100 +6%; AF8 onderhoud bedrijfswagen 70 +21%. VERKOPEN: VF9 werk bij BTW-plichtige MvH 8 750 (medecontractant); VF10 werk privéhuis 1 500 +21%; contante winkelverkopen 6 000 incl. 21%.",
       "question": "Bepaal de BTW-vereffening voor deze maand.",
       "steps": [
-        { "prompt": "Welke aankopen geven aftrekbare BTW, en hoeveel?", "modelAnswer": "AF1: 21%×40 000 = 8 400. AF2: 21%×250 = 52,50 × 60% = 31,50. AF3: 21%×1 200 = 252. AF5 (lichte vracht = 100% aftrekbaar): 21%×22 186,47 = 4 659,16. AF6: 21%×3 000 = 630. AF7: 6%×100 = 6. AF8: 21%×70 = 14,70. AF4 medecontractant: 21%×650 = 136,50 aftrekbaar (én verschuldigd). Totaal aftrekbaar ≈ € 14 129,86." },
-        { "prompt": "Welke verkopen geven verschuldigde BTW, en hoeveel?", "modelAnswer": "VF9 medecontractant → seller rekent 0 aan. VF10: 21%×1 500 = 315. Contant: 6 000/1,21 = 4 958,68 → BTW = 1 041,32. AF4 medecontractant: 136,50 verschuldigd. Totaal verschuldigd ≈ € 1 492,82." },
-        { "prompt": "Wat is de eindvereffening?", "modelAnswer": "Verschuldigd 1 492,82 − aftrekbaar 14 129,86 = − € 12 637,04 → TERUG TE VORDEREN van de Staat ± € 12 637,04 (grote investeringen in deze maand)." }
+        {
+          "prompt": "Welke aankopen geven aftrekbare BTW, en hoeveel?",
+          "modelAnswer": "AF1: 21%×40 000 = 8 400. AF2: 21%×250 = 52,50 × 60% = 31,50. AF3: 21%×1 200 = 252. AF5 (lichte vracht = 100% aftrekbaar): 21%×22 186,47 = 4 659,16. AF6: 21%×3 000 = 630. AF7: 6%×100 = 6. AF8: 21%×70 = 14,70. AF4 medecontractant: 21%×650 = 136,50 aftrekbaar (én verschuldigd). Totaal aftrekbaar ≈ € 14 129,86."
+        },
+        {
+          "prompt": "Welke verkopen geven verschuldigde BTW, en hoeveel?",
+          "modelAnswer": "VF9 medecontractant → seller rekent 0 aan. VF10: 21%×1 500 = 315. Contant: 6 000/1,21 = 4 958,68 → BTW = 1 041,32. AF4 medecontractant: 136,50 verschuldigd. Totaal verschuldigd ≈ € 1 492,82."
+        },
+        {
+          "prompt": "Wat is de eindvereffening?",
+          "modelAnswer": "Verschuldigd 1 492,82 − aftrekbaar 14 129,86 = − € 12 637,04 → TERUG TE VORDEREN van de Staat ± € 12 637,04 (grote investeringen in deze maand)."
+        }
       ],
       "explanation": "Lichte vracht is geen personenwagen → 100% aftrek (geen 50%-beperking). Medecontractant: BTW dubbel aangeven (nuloperatie). Contant incl. BTW → delen door 1,21."
     },
     {
-      "id": "ob-05", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["BTW","vereffening","ICL"],
+      "id": "ob-05",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "BTW",
+        "vereffening",
+        "ICL"
+      ],
       "category": "BTW-vereffening",
       "context": "BV Colman (groothandel elektronica), maand december. AF/1 triacs 10 857; VF/1 verkoop transistoren 17 055 aan Luxemburgse firma; AF/2 bestelwagen 40 282 met 5% handelskorting (lineair 5 j); AF/3 Telenet internet 223,08 (20% privé); AF/4 dakherstelling magazijn 22 062,52; VF/2 Zehner diodes 11 378; AF/5 SMD-capaciteiten uit Nederland 8 676. Interne winkelverkoop 20 872,63 incl. BTW. Alle aan/verkopen excl. BTW tenzij vermeld; standaard 21%.",
       "question": "Bepaal de BTW-vereffening voor december.",
       "steps": [
-        { "prompt": "Verschuldigde BTW (verkopen)?", "modelAnswer": "VF/1 naar Luxemburg = intracommunautaire levering → vrijgesteld (BTW verlegd), 0. VF/2 binnenland: 21%×11 378 = 2 389,38. Winkelverkoop 20 872,63 incl. → /1,21 = 17 250,11 → BTW = 3 622,52. AF/4 medecontractant (werk onroerende staat): 21%×22 062,52 = 4 633,13 verschuldigd. AF/5 ICL-aankoop NL: 21%×8 676 = 1 821,96 verschuldigd. Totaal verschuldigd ≈ € 12 466,99." },
-        { "prompt": "Aftrekbare BTW (aankopen)?", "modelAnswer": "AF/1: 21%×10 857 = 2 279,97. AF/2 na 5% korting: 40 282×0,95 = 38 267,90 → 21% = 8 036,26 (bestelwagen lichte vracht/bedrijfsvoertuig → volledig). AF/3 internet: 21%×223,08 = 46,85 × 80% = 37,48. AF/4 medecontractant: 4 633,13 aftrekbaar. AF/5 ICL: 1 821,96 aftrekbaar. Totaal aftrekbaar ≈ € 16 808,80." },
-        { "prompt": "Eindvereffening?", "modelAnswer": "12 466,99 − 16 808,80 = − € 4 341,81 → terug te vorderen. (Door de zware investering in de bestelwagen.)" }
+        {
+          "prompt": "Verschuldigde BTW (verkopen)?",
+          "modelAnswer": "VF/1 naar Luxemburg = intracommunautaire levering → vrijgesteld (BTW verlegd), 0. VF/2 binnenland: 21%×11 378 = 2 389,38. Winkelverkoop 20 872,63 incl. → /1,21 = 17 250,11 → BTW = 3 622,52. AF/4 medecontractant (werk onroerende staat): 21%×22 062,52 = 4 633,13 verschuldigd. AF/5 ICL-aankoop NL: 21%×8 676 = 1 821,96 verschuldigd. Totaal verschuldigd ≈ € 12 466,99."
+        },
+        {
+          "prompt": "Aftrekbare BTW (aankopen)?",
+          "modelAnswer": "AF/1: 21%×10 857 = 2 279,97. AF/2 na 5% korting: 40 282×0,95 = 38 267,90 → 21% = 8 036,26 (bestelwagen lichte vracht/bedrijfsvoertuig → volledig). AF/3 internet: 21%×223,08 = 46,85 × 80% = 37,48. AF/4 medecontractant: 4 633,13 aftrekbaar. AF/5 ICL: 1 821,96 aftrekbaar. Totaal aftrekbaar ≈ € 16 808,80."
+        },
+        {
+          "prompt": "Eindvereffening?",
+          "modelAnswer": "12 466,99 − 16 808,80 = − € 4 341,81 → terug te vorderen. (Door de zware investering in de bestelwagen.)"
+        }
       ],
       "explanation": "ICL-verkoop = vrijgesteld. ICL-aankoop én medecontractant: BTW dubbel (verschuldigd + aftrekbaar). Handelskorting verlaagt de maatstaf. Winkelverkoop incl. BTW → /1,21."
     },
     {
-      "id": "ob-06", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Soorten kosten","vast","variabel","direct","indirect"],
+      "id": "ob-06",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Soorten kosten",
+        "vast",
+        "variabel",
+        "direct",
+        "indirect"
+      ],
       "category": "Soorten kosten",
       "context": "Een onderneming produceert per jaar 2 000 gelakte tafels en 5 000 gelakte kasten. Je moet elke kost indelen als VAST/VARIABEL en DIRECT/INDIRECT.",
       "question": "Classificeer de belangrijkste kosten.",
       "steps": [
-        { "prompt": "Loonkosten maken tafels / kasten (€ 50 000 / € 112 500)?", "modelAnswer": "Variabel + Direct — toewijsbaar aan één productsoort en schaalt met productie." },
-        { "prompt": "Spuiter lakwerk (tafels én kasten), directie, boekhouder?", "modelAnswer": "Spuiter: variabel maar INDIRECT (gedeeld over beide producten). Directie & boekhouder: VAST + INDIRECT (algemene kosten)." },
-        { "prompt": "Materiaalkosten (metaalplaten per tafel/kast) en afschrijving machines?", "modelAnswer": "Metaalplaten: variabel + direct (per stuk toewijsbaar). Afschrijving snij-/plooimachine, gebouwen, spuitcabine: VAST. Snij/plooi & spuitcabine zijn indirect (gedeeld), gebouwafschrijving indirect." },
-        { "prompt": "Verkoper enkel tafels / enkel kasten?", "modelAnswer": "Vast (jaarloon) + DIRECT (toewijsbaar aan één productsoort)." }
+        {
+          "prompt": "Loonkosten maken tafels / kasten (€ 50 000 / € 112 500)?",
+          "modelAnswer": "Variabel + Direct — toewijsbaar aan één productsoort en schaalt met productie."
+        },
+        {
+          "prompt": "Spuiter lakwerk (tafels én kasten), directie, boekhouder?",
+          "modelAnswer": "Spuiter: variabel maar INDIRECT (gedeeld over beide producten). Directie & boekhouder: VAST + INDIRECT (algemene kosten)."
+        },
+        {
+          "prompt": "Materiaalkosten (metaalplaten per tafel/kast) en afschrijving machines?",
+          "modelAnswer": "Metaalplaten: variabel + direct (per stuk toewijsbaar). Afschrijving snij-/plooimachine, gebouwen, spuitcabine: VAST. Snij/plooi & spuitcabine zijn indirect (gedeeld), gebouwafschrijving indirect."
+        },
+        {
+          "prompt": "Verkoper enkel tafels / enkel kasten?",
+          "modelAnswer": "Vast (jaarloon) + DIRECT (toewijsbaar aan één productsoort)."
+        }
       ],
       "explanation": "Vast vs variabel = gevoeligheid voor bedrijfsdrukte. Direct vs indirect = toewijsbaarheid aan één product. Een kost kan vast én direct zijn (bv. verkoper voor één product)."
     },
     {
-      "id": "ob-07", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Integrale kostprijs","break-even"],
+      "id": "ob-07",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Integrale kostprijs",
+        "break-even"
+      ],
       "category": "Integrale kostprijs",
       "context": "Massaproductie van 12 000 eenheden (= max. capaciteit). Kostengegevens: bij 1 000 stuks → totale variabele kost 20 823, totale kost 324 245. Bij 12 000 stuks → totale variabele kost 249 876, totale kost 553 298. Verkoopprijs € 46,58/stuk.",
       "question": "Bereken kostprijs bij 4 000 eenheden, totale winst bij volle bezetting en de break-even afzet.",
       "steps": [
-        { "prompt": "Variabele kost per stuk en totale vaste kosten?", "modelAnswer": "VK/stuk = (249 876 − 20 823)/(12 000 − 1 000) = 229 053/11 000 = € 20,823. Vaste kost = 324 245 − (1 000 × 20,823) = € 303 422." },
-        { "prompt": "Kostprijs per stuk bij 4 000 eenheden?", "modelAnswer": "TK = 303 422 + 4 000 × 20,823 = 303 422 + 83 292 = 386 714. Per stuk = 386 714/4 000 ≈ € 96,68." },
-        { "prompt": "Totale winst bij 12 000 stuks?", "modelAnswer": "Omzet = 12 000 × 46,58 = 558 960. TK = 553 298. Winst = € 5 662." },
-        { "prompt": "Break-even afzet?", "modelAnswer": "BB/stuk = 46,58 − 20,823 = 25,757. BE = 303 422/25,757 ≈ 11 780 stuks (net onder de max. capaciteit)." }
+        {
+          "prompt": "Variabele kost per stuk en totale vaste kosten?",
+          "modelAnswer": "VK/stuk = (249 876 − 20 823)/(12 000 − 1 000) = 229 053/11 000 = € 20,823. Vaste kost = 324 245 − (1 000 × 20,823) = € 303 422."
+        },
+        {
+          "prompt": "Kostprijs per stuk bij 4 000 eenheden?",
+          "modelAnswer": "TK = 303 422 + 4 000 × 20,823 = 303 422 + 83 292 = 386 714. Per stuk = 386 714/4 000 ≈ € 96,68."
+        },
+        {
+          "prompt": "Totale winst bij 12 000 stuks?",
+          "modelAnswer": "Omzet = 12 000 × 46,58 = 558 960. TK = 553 298. Winst = € 5 662."
+        },
+        {
+          "prompt": "Break-even afzet?",
+          "modelAnswer": "BB/stuk = 46,58 − 20,823 = 25,757. BE = 303 422/25,757 ≈ 11 780 stuks (net onder de max. capaciteit)."
+        }
       ],
       "explanation": "Vaste kosten afleiden via twee productieniveaus (verschilmethode). Daarna kostprijs, winst en break-even berekenen."
     },
     {
-      "id": "ob-08", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Integrale kostprijs","verdeelsleutel"],
+      "id": "ob-08",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Integrale kostprijs",
+        "verdeelsleutel"
+      ],
       "category": "Integrale kostprijs",
       "context": "Twee producten. Directe materialen: A € 250/stuk, B € 200/stuk. Directe arbeid: A € 149/stuk, B € 124/stuk. Indirecte kosten: aankoopkosten 54 536 + set-up 74 368 + intern transport 90 000 + afschrijving assemblage 190 878. Verkocht: A 500 stuks, B 100 stuks. Indirecte kosten omslaan volgens aantal verkochte eenheden.",
       "question": "Bereken de integrale kostprijs van één eenheid A en één eenheid B.",
       "steps": [
-        { "prompt": "Directe kost per stuk?", "modelAnswer": "A: 250 + 149 = € 399. B: 200 + 124 = € 324." },
-        { "prompt": "Totale indirecte kosten en verdeling per stuk?", "modelAnswer": "Indirect totaal = 54 536 + 74 368 + 90 000 + 190 878 = 409 782. Totaal aantal stuks = 600 → 409 782/600 = € 683,03 per stuk." },
-        { "prompt": "Integrale kostprijs A en B?", "modelAnswer": "A = 399 + 683,03 = € 1 082,03. B = 324 + 683,03 = € 1 007,03." }
+        {
+          "prompt": "Directe kost per stuk?",
+          "modelAnswer": "A: 250 + 149 = € 399. B: 200 + 124 = € 324."
+        },
+        {
+          "prompt": "Totale indirecte kosten en verdeling per stuk?",
+          "modelAnswer": "Indirect totaal = 54 536 + 74 368 + 90 000 + 190 878 = 409 782. Totaal aantal stuks = 600 → 409 782/600 = € 683,03 per stuk."
+        },
+        {
+          "prompt": "Integrale kostprijs A en B?",
+          "modelAnswer": "A = 399 + 683,03 = € 1 082,03. B = 324 + 683,03 = € 1 007,03."
+        }
       ],
       "explanation": "Globale toeslagcalculatie met één verdeelsleutel (aantal eenheden). Let op: deze sleutel belast A en B gelijk per stuk ongeacht hun werkelijke beslag op de indirecte kosten."
     },
     {
-      "id": "ob-09", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Integrale kostprijs","verfijnde toeslag"],
+      "id": "ob-09",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Integrale kostprijs",
+        "verfijnde toeslag"
+      ],
       "category": "Integrale kostprijs",
       "context": "Vervolg op oefening 6 (tafels en kasten). De indirecte spuitkosten (lakwerk) worden omgeslagen volgens de te spuiten oppervlakte (tafel 2 m², kast 6 m²; 2 000 tafels, 5 000 kasten). Alle andere indirecte kosten volgens het aantal geproduceerde goederen (7 000 totaal).",
       "question": "Bepaal de verdeelsleutels voor 1 tafel en 1 kast.",
       "steps": [
-        { "prompt": "Totaal te spuiten oppervlakte?", "modelAnswer": "Tafels: 2 m² × 2 000 = 4 000 m². Kasten: 6 m² × 5 000 = 30 000 m². Totaal = 34 000 m²." },
-        { "prompt": "Spuitkost per m² (verzamel de indirecte lak-gerelateerde kosten)?", "modelAnswer": "Spuiter 22 500 + verfkost spuiten 2 000 + afschrijving spuitcabine 3 750 + elektriciteit spuitcabine 1 500 = 29 750. Per m² = 29 750/34 000 ≈ € 0,875. Tafel: 2×0,875 = € 1,75. Kast: 6×0,875 = € 5,25." },
-        { "prompt": "Andere indirecte kosten per stuk?", "modelAnswer": "Som de overige indirecte kosten (directie, boekhouder, afschrijving snij/plooimachine + gebouwen, elektriciteit gebouw, onderhoudscontract, verf schilderwerk gebouw...) en deel door 7 000 geproduceerde goederen. Tel daarbij de directe kosten per product (loon + metaalplaten) op voor de integrale kostprijs." }
+        {
+          "prompt": "Totaal te spuiten oppervlakte?",
+          "modelAnswer": "Tafels: 2 m² × 2 000 = 4 000 m². Kasten: 6 m² × 5 000 = 30 000 m². Totaal = 34 000 m²."
+        },
+        {
+          "prompt": "Spuitkost per m² (verzamel de indirecte lak-gerelateerde kosten)?",
+          "modelAnswer": "Spuiter 22 500 + verfkost spuiten 2 000 + afschrijving spuitcabine 3 750 + elektriciteit spuitcabine 1 500 = 29 750. Per m² = 29 750/34 000 ≈ € 0,875. Tafel: 2×0,875 = € 1,75. Kast: 6×0,875 = € 5,25."
+        },
+        {
+          "prompt": "Andere indirecte kosten per stuk?",
+          "modelAnswer": "Som de overige indirecte kosten (directie, boekhouder, afschrijving snij/plooimachine + gebouwen, elektriciteit gebouw, onderhoudscontract, verf schilderwerk gebouw...) en deel door 7 000 geproduceerde goederen. Tel daarbij de directe kosten per product (loon + metaalplaten) op voor de integrale kostprijs."
+        }
       ],
       "explanation": "Verfijnde toeslagcalculatie: de lakwerk-kosten via m² (logische sleutel), de rest via aantal stuks. Zo benadert de kostprijs de werkelijkheid beter dan met één globale sleutel."
     },
     {
-      "id": "ob-10", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Variabele kostprijs","make-or-buy"],
+      "id": "ob-10",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Variabele kostprijs",
+        "make-or-buy"
+      ],
       "category": "Variabele kostprijs",
       "context": "Een bierproducent reinigt 1 920 000 leeggoedflesjes zelf. Kostprijs per flesje: afschrijving installatie 0,0074; huur gebouw 0,0045; water+elektriciteit 0,0015; brandverzekering gebouw 0,0007; arbeiderslonen (interim) 0,0233; onroerende voorheffing 0,0002. Extern bedrijf reinigt voor € 0,0307/flesje.",
       "question": "Make or buy? Motiveer met cijfers.",
       "steps": [
-        { "prompt": "Welke kosten zijn vermijdbaar (variabel) bij uitbesteden op korte termijn?", "modelAnswer": "Enkel de variabele/vermijdbare kosten: water+elektriciteit 0,0015 + arbeiderslonen 0,0233 = € 0,0248/flesje. Afschrijving, huur, brandverzekering en onroerende voorheffing blijven sowieso lopen (vast)." },
-        { "prompt": "Vergelijk met het externe aanbod (korte termijn).", "modelAnswer": "Vermijdbare kost 0,0248 < extern 0,0307 → ZELF blijven reinigen op korte termijn (de vaste kosten lopen toch verder)." },
-        { "prompt": "Wat op lange termijn?", "modelAnswer": "Totale eigen kost = 0,0376/flesje > 0,0307 extern. Als op lange termijn ook de vaste kosten (gebouw, installatie) wegvallen, wordt uitbesteden voordeliger." }
+        {
+          "prompt": "Welke kosten zijn vermijdbaar (variabel) bij uitbesteden op korte termijn?",
+          "modelAnswer": "Enkel de variabele/vermijdbare kosten: water+elektriciteit 0,0015 + arbeiderslonen 0,0233 = € 0,0248/flesje. Afschrijving, huur, brandverzekering en onroerende voorheffing blijven sowieso lopen (vast)."
+        },
+        {
+          "prompt": "Vergelijk met het externe aanbod (korte termijn).",
+          "modelAnswer": "Vermijdbare kost 0,0248 < extern 0,0307 → ZELF blijven reinigen op korte termijn (de vaste kosten lopen toch verder)."
+        },
+        {
+          "prompt": "Wat op lange termijn?",
+          "modelAnswer": "Totale eigen kost = 0,0376/flesje > 0,0307 extern. Als op lange termijn ook de vaste kosten (gebouw, installatie) wegvallen, wordt uitbesteden voordeliger."
+        }
       ],
       "explanation": "Korte termijn: enkel variabele/vermijdbare kosten tellen. Lange termijn: integrale kost vergelijken indien de vaste kosten effectief geëlimineerd kunnen worden."
     },
     {
-      "id": "ob-11", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Variabele kostprijs","elimineren"],
+      "id": "ob-11",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Variabele kostprijs",
+        "elimineren"
+      ],
       "category": "Variabele kostprijs",
       "context": "Drie producten. A: omzet 500 000, variabele kosten 300 000. B: omzet 400 000, variabele kosten 280 000. C: omzet 100 000, variabele kosten 85 000. Vaste kosten totaal 250 000. Men overweegt C te schrappen; daarbij kan € 20 000 salaris van de meestergast bespaard worden.",
       "question": "Is het raadzaam product C te schrappen?",
       "steps": [
-        { "prompt": "Bruto bijdrage per product?", "modelAnswer": "A: 500 000 − 300 000 = 200 000. B: 400 000 − 280 000 = 120 000. C: 100 000 − 85 000 = € 15 000." },
-        { "prompt": "Huidige totale winst?", "modelAnswer": "Totale BB = 200 000 + 120 000 + 15 000 = 335 000 − vaste 250 000 = winst € 85 000." },
-        { "prompt": "Effect van C schrappen?", "modelAnswer": "Je verliest de BB van C (−15 000) maar bespaart 20 000 salaris (+20 000) → netto +5 000. Winst stijgt naar € 90 000 → JA, C schrappen is raadzaam (de besparing 20 000 > weggevallen BB 15 000)." }
+        {
+          "prompt": "Bruto bijdrage per product?",
+          "modelAnswer": "A: 500 000 − 300 000 = 200 000. B: 400 000 − 280 000 = 120 000. C: 100 000 − 85 000 = € 15 000."
+        },
+        {
+          "prompt": "Huidige totale winst?",
+          "modelAnswer": "Totale BB = 200 000 + 120 000 + 15 000 = 335 000 − vaste 250 000 = winst € 85 000."
+        },
+        {
+          "prompt": "Effect van C schrappen?",
+          "modelAnswer": "Je verliest de BB van C (−15 000) maar bespaart 20 000 salaris (+20 000) → netto +5 000. Winst stijgt naar € 90 000 → JA, C schrappen is raadzaam (de besparing 20 000 > weggevallen BB 15 000)."
+        }
       ],
       "explanation": "Een verlieslatend product mag je pas schrappen als de besparing op vaste kosten groter is dan de bruto bijdrage die wegvalt."
     },
     {
-      "id": "ob-12", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Variabele kostprijs","uitzonderlijk order"],
+      "id": "ob-12",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Variabele kostprijs",
+        "uitzonderlijk order"
+      ],
       "category": "Variabele kostprijs",
       "context": "Vaste kosten € 2 000 000 bij normale productie van 200 000 stuks. Variabele kost € 20/stuk. Wegens vraagdaling herleidt men naar 150 000 stuks. Er is een mogelijkheid om 50 000 stuks extra te verkopen aan € 23/stuk; dit vereist € 200 000 extra kosten.",
       "question": "Moet het bedrijf dit extra order aannemen? (integrale én variabele methode)",
       "steps": [
-        { "prompt": "Variabele methode — extra opbrengst vs extra kosten?", "modelAnswer": "Extra opbrengst = 50 000 × 23 = 1 150 000. Extra variabele kost = 50 000 × 20 = 1 000 000. Extra bijkomende kosten = 200 000. Netto = 1 150 000 − 1 000 000 − 200 000 = − € 50 000." },
-        { "prompt": "Beslissing?", "modelAnswer": "Het order levert € 50 000 verlies op → NIET aannemen. De extra bijdrage (3/stuk × 50 000 = 150 000) dekt de extra kosten van 200 000 niet." },
-        { "prompt": "Integrale check?", "modelAnswer": "Integrale kost/stuk bij 200 000 = 20 + 2 000 000/200 000 = 30. Verkoopprijs 23 < 30. Maar de juiste beslissing volgt uit de variabele methode + extra kosten: hier valt ze samen → niet aannemen." }
+        {
+          "prompt": "Variabele methode — extra opbrengst vs extra kosten?",
+          "modelAnswer": "Extra opbrengst = 50 000 × 23 = 1 150 000. Extra variabele kost = 50 000 × 20 = 1 000 000. Extra bijkomende kosten = 200 000. Netto = 1 150 000 − 1 000 000 − 200 000 = − € 50 000."
+        },
+        {
+          "prompt": "Beslissing?",
+          "modelAnswer": "Het order levert € 50 000 verlies op → NIET aannemen. De extra bijdrage (3/stuk × 50 000 = 150 000) dekt de extra kosten van 200 000 niet."
+        },
+        {
+          "prompt": "Integrale check?",
+          "modelAnswer": "Integrale kost/stuk bij 200 000 = 20 + 2 000 000/200 000 = 30. Verkoopprijs 23 < 30. Maar de juiste beslissing volgt uit de variabele methode + extra kosten: hier valt ze samen → niet aannemen."
+        }
       ],
       "explanation": "Bij uitzonderlijke orders: vergelijk extra opbrengst met extra (variabele + bijkomende) kosten. Hier wegen de € 200 000 extra kosten te zwaar."
     },
     {
-      "id": "ob-13", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Break-even","zalen"],
+      "id": "ob-13",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Break-even",
+        "zalen"
+      ],
       "category": "Break-even",
       "context": "Uitgeverij Inform organiseert een congres. Inschrijving € 6,69/persoon (geen variabele kosten behalve drank in Béliaard). Zaal Tristan (< 250 pers.) € 1 338. Zaal Isolde (≤ 450 pers.) € 2 007. Zaal Béliaard (≤ 700 pers.) € 3 470; daar krijgt Inform € 0,12 marge per drankje en deelnemers drinken gemiddeld 2 drankjes.",
       "question": "Bepaal de break-even in aantal personen en omzet voor elke zaal.",
       "steps": [
-        { "prompt": "Break-even Tristan?", "modelAnswer": "BB/persoon = 6,69. BE = 1 338/6,69 = 200 personen (< 250 ✓). Omzet = 200 × 6,69 = € 1 338." },
-        { "prompt": "Break-even Isolde?", "modelAnswer": "BE = 2 007/6,69 = 300 personen (≤ 450 ✓). Omzet = 300 × 6,69 = € 2 007." },
-        { "prompt": "Break-even Béliaard?", "modelAnswer": "Extra marge drank = 2 × 0,12 = 0,24/persoon. BB/persoon = 6,69 + 0,24 = 6,93. BE = 3 470/6,93 ≈ 501 personen (≤ 700 ✓). Omzet (inschrijving) ≈ 501 × 6,69 = € 3 351,69 (+ drankmarge)." }
+        {
+          "prompt": "Break-even Tristan?",
+          "modelAnswer": "BB/persoon = 6,69. BE = 1 338/6,69 = 200 personen (< 250 ✓). Omzet = 200 × 6,69 = € 1 338."
+        },
+        {
+          "prompt": "Break-even Isolde?",
+          "modelAnswer": "BE = 2 007/6,69 = 300 personen (≤ 450 ✓). Omzet = 300 × 6,69 = € 2 007."
+        },
+        {
+          "prompt": "Break-even Béliaard?",
+          "modelAnswer": "Extra marge drank = 2 × 0,12 = 0,24/persoon. BB/persoon = 6,69 + 0,24 = 6,93. BE = 3 470/6,93 ≈ 501 personen (≤ 700 ✓). Omzet (inschrijving) ≈ 501 × 6,69 = € 3 351,69 (+ drankmarge)."
+        }
       ],
       "explanation": "Break-even = vaste kosten / bruto bijdrage per persoon. In Béliaard verhoogt de drankmarge de bijdrage per persoon."
     },
     {
-      "id": "ob-14", "chapter": 98, "difficulty": "diepgang", "type": "case",
-      "tags": ["Break-even","doosopeners"],
+      "id": "ob-14",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Break-even",
+        "doosopeners"
+      ],
       "category": "Break-even",
       "context": "Doosopeners verkocht aan € 3,10/stuk. Vaste kosten € 75 000. Variabele kost € 1,86/stuk. Maximale capaciteit 120 000 stuks.",
       "question": "Bereken break-even, nettoresultaat bij 100 000 stuks, en het effect van een prijsverhoging + reclame.",
       "steps": [
-        { "prompt": "Break-even afzet en omzet?", "modelAnswer": "BB/stuk = 3,10 − 1,86 = 1,24. BE = 75 000/1,24 ≈ 60 484 stuks. BE-omzet ≈ 60 484 × 3,10 = € 187 500." },
-        { "prompt": "Nettoresultaat bij 100 000 stuks?", "modelAnswer": "BB = 100 000 × 1,24 = 124 000 − vaste 75 000 = winst € 49 000." },
-        { "prompt": "Effect prijs +0,12 én reclame € 2 500?", "modelAnswer": "Nieuwe BB/stuk = (3,22 − 1,86) = 1,36. Vaste kosten = 75 000 + 2 500 = 77 500. Winst bij 100 000 = 136 000 − 77 500 = € 58 500 → € 9 500 beter. Nieuwe BE = 77 500/1,36 ≈ 56 985 stuks (lager). Gunstig." }
+        {
+          "prompt": "Break-even afzet en omzet?",
+          "modelAnswer": "BB/stuk = 3,10 − 1,86 = 1,24. BE = 75 000/1,24 ≈ 60 484 stuks. BE-omzet ≈ 60 484 × 3,10 = € 187 500."
+        },
+        {
+          "prompt": "Nettoresultaat bij 100 000 stuks?",
+          "modelAnswer": "BB = 100 000 × 1,24 = 124 000 − vaste 75 000 = winst € 49 000."
+        },
+        {
+          "prompt": "Effect prijs +0,12 én reclame € 2 500?",
+          "modelAnswer": "Nieuwe BB/stuk = (3,22 − 1,86) = 1,36. Vaste kosten = 75 000 + 2 500 = 77 500. Winst bij 100 000 = 136 000 − 77 500 = € 58 500 → € 9 500 beter. Nieuwe BE = 77 500/1,36 ≈ 56 985 stuks (lager). Gunstig."
+        }
       ],
       "explanation": "Een hogere verkoopprijs verhoogt de bruto bijdrage per stuk, wat de break-even verlaagt en de winst verhoogt — zelfs met extra reclamekosten."
     },
     {
-      "id": "ob-15", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Integrale kostprijs","bruto bijdrage"],
+      "id": "ob-15",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Integrale kostprijs",
+        "bruto bijdrage"
+      ],
       "category": "Integrale kostprijs",
       "context": "Productie en verkoop: 1 000 stuks A en 4 000 stuks B. Verkoopprijs A € 7,44, B € 6,20. Directe grondstofkosten: A 2 727, B 8 428 (totaal). Directe loonkosten: A 2 231, B 7 437 (totaal). Indirecte vaste kosten € 5 000, omgeslagen volgens aantal stuks.",
       "question": "Bereken de integrale kostprijs van 1 stuk A en 1 stuk B.",
       "steps": [
-        { "prompt": "Directe kosten per product?", "modelAnswer": "A: 2 727 + 2 231 = 4 958 (voor 1 000 stuks). B: 8 428 + 7 437 = 15 865 (voor 4 000 stuks)." },
-        { "prompt": "Indirecte kosten per stuk?", "modelAnswer": "Totaal stuks = 5 000. 5 000 indirect / 5 000 stuks = € 1 per stuk. A: 1 000 × 1 = 1 000. B: 4 000 × 1 = 4 000." },
-        { "prompt": "Integrale kostprijs per stuk?", "modelAnswer": "A = (4 958 + 1 000)/1 000 = € 5,958. B = (15 865 + 4 000)/4 000 = € 4,966." }
+        {
+          "prompt": "Directe kosten per product?",
+          "modelAnswer": "A: 2 727 + 2 231 = 4 958 (voor 1 000 stuks). B: 8 428 + 7 437 = 15 865 (voor 4 000 stuks)."
+        },
+        {
+          "prompt": "Indirecte kosten per stuk?",
+          "modelAnswer": "Totaal stuks = 5 000. 5 000 indirect / 5 000 stuks = € 1 per stuk. A: 1 000 × 1 = 1 000. B: 4 000 × 1 = 4 000."
+        },
+        {
+          "prompt": "Integrale kostprijs per stuk?",
+          "modelAnswer": "A = (4 958 + 1 000)/1 000 = € 5,958. B = (15 865 + 4 000)/4 000 = € 4,966."
+        }
       ],
       "explanation": "Directe kosten direct toewijzen, indirecte vaste kosten omslaan volgens aantal stuks, dan delen door de productie per product."
     },
     {
-      "id": "ob-16", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Personeelskost","bediende"],
+      "id": "ob-16",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Personeelskost",
+        "bediende"
+      ],
       "category": "Personeelskost",
       "context": "Bediende D'Hondt, bedrijf met 9 werknemers. Bruto maandloon € 4 200, bedrijfsvoorheffing € 200 (gehuwd, 3 kinderen).",
       "question": "Bereken het nettoloon en de totale kost voor de werkgever.",
       "steps": [
-        { "prompt": "RSZ-werknemersbijdrage en belastbaar loon?", "modelAnswer": "RSZ-WN = 13,07% × 4 200 = € 548,94. Belastbaar loon = 4 200 − 548,94 = € 3 651,06." },
-        { "prompt": "Nettoloon?", "modelAnswer": "Belastbaar − bedrijfsvoorheffing = 3 651,06 − 200 = € 3 451,06." },
-        { "prompt": "Totale kost voor de werkgever?", "modelAnswer": "Brutoloon + patronale RSZ (± 27,31% bediende) = 4 200 + 1 147,02 = ± € 5 347,02. (Vuistregel: ± brutoloon × 2 inclusief alle bijkomende verzekeringen.)" }
+        {
+          "prompt": "RSZ-werknemersbijdrage en belastbaar loon?",
+          "modelAnswer": "RSZ-WN = 13,07% × 4 200 = € 548,94. Belastbaar loon = 4 200 − 548,94 = € 3 651,06."
+        },
+        {
+          "prompt": "Nettoloon?",
+          "modelAnswer": "Belastbaar − bedrijfsvoorheffing = 3 651,06 − 200 = € 3 451,06."
+        },
+        {
+          "prompt": "Totale kost voor de werkgever?",
+          "modelAnswer": "Brutoloon + patronale RSZ (± 27,31% bediende) = 4 200 + 1 147,02 = ± € 5 347,02. (Vuistregel: ± brutoloon × 2 inclusief alle bijkomende verzekeringen.)"
+        }
       ],
       "explanation": "Bruto − RSZ-WN (13,07%) = belastbaar → − bedrijfsvoorheffing = netto. Loonkost werkgever = bruto + patronale bijdrage (~27% bediende)."
     },
     {
-      "id": "ob-17", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Personeelskost","bediende"],
+      "id": "ob-17",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Personeelskost",
+        "bediende"
+      ],
       "category": "Personeelskost",
       "context": "Bediende Vroman (multinational). Bruto september € 4 200, bedrijfsvoorheffing € 454 (gehuwd, 1 kind).",
       "question": "Bereken het nettoloon en de totale werkgeverskost.",
       "steps": [
-        { "prompt": "RSZ-WN en belastbaar loon?", "modelAnswer": "RSZ-WN = 13,07% × 4 200 = € 548,94. Belastbaar = 4 200 − 548,94 = € 3 651,06." },
-        { "prompt": "Nettoloon?", "modelAnswer": "3 651,06 − 454 = € 3 197,06. (Lager netto dan D'Hondt door hogere bedrijfsvoorheffing: minder kinderen ten laste.)" },
-        { "prompt": "Totale werkgeverskost?", "modelAnswer": "4 200 + 27,31% × 4 200 = 4 200 + 1 147,02 = ± € 5 347,02." }
+        {
+          "prompt": "RSZ-WN en belastbaar loon?",
+          "modelAnswer": "RSZ-WN = 13,07% × 4 200 = € 548,94. Belastbaar = 4 200 − 548,94 = € 3 651,06."
+        },
+        {
+          "prompt": "Nettoloon?",
+          "modelAnswer": "3 651,06 − 454 = € 3 197,06. (Lager netto dan D'Hondt door hogere bedrijfsvoorheffing: minder kinderen ten laste.)"
+        },
+        {
+          "prompt": "Totale werkgeverskost?",
+          "modelAnswer": "4 200 + 27,31% × 4 200 = 4 200 + 1 147,02 = ± € 5 347,02."
+        }
       ],
       "explanation": "Zelfde brutoloon als oef 16, maar door minder kinderlast hogere bedrijfsvoorheffing → lager netto. De werkgeverskost blijft gelijk (hangt niet af van gezinssituatie)."
     },
     {
-      "id": "ob-18", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Personeelskost","arbeider"],
+      "id": "ob-18",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Personeelskost",
+        "arbeider"
+      ],
       "category": "Personeelskost",
       "context": "Arbeider Verhaeghe, bedrijf met 15 werknemers. Bruto afgelopen maand € 3 500, bedrijfsvoorheffing € 273 (gehuwd, 1 kind).",
       "question": "Bereken het nettoloon en de totale werkgeverskost.",
       "steps": [
-        { "prompt": "RSZ-werknemersbijdrage (arbeider)?", "modelAnswer": "Voor arbeiders op 108% van het brutoloon: 13,07% × (108% × 3 500) = 13,07% × 3 780 = € 494,05." },
-        { "prompt": "Nettoloon?", "modelAnswer": "Belastbaar = 3 500 − 494,05 = 3 005,95. Netto = 3 005,95 − 273 = € 2 732,95." },
-        { "prompt": "Totale werkgeverskost?", "modelAnswer": "Brutoloon + patronale (± 32,88% voor arbeiders) = 3 500 + 1 150,80 = ± € 4 650,80." }
+        {
+          "prompt": "RSZ-werknemersbijdrage (arbeider)?",
+          "modelAnswer": "Voor arbeiders op 108% van het brutoloon: 13,07% × (108% × 3 500) = 13,07% × 3 780 = € 494,05."
+        },
+        {
+          "prompt": "Nettoloon?",
+          "modelAnswer": "Belastbaar = 3 500 − 494,05 = 3 005,95. Netto = 3 005,95 − 273 = € 2 732,95."
+        },
+        {
+          "prompt": "Totale werkgeverskost?",
+          "modelAnswer": "Brutoloon + patronale (± 32,88% voor arbeiders) = 3 500 + 1 150,80 = ± € 4 650,80."
+        }
       ],
       "explanation": "Bij arbeiders wordt de RSZ-WN berekend op 108% van het brutoloon (die 8% = vakantiegeld). Patronale bijdrage ligt hoger dan bij bedienden (~33%)."
     },
     {
-      "id": "ob-19", "chapter": 98, "difficulty": "midden", "type": "case",
-      "tags": ["Personeelskost","arbeider"],
+      "id": "ob-19",
+      "chapter": 98,
+      "difficulty": "midden",
+      "type": "case",
+      "tags": [
+        "Personeelskost",
+        "arbeider"
+      ],
       "category": "Personeelskost",
       "context": "Arbeider Declercq, bedrijf met 8 werknemers. Bruto afgelopen maand € 3 500, bedrijfsvoorheffing € 600 (alleenstaande).",
       "question": "Bereken het nettoloon en de totale werkgeverskost.",
       "steps": [
-        { "prompt": "RSZ-WN (arbeider, op 108%)?", "modelAnswer": "13,07% × (108% × 3 500) = 13,07% × 3 780 = € 494,05." },
-        { "prompt": "Nettoloon?", "modelAnswer": "Belastbaar = 3 500 − 494,05 = 3 005,95. Netto = 3 005,95 − 600 = € 2 405,95. (Hogere bedrijfsvoorheffing dan Verhaeghe: alleenstaande zonder kinderlast.)" },
-        { "prompt": "Totale werkgeverskost?", "modelAnswer": "3 500 + 32,88% × 3 500 = 3 500 + 1 150,80 = ± € 4 650,80." }
+        {
+          "prompt": "RSZ-WN (arbeider, op 108%)?",
+          "modelAnswer": "13,07% × (108% × 3 500) = 13,07% × 3 780 = € 494,05."
+        },
+        {
+          "prompt": "Nettoloon?",
+          "modelAnswer": "Belastbaar = 3 500 − 494,05 = 3 005,95. Netto = 3 005,95 − 600 = € 2 405,95. (Hogere bedrijfsvoorheffing dan Verhaeghe: alleenstaande zonder kinderlast.)"
+        },
+        {
+          "prompt": "Totale werkgeverskost?",
+          "modelAnswer": "3 500 + 32,88% × 3 500 = 3 500 + 1 150,80 = ± € 4 650,80."
+        }
       ],
       "explanation": "Zelfde bruto en RSZ als oef 18, maar als alleenstaande een hogere bedrijfsvoorheffing → lager netto. De werkgeverskost blijft gelijk."
+    },
+    {
+      "id": "ob-20",
+      "chapter": 98,
+      "difficulty": "diepgang",
+      "type": "case",
+      "tags": [
+        "Integrale kostprijs",
+        "toeslagcalculatie",
+        "verdeelsleutel"
+      ],
+      "category": "Integrale kostprijs",
+      "context": "BV CONTAINER produceert twee types stapelbakken: Type 1 (grote bak, 2 000 kg) — 2 000 stuks; Type 2 (kleine bak, 1 000 kg) — 10 000 stuks. DIRECTE kosten — Type 1: arbeiders 50 000 + metaal 200 000 + toebehoren 60 000 + machines 67 000. Type 2: arbeiders 70 000 + metaal 225 000 + toebehoren 21 000 + machines 76 000. INDIRECTE kosten (gedeeld, totaal € 409 400): directeur 30 000, chauffeur 25 000, arbeiders gemeenschappelijke machines 100 000, bedienden 30 000, coating 20 000, water 1 000, afschrijving gemeenschappelijke machines 70 000, gebouw 50 000, parking 9 000, vrachtwagen 12 000, directiewagen 5 000, bureau-uitrusting 17 000, elektriciteit 12 000 (90% drijfkracht machines), verwarming 6 000, telefoon 1 200, reclame 11 000, verzekering gebouw 4 500, verzekering voorraad 2 500, verzekering directiewagen 650, verzekering vrachtwagen 700, onroerende voorheffing 1 500, verkeersbelasting directiewagen 200 + vrachtwagen 150.",
+      "question": "Bereken de integrale kostprijs per bak met drie globale verdeelsleutels, en bereid de verfijnde toeslagcalculatie voor.",
+      "steps": [
+        {
+          "prompt": "Stap 0 — Bepaal de directe kosten per producttype en het totaal aan indirecte kosten.",
+          "modelAnswer": "Directe kosten Type 1 = 50 000 + 200 000 + 60 000 + 67 000 = € 377 000. Type 2 = 70 000 + 225 000 + 21 000 + 76 000 = € 392 000. Alle overige kosten zijn gedeeld → indirect = € 409 400."
+        },
+        {
+          "prompt": "Vraag 1 — Globale toeslagcalculatie met verdeelsleutel METAALKOST. Bereken de kostprijs per bak.",
+          "modelAnswer": "Metaal: T1 200 000 + T2 225 000 = 425 000. Indirect T1 = 409 400 × 200 000/425 000 = 192 659. T2 = 216 741. Grote bak = (377 000 + 192 659)/2 000 = 569 659/2 000 = € 284,83. Kleine bak = (392 000 + 216 741)/10 000 = 608 741/10 000 = € 60,87."
+        },
+        {
+          "prompt": "Vraag 2 — Globale toeslagcalculatie met verdeelsleutel DIRECTE LOONKOST arbeiders (beide afdelingen).",
+          "modelAnswer": "Loon arbeiders: T1 50 000 + T2 70 000 = 120 000. Indirect T1 = 409 400 × 50 000/120 000 = 170 583. T2 = 238 817. Grote bak = (377 000 + 170 583)/2 000 = € 273,79. Kleine bak = (392 000 + 238 817)/10 000 = € 63,08."
+        },
+        {
+          "prompt": "Vraag 3 — Globale toeslagcalculatie met verdeelsleutel AANTAL STUKS.",
+          "modelAnswer": "Stuks: T1 2 000 + T2 10 000 = 12 000. Indirect T1 = 409 400 × 2 000/12 000 = 68 233. T2 = 341 167. Grote bak = (377 000 + 68 233)/2 000 = € 222,62. Kleine bak = (392 000 + 341 167)/10 000 = € 73,32."
+        },
+        {
+          "prompt": "Overzicht & besluit — vergelijk de drie globale resultaten.",
+          "modelAnswer": "Sleutel METAALKOST: grote 284,83 / kleine 60,87. LOONKOST: 273,79 / 63,08. AANTAL STUKS: 222,62 / 73,32. Besluit: één globale sleutel geeft sterk uiteenlopende 'papieren' kostprijzen — geen enkele is exact correct. De meest correcte kostprijs benadert de werkelijkheid → daarvoor de VERFIJNDE toeslagcalculatie (indirecte kosten in groepen, elk met de best passende sleutel)."
+        },
+        {
+          "prompt": "Vraag 4 — Verfijnde toeslagcalculatie: welke omslagsleutel hoort bij welke indirecte kostengroep?",
+          "modelAnswer": "GROEP 'metaalverwerking' (snijden/coaten) → sleutel metaalverbruik: gemeenschappelijke machines 70 000 + arbeiders gemeenschappelijke machines 100 000 + coating 20 000 + 90% elektriciteit (10 800). GROEP 'oppervlakte' (plattegrond %) → gebouw 50 000 + verwarming 6 000 + verzekering gebouw 4 500 + onroerende voorheffing 1 500 + 10% elektriciteit (1 200). GROEP 'transport' → vrachtwagen-afschrijving 12 000 + verzekering 700 + verkeersbelasting 150 + chauffeur 25 000, omslaan volgens transportvolume (grote bak telt dubbel: T1 = 2 000×2 = 4 000; T2 = 10 000×1 = 10 000). GROEP 'algemeen beheer' → directeur 30 000 + bedienden 30 000 + bureau 17 000 + telefoon 1 200 + reclame 11 000 + directiewagen-afschrijving/verzekering/verkeersbelasting (5 850), omslaan volgens aantal stuks. Parking 9 000 → productietijd/arbeiders; water 1 000 → aantal arbeiders."
+        },
+        {
+          "prompt": "Vraag 4 — Hoe bereken je dan de uiteindelijke integrale kostprijs?",
+          "modelAnswer": "Per groep: groepstotaal × (aandeel van het product volgens de gekozen sleutel) = indirect deel per producttype. Tel alle groepsdelen op per type, voeg toe aan de directe kosten, deel door het aantal stuks (T1 /2 000, T2 /10 000). De verfijnde kostprijs ligt tussen de globale uitkomsten in en weerspiegelt de werkelijke beslaglegging op de indirecte kosten het best. Belangrijk besluit: hoe groter de groep indirecte kosten, hoe meer een verfijnde aanpak loont ('cost and value of information decision')."
+        }
+      ],
+      "explanation": "Eén globale sleutel verschuift kosten willekeurig tussen producten (metaalkost belast de grote bak zwaar, aantal stuks belast de kleine bak zwaar). De verfijnde toeslagcalculatie groepeert de indirecte kosten en kiest per groep de logische sleutel (metaalverbruik, oppervlakte, transportvolume, aantal stuks) → realistischere kostprijs."
     }
   ]
 }
