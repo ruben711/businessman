@@ -479,6 +479,34 @@ select.input { padding-right: 28px; appearance: none; background-image: linear-g
 }
 .admin-badge .crown { font-size: 9px; line-height: 1; filter: drop-shadow(0 0 2px rgba(255,255,255,0.5)); }
 
+/* STAFF badge — cool steel/cyan, onderscheidt zich van het gouden ADMIN */
+.staff-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px 2px 6px;
+  border-radius: 3px;
+  font-family: var(--font-pixel);
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: #06222b;
+  background:
+    linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.5) 38%, transparent 56%),
+    linear-gradient(180deg, #7fe3f0, #34c3d6 55%, #1f97a8);
+  background-size: 220% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid #5fd4e3;
+  box-shadow:
+    0 0 0 1px rgba(52,195,214,0.25),
+    0 0 10px rgba(52,195,214,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+  animation: admin-sheen 4.5s ease-in-out infinite;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+}
+.staff-badge .gem { font-size: 8px; line-height: 1; filter: drop-shadow(0 0 2px rgba(255,255,255,0.5)); }
+
 /* ==================== NAME STYLING (leaderboard) ==================== */
 @keyframes shake-x { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-1px)} 75%{transform:translateX(1px)} }
 @keyframes rainbow-hue { 0%{filter:hue-rotate(0deg)} 100%{filter:hue-rotate(360deg)} }

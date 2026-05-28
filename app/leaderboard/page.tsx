@@ -13,7 +13,7 @@ import { BADGE_DEFS } from "@/lib/badges";
 
 type Row = {
   uid: string; name: string; xp: number; solved: number;
-  isAdmin?: boolean; customTag?: any; nameStyle?: any;
+  isAdmin?: boolean; isStaff?: boolean; customTag?: any; nameStyle?: any;
   badges?: string[]; customBadges?: any[];
 };
 
@@ -106,7 +106,7 @@ export default function LeaderboardPage() {
                   <span className={`font-pixel text-[12px] num w-8 ${rankColor}`}>{String(i + 1).padStart(2, "0")}</span>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <StyledName name={u.name} style={u.nameStyle} isAdmin={u.isAdmin} />
+                      <StyledName name={u.name} style={u.nameStyle} isAdmin={u.isAdmin} isStaff={u.isStaff} />
                       {u.customTag && <CustomTag tag={u.customTag} />}
                       {isMe && <span className="chip chip-acc">YOU</span>}
                     </div>

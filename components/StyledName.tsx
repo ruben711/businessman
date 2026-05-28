@@ -11,7 +11,7 @@ const animClass: Record<string, string> = {
   none: "", rainbow: "name-rainbow", pulse: "name-pulse", shake: "name-shake", shimmer: "name-shimmer",
 };
 
-export function StyledName({ name, style, isAdmin }: { name: string; style?: NameStyle; isAdmin?: boolean }) {
+export function StyledName({ name, style, isAdmin, isStaff }: { name: string; style?: NameStyle; isAdmin?: boolean; isStaff?: boolean }) {
   const s = style || {};
   const classes = [
     fontClass[s.font || "default"] || "",
@@ -34,6 +34,11 @@ export function StyledName({ name, style, isAdmin }: { name: string; style?: Nam
       {isAdmin && (
         <span className="admin-badge" title="Beheerder">
           <span className="crown">♛</span>ADMIN
+        </span>
+      )}
+      {isStaff && !isAdmin && (
+        <span className="staff-badge" title="Staff">
+          <span className="gem">◈</span>STAFF
         </span>
       )}
       <span className={classes} style={styleObj}>{name}</span>

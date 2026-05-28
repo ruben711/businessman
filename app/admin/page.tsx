@@ -130,7 +130,7 @@ function LbAdmin() {
       {users.map((u) => (
         <div key={u.uid} className="panel p-4">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            <StyledName name={u.name} style={u.nameStyle} isAdmin={u.isAdmin} />
+            <StyledName name={u.name} style={u.nameStyle} isAdmin={u.isAdmin} isStaff={u.isStaff} />
             {u.customTag && <CustomTag tag={u.customTag} />}
             <span className="font-pixel text-[7px] text-ink-4 ml-auto num">{u.uid}</span>
           </div>
@@ -138,7 +138,10 @@ function LbAdmin() {
             <label className="block"><div className="label mb-1">Name</div><input className="input" defaultValue={u.name} onBlur={(e) => update(u.uid, { name: e.target.value })} /></label>
             <label className="block"><div className="label mb-1">XP</div><input type="number" className="input" defaultValue={u.xp} onBlur={(e) => update(u.uid, { xp: parseInt(e.target.value, 10) })} /></label>
             <label className="block"><div className="label mb-1">Solved</div><input type="number" className="input" defaultValue={u.solved} onBlur={(e) => update(u.uid, { solved: parseInt(e.target.value, 10) })} /></label>
-            <label className="flex items-center gap-2 mt-6"><input type="checkbox" defaultChecked={!!u.isAdmin} onChange={(e) => update(u.uid, { isAdmin: e.target.checked })} className="accent-acc" /><span className="text-[13px]">Admin</span></label>
+            <div className="flex items-center gap-4 mt-6">
+              <label className="flex items-center gap-2"><input type="checkbox" defaultChecked={!!u.isAdmin} onChange={(e) => update(u.uid, { isAdmin: e.target.checked })} className="accent-acc" /><span className="text-[13px]">Admin</span></label>
+              <label className="flex items-center gap-2"><input type="checkbox" defaultChecked={!!u.isStaff} onChange={(e) => update(u.uid, { isStaff: e.target.checked })} className="accent-acc" /><span className="text-[13px]">Staff</span></label>
+            </div>
           </div>
 
           {/* Existing badges */}

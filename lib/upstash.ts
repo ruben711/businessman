@@ -59,6 +59,7 @@ export type LbUser = {
   solved: number;
   lastSync: number;
   isAdmin?: boolean;
+  isStaff?: boolean;
   customTag?: { label: string; color: string; emoji?: string };
   nameStyle?: any;
   badges?: string[];                                       // catalog badge ids
@@ -80,6 +81,7 @@ export async function lbUpsert(u: LbUser) {
       if (u.customTag === undefined) u.customTag = existing.customTag;
       if (u.nameStyle === undefined) u.nameStyle = existing.nameStyle;
       if (u.isAdmin === undefined) u.isAdmin = existing.isAdmin;
+      if (u.isStaff === undefined) u.isStaff = existing.isStaff;
       if (u.badges === undefined) u.badges = existing.badges;
       if (u.customBadges === undefined) u.customBadges = existing.customBadges;
     } catch {}
