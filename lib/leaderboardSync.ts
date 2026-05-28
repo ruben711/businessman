@@ -19,8 +19,9 @@ export async function syncLeaderboard(force = false) {
         name: getName(),
         xp: s.xp,
         solved: s.solvedExerciseIds.length,
-        nameStyle: s.nameStyle,
-        customTag: s.customTag,
+        // null = expliciet gewist (vs ontbrekend = behouden op server)
+        nameStyle: s.nameStyle ?? null,
+        customTag: s.customTag ?? null,
         badges: s.badges.map((b) => b.id),
         customBadges: s.customBadges,
       }),

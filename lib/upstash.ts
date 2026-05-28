@@ -69,7 +69,10 @@ export const LB_KEY = "bm:lb";
 export const LB_SCORES_KEY = "bm:lb:scores";
 
 export async function lbUpsert(u: LbUser) {
-  // preserve existing fields not provided by the caller
+  // Field semantics:
+  //   undefined → niet meegestuurd → behoud bestaande waarde
+  //   null      → expliciet gewist → verwijder de waarde
+  //   waarde    → overschrijf
   const existingRaw = await redis.hget(LB_KEY, u.uid).catch(() => null);
   if (existingRaw) {
     try {
@@ -81,6 +84,10 @@ export async function lbUpsert(u: LbUser) {
       if (u.customBadges === undefined) u.customBadges = existing.customBadges;
     } catch {}
   }
+  // Normaliseer expliciete nulls naar "leeg" zodat ze niet als null blijven hangen
+  if (u.customTag === null) u.customTag = undefined;
+  if (u.nameStyle === null) u.nameStyle = undefined;
+
   await redis.pipe([
     ["hset", LB_KEY, u.uid, JSON.stringify(u)],
     ["zadd", LB_SCORES_KEY, u.xp, u.uid],
